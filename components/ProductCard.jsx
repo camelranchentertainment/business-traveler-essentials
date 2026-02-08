@@ -81,9 +81,9 @@ export default function ProductCard({ product }) {
             <div className="text-2xl font-bold text-gray-900">
               ${product.price}
             </div>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
-              View Details →
-            </button>
+           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
+             {product.asin ? 'View on Amazon →' : 'Coming Soon'}
+           </button>
           </div>
         </div>
       </a>
