@@ -551,3 +551,36 @@ export const getReadyProducts = () => {
 export const getProductsNeedingASINs = () => {
   return products.filter(product => !hasAmazonLink(product));
 };
+// ====================
+// LEGACY EXPORTS (for compatibility)
+// ====================
+
+// Export categories object (your old format)
+export const categories = {
+  "Luggage": { name: "Luggage", slug: "luggage" },
+  "Backpacks": { name: "Backpacks", slug: "backpacks" },
+  "Cable Bags / Pouches": { name: "Cable Bags / Pouches", slug: "cable-bags-pouches" },
+  "Cords": { name: "Cords", slug: "cords" },
+  "Power Blocks": { name: "Power Blocks", slug: "power-blocks" },
+  "Computer Power": { name: "Computer Power", slug: "computer-power" },
+  "Portable Monitors": { name: "Portable Monitors", slug: "portable-monitors" },
+  "Mouse": { name: "Mouse", slug: "mouse" },
+  "Keyboards": { name: "Keyboards", slug: "keyboards" },
+  "Phone Chargers": { name: "Phone Chargers", slug: "phone-chargers" },
+  "Night Bags": { name: "Night Bags", slug: "night-bags" },
+  "Earbuds/Headphones": { name: "Earbuds/Headphones", slug: "earbuds-headphones" },
+  "Organizers": { name: "Organizers", slug: "organizers" },
+  "Recording Devices": { name: "Recording Devices", slug: "recording-devices" },
+  "Clothing Bags": { name: "Clothing Bags", slug: "clothing-bags" },
+  "Tracking Devices": { name: "Tracking Devices", slug: "tracking-devices" }
+};
+
+// Get featured products (products with high ratings)
+export const getFeaturedProducts = () => {
+  return products.filter(product => product.rating >= 4.7).slice(0, 8);
+};
+
+// Get product by ID (alias for compatibility)
+export const getProduct = (id) => {
+  return getProductById(id);
+};
