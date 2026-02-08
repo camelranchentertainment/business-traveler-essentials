@@ -510,8 +510,118 @@ export const products = [
     reviewCount: 2800,
     features: ["Magnetic wrap", "USB-C to C", "60W charging", "Tangle-free"]
   },
-
-  // ==================== POWER BLOCKS ====================
+  // Products 41-50: Power Blocks (continued)
+{
+  id: 41,
+  name: "Anker 747 GaN Prime 150W Charger",
+  category: "Power Blocks",
+  price: 109.99,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/61J4Z4qVskL._AC_SL1500_.jpg",
+  asin: "B0BFGNQNKR",
+  description: "150W 4-port GaN charger with foldable plug"
+},
+{
+  id: 42,
+  name: "Apple 140W USB-C Power Adapter",
+  category: "Power Blocks",
+  price: 99.00,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/41VqL-JtjJL._AC_SL1000_.jpg",
+  asin: "B09JR6DBFH",
+  description: "Official Apple 140W USB-C power adapter"
+},
+{
+  id: 43,
+  name: "Satechi 165W USB-C 4-Port GaN Charger",
+  category: "Power Blocks",
+  price: 119.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/61xK3qYTZuL._AC_SL1500_.jpg",
+  asin: "B09PMDZWZ6",
+  description: "165W 4-port GaN charger for multiple devices"
+},
+{
+  id: 44,
+  name: "UGREEN 100W USB-C Charger",
+  category: "Power Blocks",
+  price: 55.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/618dHZb3YqL._AC_SL1500_.jpg",
+  asin: "B091Z6JNX4",
+  description: "100W 4-port GaN charger with foldable plug"
+},
+{
+  id: 45,
+  name: "Baseus 100W GaN Charger",
+  category: "Power Blocks",
+  price: 45.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/61xz8vZQzPL._AC_SL1500_.jpg",
+  asin: "B097XRTQHY",
+  description: "100W 4-port compact GaN charger"
+},
+{
+  id: 46,
+  name: "RAVPower 90W 2-Port Wall Charger",
+  category: "Power Blocks",
+  price: 49.99,
+  rating: 4.6,
+  reviewCount: 2800,
+  image: "https://m.media-amazon.com/images/I/61b8UvQfymL._AC_SL1500_.jpg",
+  asin: "B083ZBXXN5",
+  description: "90W dual-port PD charger"
+},
+{
+  id: 47,
+  name: "Anker 735 GaN Prime 65W Charger",
+  category: "Power Blocks",
+  price: 49.99,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/51W5YqF9vkL._AC_SL1500_.jpg",
+  asin: "B09WD4GYNJ",
+  description: "65W 3-port compact charger"
+},
+{
+  id: 48,
+  name: "HyperJuice 100W GaN Charger",
+  category: "Power Blocks",
+  price: 79.99,
+  rating: 4.6,
+  reviewCount: 2800,
+  image: "https://m.media-amazon.com/images/I/61PqOCWgKEL._AC_SL1500_.jpg",
+  asin: "B0D323YZ7B",
+  description: "100W 4-port travel GaN charger"
+},
+{
+  id: 49,
+  name: "Belkin 108W 4-Port GaN Charger",
+  category: "Power Blocks",
+  price: 99.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/61JCkVEtpBL._AC_SL1500_.jpg",
+  asin: "B09RMMMM5W",
+  description: "108W quad-port charging station"
+},
+{
+  id: 50,
+  name: "Nekteck 100W PD 3.0 Wall Charger",
+  category: "Power Blocks",
+  price: 39.99,
+  rating: 4.6,
+  reviewCount: 2800,
+  image: "https://m.media-amazon.com/images/I/61XEOCHsPBL._AC_SL1500_.jpg",
+  asin: "B09MD9HJG6",
+  description: "100W single-port USB-C charger"
+},
+  // ==================== COMPUTER POWER ====================
  // Products 51-60: Computer Power (Laptop Power Banks)
 {
   id: 51,
@@ -622,7 +732,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71ANKERPC45._AC_SL1500_.jpg",
   asin: "B07XRJZXKY",
   description: "45W PD, includes 60W charger, premium laptop battery"
-},
+}, 
 // ==========================
 // SUMMARY OF ADDED PRODUCTS
 // ==========================
