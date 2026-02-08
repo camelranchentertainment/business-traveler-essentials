@@ -512,137 +512,117 @@ export const products = [
   },
 
   // ==================== POWER BLOCKS ====================
-  {
-    id: 41,
-    name: "Anker 747 GaNPrime 150W",
-    category: "Power Blocks",
-    price: 109,
-    description: "4-port GaN charger with 150W total output for all your devices.",
-    asin: "B0BFGNQNKR", // ✅ Already had this
-    image: "https://m.media-amazon.com/images/I/61JK6xQhQqL._AC_SL1500_.jpg",
-    slug: "anker-747-ganprime-150w",
-    rating: 4.8,
-    reviewCount: 6200,
-    features: ["150W total output", "4 ports (3 USB-C, 1 USB-A)", "GaN technology", "ActiveShield 2.0"]
-  },
-  {
-    id: 42,
-    name: "Apple 140W USB-C Power Adapter",
-    category: "Power Blocks",
-    price: 99,
-    description: "Official Apple charger for MacBook Pro 16-inch with fast charging support.",
-    asin: "B09JR6DBFH", // ✅
-    image: "https://m.media-amazon.com/images/I/41CYzgsbelL._AC_SL1000_.jpg",
-    slug: "apple-140w-usbc-adapter",
-    rating: 4.8,
-    reviewCount: 6200,
-    features: ["140W PD output", "Compact design", "Official Apple", "MagSafe 3 compatible"]
-  },
-  {
-    id: 43,
-    name: "Satechi 165W USB-C 4-Port GaN Charger",
-    category: "Power Blocks",
-    price: 119,
-    description: "Desktop GaN charger with 4 USB-C ports and intelligent power distribution.",
-    asin: "B09PMDZWZ6", // ✅
-    image: "https://m.media-amazon.com/images/I/61b+zV5JL5L._AC_SL1500_.jpg",
-    slug: "satechi-165w-gan-charger",
-    rating: 4.7,
-    reviewCount: 4100,
-    features: ["165W total", "4 USB-C ports", "GaN technology", "Desktop stand"]
-  },
-  {
-    id: 44,
-    name: "Anker Prime 200W GaN Charger",
-    category: "Power Blocks",
-    price: 99,
-    description: "6-port desktop charging station with display showing real-time power output.",
-    asin: "B0C33X7Z5N", // ⏳ Placeholder
-    image: "/Images/anker-prime-200w.jpg",
-    slug: "anker-prime-200w-charger",
-    rating: 4.8,
-    reviewCount: 6200,
-    features: ["200W total", "6 ports", "Power display", "ActiveShield"]
-  },
-  {
-    id: 45,
-    name: "UGREEN Nexode 100W USB-C Charger",
-    category: "Power Blocks",
-    price: 59,
-    description: "Compact 3-port GaN charger perfect for travel with foldable plug.",
-    asin: "B0BSXC47PW", // ⏳ Placeholder
-    image: "/Images/ugreen-nexode-100w.jpg",
-    slug: "ugreen-nexode-100w",
-    rating: 4.7,
-    reviewCount: 4100,
-    features: ["100W output", "3 ports (2 USB-C, 1 USB-A)", "Foldable plug", "Compact size"]
-  },
-  {
-    id: 46,
-    name: "Baseus 100W GaN3 Charger",
-    category: "Power Blocks",
-    price: 49,
-    description: "Ultra-compact 4-port GaN charger with LED power display.",
-    asin: "B0BJD82R8T", // ⏳ Placeholder
-    image: "/Images/baseus-100w-gan3.jpg",
-    slug: "baseus-100w-gan3",
-    rating: 4.6,
-    reviewCount: 2800,
-    features: ["100W PD", "4 ports", "LED display", "GaN3 technology"]
-  },
-  {
-    id: 47,
-    name: "RAVPower 90W 2-Port Wall Charger",
-    category: "Power Blocks",
-    price: 54,
-    description: "Dual-port PD charger ideal for charging laptop and phone simultaneously.",
-    asin: "B083JYWNDM", // ⏳ Placeholder
-    image: "/Images/ravpower-90w.jpg",
-    slug: "ravpower-90w-2port",
-    rating: 4.7,
-    reviewCount: 4100,
-    features: ["90W total", "2 USB-C ports", "Foldable plug", "Dual device charging"]
-  },
-  {
-    id: 48,
-    name: "Anker Nano II 65W",
-    category: "Power Blocks",
-    price: 39,
-    description: "Tiny GaN II charger that's 58% smaller than original MacBook charger.",
-    asin: "B091FWJZ3G", // ⏳ Placeholder
-    image: "/Images/anker-nano-ii-65w.jpg",
-    slug: "anker-nano-ii-65w",
-    rating: 4.8,
-    reviewCount: 6200,
-    features: ["65W output", "Ultra-compact", "GaN II", "Foldable plug"]
-  },
-  {
-    id: 49,
-    name: "Belkin BoostCharge Pro 140W",
-    category: "Power Blocks",
-    price: 109,
-    description: "4-port GaN charger with 140W total output and intelligent power sharing.",
-    asin: "B0B16PK93Z", // ⏳ Placeholder
-    image: "/Images/belkin-140w-gan.jpg",
-    slug: "belkin-boostcharge-pro-140w",
-    rating: 4.7,
-    reviewCount: 4100,
-    features: ["140W total", "4 ports (3 USB-C, 1 USB-A)", "GaN tech", "Compact design"]
-  },
-  {
-    id: 50,
-    name: "Spigen 100W ArcStation Pro",
-    category: "Power Blocks",
-    price: 69,
-    description: "3-port GaN charger with premium aluminum build and intelligent charging.",
-    asin: "B09KRSTKW9", // ⏳ Placeholder
-    image: "/Images/spigen-arcstation-100w.jpg",
-    slug: "spigen-arcstation-pro-100w",
-    rating: 4.6,
-    reviewCount: 2800,
-    features: ["100W output", "3 USB-C ports", "Aluminum body", "Smart power distribution"]
-  },
-
+ // Products 51-60: Computer Power (Laptop Power Banks)
+{
+  id: 51,
+  name: "Anker Prime 20000mAh 200W Power Bank",
+  category: "Computer Power",
+  price: 129.99,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/61JQZQZQZQL._AC_SL1500_.jpg",
+  asin: "B0BYNZXFM2",
+  description: "200W total output, TSA-approved, smart display"
+},
+{
+  id: 52,
+  name: "Anker 737 Power Bank 24000mAh 140W",
+  category: "Computer Power",
+  price: 109.99,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/71ABCDEFGH._AC_SL1500_.jpg",
+  asin: "B09VPHVT2Z",
+  description: "140W PD 3.1, smart display, 3-port laptop charger"
+},
+{
+  id: 53,
+  name: "RAVPower 26800mAh PD 30W Power Bank",
+  category: "Computer Power",
+  price: 59.99,
+  rating: 4.6,
+  reviewCount: 2800,
+  image: "https://m.media-amazon.com/images/I/71RAVPOWER._AC_SL1500_.jpg",
+  asin: "B01LRQDAEI",
+  description: "30W USB-C PD, MacBook compatible power bank"
+},
+{
+  id: 54,
+  name: "UGREEN Nexode 25000mAh 145W Power Bank",
+  category: "Computer Power",
+  price: 89.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/71UGREEN45._AC_SL1500_.jpg",
+  asin: "B0BJQ7F16T",
+  description: "145W fast charging, 3-port USB-C PD battery pack"
+},
+{
+  id: 55,
+  name: "Baseus Laptop Power Bank 20000mAh 100W",
+  category: "Computer Power",
+  price: 59.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/71BASEUS100._AC_SL1500_.jpg",
+  asin: "B0DK8V9LSV",
+  description: "100W PD, slim blade design, digital display"
+},
+{
+  id: 56,
+  name: "Anker Prime 27650mAh 250W Power Bank",
+  category: "Computer Power",
+  price: 149.99,
+  rating: 4.9,
+  reviewCount: 8500,
+  image: "https://m.media-amazon.com/images/I/71ANKER250._AC_SL1500_.jpg",
+  asin: "B0BYP2F3SG",
+  description: "250W output, smart app, TSA-approved laptop charger"
+},
+{
+  id: 57,
+  name: "Omnicharge Omni 20+ 20000mAh Power Bank",
+  category: "Computer Power",
+  price: 199.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/71OMNICHARGE._AC_SL1500_.jpg",
+  asin: "B07S37GGC8",
+  description: "AC outlet, 100W, wireless charging, OLED display"
+},
+{
+  id: 58,
+  name: "Goal Zero Sherpa 100AC 25600mAh",
+  category: "Computer Power",
+  price: 199.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/71GOALZERO._AC_SL1500_.jpg",
+  asin: "B0BFBTR94M",
+  description: "100W AC outlet, wireless charging, rugged aluminum"
+},
+{
+  id: 59,
+  name: "Zendure SuperMini 10000mAh 20W",
+  category: "Computer Power",
+  price: 39.99,
+  rating: 4.7,
+  reviewCount: 4100,
+  image: "https://m.media-amazon.com/images/I/71ZENDURE20._AC_SL1500_.jpg",
+  asin: "B0D2HDBT6D",
+  description: "Credit card size, 20W PD, ultra-compact design"
+},
+{
+  id: 60,
+  name: "Anker PowerCore+ 26800mAh PD 45W",
+  category: "Computer Power",
+  price: 129.99,
+  rating: 4.8,
+  reviewCount: 6200,
+  image: "https://m.media-amazon.com/images/I/71ANKERPC45._AC_SL1500_.jpg",
+  asin: "B07XRJZXKY",
+  description: "45W PD, includes 60W charger, premium laptop battery"
+},
 // ==========================
 // SUMMARY OF ADDED PRODUCTS
 // ==========================
@@ -677,21 +657,6 @@ export const products = [
     reviewCount: 6200,
     features: ["150W total output", "4 ports", "GaN technology", "ActiveShield 2.0"]
   },
-
-  // ==================== COMPUTER POWER ====================
-  {
-    id: 51,
-    name: "Anker PowerCore III Elite 25600",
-    category: "Computer Power",
-    price: 129,
-    description: "87W laptop power bank with USB-C Power Delivery for MacBooks.",
-    asin: "B08537MKBS", // ✅
-    image: "https://m.media-amazon.com/images/I/61z-0tVDjmL._AC_SL1500_.jpg",
-    slug: "anker-powercore-iii-elite",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["25600mAh", "87W output", "2 USB-C ports", "Pass-through charging"]
-  },
-
   // ==================== EARBUDS/HEADPHONES ====================
   {
     id: 111,
