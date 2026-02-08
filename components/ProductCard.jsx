@@ -3,8 +3,15 @@ import Link from 'next/link';
 export default function ProductCard({ product }) {
   return (
     <div className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-      <Link href={`/products/${product.id}`}>
-        <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
+     <a 
+  href={product.asin 
+    ? `https://www.amazon.com/dp/${product.asin}?tag=businesst02d1-20`
+    : '#'
+  }
+  target={product.asin ? "_blank" : "_self"}
+  rel={product.asin ? "noopener noreferrer nofollow" : ""}
+>
+  <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
           {/* Amazon Product Image */}
           <img 
             src={product.image}
