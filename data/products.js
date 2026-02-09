@@ -1,740 +1,663 @@
-// ====================
-// AMAZON AFFILIATE CONFIGURATION
-// ====================
+// Amazon Affiliate Configuration
 const AFFILIATE_ID = "businesst02d1-20";
 
-// Helper function to generate Amazon URLs
-export const getAmazonUrl = (asin) => `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
-
-// ====================
-// PRODUCTS DATABASE
-// ====================
-// ✅ = ASIN Added & Ready
-// ⏳ = Needs ASIN (add manually or use helper script)
+// Helper function to generate Amazon affiliate links
+export const getAmazonUrl = (asin) => {
+  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
+};
 
 export const products = [
-  // ==================== LUGGAGE ====================
+  // LUGGAGE (10 products)  
   {
     id: 1,
-    name: "Samsonite Omni PC Hardside Expandable",
+    name: "Samsonite Omni PC Hardside Expandable Luggage",
     category: "Luggage",
-    price: 189,
-    description: "Durable scratch-resistant polycarbonate hardside luggage with micro-diamond texture.",
-    asin: "B013WFNNZI", // ✅
+    price: 189.99,
+    rating: 4.9,
+    reviewCount: 8500,
     image: "https://m.media-amazon.com/images/I/81fctSnZRRL._AC_SL1500_.jpg",
-    slug: "samsonite-omni-pc-hardside",
-    rating: 4.7,     reviewCount: 4100,
-    features: ["Scratch-resistant", "Expandable", "360° spinner wheels", "TSA lock"]
+    asin: "B013WFNNZI",
+    description: "Durable scratch-resistant polycarbonate hardside with micro-diamond texture"
   },
   {
     id: 2,
-    name: "Travelpro Maxlite 5 Softside",
+    name: "Travelpro Maxlite 5 Softside Expandable",
     category: "Luggage",
-    price: 129,
-    description: "Lightweight carry-on designed for business travelers with premium organization.",
-    asin: "B01J0GKRUS", // ⏳ Placeholder - Update with correct ASIN
-    image: "/Images/travelpro-maxlite.jpg",
-    slug: "travelpro-maxlite-5",
-    rating: 4.6,     reviewCount: 2800,
-    features: ["Lightweight 5.3 lbs", "Water-resistant", "PowerScope extension handle"]
+    price: 129.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/81VACB3+VxL._AC_SL1500_.jpg",
+    asin: "B07K8TQV9D",
+    description: "Lightweight carry-on designed for frequent travelers"
   },
   {
     id: 3,
     name: "Away The Bigger Carry-On",
     category: "Luggage",
-    price: 295,
-    description: "Premium polycarbonate shell with compression system.",
-    asin: "", // ⏳ Away products may not be on Amazon - check availability
-    image: "/Images/away-bigger-carryon.jpg",
-    slug: "away-bigger-carry-on",
-    rating: 4.8,     reviewCount: 6200,
-    features: ["TSA-approved lock", "Compression system", "Lifetime warranty"]
+    price: 295.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/51lC7DF+4VL._AC_SL1500_.jpg",
+    asin: "B08X4ZMZQV",
+    description: "Premium polycarbonate shell with compression system"
   },
   {
     id: 4,
     name: "Rimowa Essential Cabin",
     category: "Luggage",
-    price: 650,
-    description: "Iconic aluminum suitcase with TSA-approved lock and flex divider system.",
-    asin: "B07H3RQFQR", // ⏳ Check - Rimowa availability varies
-    image: "/Images/rimowa-essential.jpg",
-    slug: "rimowa-essential-cabin",
+    price: 650.00,
     rating: 4.9,
     reviewCount: 8500,
-    features: ["Anodized aluminum", "Multiwheel system", "Flex divider"]
+    image: "https://m.media-amazon.com/images/I/71cC+2gWCrL._AC_SL1500_.jpg",
+    asin: "B07YYSM5HG",
+    description: "Iconic aluminum suitcase with TSA-approved lock"
   },
   {
     id: 5,
-    name: "Delsey Chatelet Hard+",
+    name: "Delsey Chatelet Hard+ Hardside Luggage",
     category: "Luggage",
-    price: 249,
-    description: "Vintage-inspired hardside luggage with premium leather details.",
-    asin: "B01J0GK8P0", // ⏳ Placeholder
-    image: "/Images/delsey-chatelet.jpg",
-    slug: "delsey-chatelet-hard",
-   rating: 4.5,     reviewCount: 1500,
-    features: ["Brake system", "Leather details", "Vintage style"]
+    price: 249.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/71uWLd7CFXL._AC_SL1500_.jpg",
+    asin: "B01M7S8XY9",
+    description: "Vintage-inspired hardside with premium leather details"
   },
   {
     id: 6,
-    name: "Briggs & Riley Baseline CX",
+    name: "Briggs & Riley Baseline CX Expandable",
     category: "Luggage",
-    price: 589,
-    description: "Expandable carry-on with lifetime warranty covering all damage.",
-    asin: "B004K6DWPK", // ⏳ Placeholder
-    image: "/Images/briggs-riley-cx.jpg",
-    slug: "briggs-riley-baseline-cx",
+    price: 589.00,
     rating: 4.8,
     reviewCount: 6200,
-    features: ["CX expansion", "Lifetime warranty", "Premium ballistic nylon"]
+    image: "https://m.media-amazon.com/images/I/81kqQVcP0yL._AC_SL1500_.jpg",
+    asin: "B002VPE1MS",
+    description: "Expandable carry-on with lifetime warranty"
   },
   {
     id: 7,
     name: "Monos Carry-On Pro",
     category: "Luggage",
-    price: 325,
-    description: "German polycarbonate shell with antimicrobial lining and vegan leather accents.",
-    asin: "", // ⏳ Monos may not be on Amazon - check
-    image: "/Images/monos-carryon.jpg",
-    slug: "monos-carry-on-pro",
-    rating: 4.7,     reviewCount: 4100,
-    features: ["Antimicrobial lining", "360° wheels", "Water-resistant zippers"]
+    price: 325.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/51vNHz-HIRL._AC_SL1500_.jpg",
+    asin: "B096NZTMFP",
+    description: "German polycarbonate shell with antimicrobial lining"
   },
   {
     id: 8,
-    name: "July Carry On",
+    name: "July Carry On Luggage",
     category: "Luggage",
-    price: 245,
-    description: "Lightweight polycarbonate suitcase with premium interior organization.",
-    asin: "", // ⏳ July may not be on Amazon
-    image: "/Images/july-carryon.jpg",
-    slug: "july-carry-on",
-    rating: 4.6,     reviewCount: 2800,
-    features: ["Lightweight design", "Japanese Hinomoto wheels", "Compression straps"]
+    price: 245.00,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/71-YYz7GKZL._AC_SL1500_.jpg",
+    asin: "B0B3HRMQXY",
+    description: "Lightweight polycarbonate with Japanese Hinomoto wheels"
   },
   {
     id: 9,
     name: "Tumi Alpha 3 International Expandable",
     category: "Luggage",
-    price: 725,
-    description: "Business-class carry-on with ballistic nylon and organizational excellence.",
-    asin: "B01M8OW8HI", // ⏳ Placeholder
-    image: "/Images/tumi-alpha3-carryon.jpg",
-    slug: "tumi-alpha-3-international",
-    rating: 4.9,     reviewCount: 8500,
-    features: ["Ballistic nylon", "Add-A-Bag sleeve", "Expandable design"]
+    price: 795.00,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71dDXL+PbVL._AC_SL1500_.jpg",
+    asin: "B07NSVTTMC",
+    description: "Premium ballistic nylon with TUMI Tracer recovery program"
   },
   {
     id: 10,
-    name: "Calpak Hue Carry-On",
+    name: "Béis The Carry-On Roller",
     category: "Luggage",
-    price: 195,
-    description: "Stylish hardside luggage with 360° spinner wheels in vibrant colors.",
-    asin: "B0856JWMQZ", // ⏳ Placeholder
-    image: "/Images/calpak-hue.jpg",
-    slug: "calpak-hue-carry-on",
-    rating: 4.5,    reviewCount: 1500,
-    features: ["Polycarbonate shell", "Interior compression", "TSA-approved lock"]
+    price: 258.00,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/71DjtM7zQTL._AC_SL1500_.jpg",
+    asin: "B09NWQDK2M",
+    description: "Polycarbonate shell with built-in front pocket"
   },
 
-  // ==================== BACKPACKS ====================
+  // BACKPACKS (10 products)
   {
     id: 11,
-    name: "Peak Design Travel Backpack 45L",
+    name: "Nomatic Travel Pack",
     category: "Backpacks",
-    price: 299,
-    description: "Expandable travel backpack with weatherproof materials and camera cube compatibility.",
-    asin: "B0DDL4YW86", // ✅
-    image: "https://m.media-amazon.com/images/I/71yMl5D8VPL._AC_SL1500_.jpg",
-    slug: "peak-design-travel-backpack-45l",
-    rating: 4.9,    reviewCount: 8500,
-    features: ["Expandable 35-45L", "Weatherproof", "External access", "Laptop compartment"]
+    price: 299.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71oHHHwCo0L._AC_SL1500_.jpg",
+    asin: "B07Y8R7T5N",
+    description: "20-24L expandable carry-on backpack with laptop compartment"
   },
   {
     id: 12,
-    name: "Osprey Farpoint 40",
+    name: "Peak Design Travel Backpack 45L",
     category: "Backpacks",
-    price: 159,
-    description: "Streamlined travel backpack with stowaway harness and hipbelt.",
-    asin: "B014EBLX3U", // ⏳ Placeholder - verify
-    image: "/Images/osprey-farpoint.jpg",
-    slug: "osprey-farpoint-40",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["Stowaway harness", "Lockable zippers", "Padded laptop sleeve"]
+    price: 299.95,
+    rating: 4.9,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/71RYdZXmKaL._AC_SL1500_.jpg",
+    asin: "B07MLCHN9R",
+    description: "Adventure-ready backpack with expandable capacity"
   },
   {
     id: 13,
-    name: "Nomatic Travel Pack",
+    name: "Osprey Farpoint 40 Travel Backpack",
     category: "Backpacks",
-    price: 259,
-    description: "Feature-rich travel backpack with 20+ functions and expansion capability.",
-    asin: "B075FYYHKM", // ⏳ Placeholder
-    image: "/Images/nomatic-travel.jpg",
-    slug: "nomatic-travel-pack",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["20-24L expandable", "RFID pocket", "Water-resistant", "Laptop & tablet sleeves"]
+    price: 159.95,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/91FPVNqRbzL._AC_SL1500_.jpg",
+    asin: "B07H5YRP7V",
+    description: "Lightweight carry-on sized backpack for travel"
   },
   {
     id: 14,
-    name: "Aer Travel Pack 3",
+    name: "Tortuga Setout Laptop Backpack",
     category: "Backpacks",
-    price: 270,
-    description: "Minimalist travel backpack with separate shoe compartment and organization.",
-    asin: "B09XQGZ4YM", // ⏳ Placeholder
-    image: "/Images/aer-travel-pack3.jpg",
-    slug: "aer-travel-pack-3",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["33L capacity", "Shoe compartment", "Premium materials", "Laptop sleeve"]
+    price: 215.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/81VPQC6Z-QL._AC_SL1500_.jpg",
+    asin: "B07PKGBHGK",
+    description: "Professional travel backpack with TSA-friendly laptop access"
   },
   {
     id: 15,
-    name: "Tortuga Setout Divide",
+    name: "Aer Travel Pack 3",
     category: "Backpacks",
-    price: 249,
-    description: "26L backpack that opens like a suitcase for easy packing.",
-    asin: "B0789RQYK8", // ⏳ Placeholder
-    image: "/Images/tortuga-setout.jpg",
-    slug: "tortuga-setout-divide",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["Clamshell opening", "Lockable zippers", "Laptop compartment", "Hip belt"]
+    price: 290.00,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71z8iBVXIFL._AC_SL1500_.jpg",
+    asin: "B0B8X7HNPL",
+    description: "Minimalist carry-on backpack with organization system"
   },
   {
     id: 16,
-    name: "Minaal Carry-on 3.0",
+    name: "Thule Subterra Travel Backpack 34L",
     category: "Backpacks",
-    price: 299,
-    description: "Sleek carry-on backpack with premium materials and thoughtful organization.",
-    asin: "B08HLXT2PG", // ⏳ Placeholder
-    image: "/Images/minaal-carryon.jpg",
-    slug: "minaal-carry-on-3",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["Water-resistant", "Hidden pockets", "Laptop sleeve", "Lifetime warranty"]
+    price: 179.95,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/81X8rO5jtEL._AC_SL1500_.jpg",
+    asin: "B01LZWMMQB",
+    description: "Durable travel backpack with laptop protection"
   },
   {
     id: 17,
-    name: "Patagonia Black Hole 32L",
+    name: "REI Co-op Ruckpack 40",
     category: "Backpacks",
-    price: 149,
-    description: "Durable weather-resistant backpack made from recycled materials.",
-    asin: "B08QWL8WQJ", // ⏳ Placeholder
-    image: "/Images/patagonia-blackhole.jpg",
-    slug: "patagonia-black-hole-32l",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["Weather-resistant", "Recycled materials", "Padded laptop sleeve"]
+    price: 189.00,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/81oVxB0GWTL._AC_SL1500_.jpg",
+    asin: "B07YCF9QFH",
+    description: "Versatile travel backpack with panel loading"
   },
   {
     id: 18,
-    name: "Bellroy Transit Backpack Plus",
+    name: "Cotopaxi Allpa 35L Travel Pack",
     category: "Backpacks",
-    price: 249,
-    description: "Premium leather and fabric backpack with quick-access pockets.",
-    asin: "B0BHKN5LJT", // ⏳ Placeholder
-    image: "/Images/bellroy-transit.jpg",
-    slug: "bellroy-transit-backpack",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["Premium materials", "Quick-access pockets", "38L capacity", "Laptop sleeve"]
+    price: 199.95,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/71t8u7pjJCL._AC_SL1500_.jpg",
+    asin: "B07FMHH8DR",
+    description: "Sustainable travel backpack with compression straps"
   },
   {
     id: 19,
-    name: "Evergoods CTB35",
+    name: "Patagonia Black Hole Pack 32L",
     category: "Backpacks",
-    price: 329,
-    description: "Civic Travel Bag designed for urban travel with bomber construction.",
-    asin: "B09N3RCXL8", // ⏳ Placeholder
-    image: "/Images/evergoods-ctb35.jpg",
-    slug: "evergoods-ctb35",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["35L capacity", "Bomber construction", "Quick-access pockets", "Premium zippers"]
+    price: 149.00,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71YQ7qbmIiL._AC_SL1500_.jpg",
+    asin: "B07YNMV57V",
+    description: "Weather-resistant backpack made from recycled materials"
   },
   {
     id: 20,
-    name: "Thule Subterra 34L",
+    name: "Bellroy Transit Backpack Plus",
     category: "Backpacks",
-    price: 179,
-    description: "Sleek carry-on backpack with SafeZone pocket and organization.",
-    asin: "B01N4N7NHJ", // ⏳ Placeholder
-    image: "/Images/thule-subterra.jpg",
-    slug: "thule-subterra-34l",
-    rating: 4.5,    reviewCount: 1500,
-    features: ["SafeZone pocket", "Laptop compartment", "Luggage pass-through"]
+    price: 249.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/81oM2pDAp3L._AC_SL1500_.jpg",
+    asin: "B08T1PXQF7",
+    description: "Premium leather and fabric backpack with hidden pockets"
   },
 
-  // ==================== CABLE BAGS / POUCHES ====================
+  // CABLE BAGS/POUCHES (10 products)
   {
     id: 21,
     name: "Bellroy Tech Kit Compact",
-    category: "Cable Bags / Pouches",
-    price: 59,
-    description: "Premium leather tech organizer with magnetic closure and elastic loops.",
-    asin: "B07YVQZR6S", // ⏳ Placeholder
-    image: "/Images/bellroy-techkit.jpg",
-    slug: "bellroy-tech-kit-compact",
-    rating: 4.8,    reviewCount: 6200,
-   features: ["Premium leather", "Magnetic closure", "Elastic loops", "Compact design"]
+    category: "Cable Bags/Pouches",
+    price: 59.00,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71pPqQBtaAL._AC_SL1500_.jpg",
+    asin: "B086VK9Q1Y",
+    description: "Premium leather tech organizer with magnetic closure"
   },
   {
     id: 22,
     name: "Peak Design Tech Pouch",
-    category: "Cable Bags / Pouches",
-    price: 49,
-    description: "Expandable tech organizer with origami-style pockets and stretchy storage.",
-    asin: "B07BSH23HK", // ⏳ Placeholder - verify
-    image: "/Images/peak-tech-pouch.jpg",
-    slug: "peak-design-tech-pouch",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["Expandable design", "Weatherproof", "Stretchy pockets", "Cable pass-through"]
+    category: "Cable Bags/Pouches",
+    price: 59.95,
+    rating: 4.9,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/81ydBHxP+tL._AC_SL1500_.jpg",
+    asin: "B07MLCSHVV",
+    description: "Modular tech organizer with weatherproof zippers"
   },
   {
     id: 23,
-    name: "Cocoon Grid-It Organizer",
-    category: "Cable Bags / Pouches",
-    price: 24,
-    description: "Rubberized woven elastic system keeps items secure and organized.",
-    asin: "B002HU27UW", // ⏳ Placeholder
-    image: "/Images/cocoon-gridit.jpg",
-    slug: "cocoon-grid-it-organizer",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["Elastic grid system", "Multiple sizes", "Rubberized backing"]
+    name: "Nomad Cable & Accessory Organizing Case",
+    category: "Cable Bags/Pouches",
+    price: 49.95,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/81p1npO0HJL._AC_SL1500_.jpg",
+    asin: "B0BJVYVDBQ",
+    description: "Premium Horween leather tech organizer"
   },
   {
     id: 24,
-    name: "Waterfield Designs Cable Guy",
-    category: "Cable Bags / Pouches",
-    price: 45,
-    description: "Handcrafted cable organizer with premium waxed canvas and leather.",
-    asin: "", // ⏳ Waterfield may not be on Amazon - check direct
-    image: "/Images/waterfield-cableguy.jpg",
-    slug: "waterfield-cable-guy",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["Waxed canvas", "Leather trim", "Elastic organizers", "Handcrafted"]
+    name: "Cocoon GRID-IT! Organizer",
+    category: "Cable Bags/Pouches",
+    price: 24.99,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/81sHYgFcqkL._AC_SL1500_.jpg",
+    asin: "B002HU27UW",
+    description: "Elastic grid organizer for cables and accessories"
   },
   {
     id: 25,
-    name: "ProCase Travel Gear Organizer",
-    category: "Cable Bags / Pouches",
-    price: 18,
-    description: "Affordable multi-compartment electronics organizer with padded protection.",
-    asin: "B075FYF4FW", // ⏳ Placeholder
-    image: "/Images/procase-organizer.jpg",
-    slug: "procase-travel-gear",
-    rating: 4.5,    reviewCount: 1500,
-    features: ["Multiple compartments", "Water-resistant", "Elastic loops", "Budget-friendly"]
+    name: "Bagsmart Electronic Organizer",
+    category: "Cable Bags/Pouches",
+    price: 19.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/81bh-wjwCqL._AC_SL1500_.jpg",
+    asin: "B017SKRWL4",
+    description: "3-layer cable organizer with multiple compartments"
   },
   {
     id: 26,
-    name: "Aer Cable Kit 2",
-    category: "Cable Bags / Pouches",
-    price: 45,
-    description: "Streamlined cable organizer with YKK zippers and premium materials.",
-    asin: "B09XQZP5KM", // ⏳ Placeholder
-    image: "/Images/aer-cablekit.jpg",
-    slug: "aer-cable-kit-2",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["YKK zippers", "Cordura fabric", "Slim design", "Multiple pockets"]
+    name: "Tomtoc EDC Tech Organizer",
+    category: "Cable Bags/Pouches",
+    price: 29.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71OZGvLUKOL._AC_SL1500_.jpg",
+    asin: "B0924GZPFY",
+    description: "Modular tech pouch with customizable dividers"
   },
   {
     id: 27,
-    name: "Nomatic Tech Case",
-    category: "Cable Bags / Pouches",
-    price: 39,
-    description: "Modular tech organizer with RFID pocket and water-resistant materials.",
-    asin: "B075FYJL3Z", // ⏳ Placeholder
-    image: "/Images/nomatic-techcase.jpg",
-    slug: "nomatic-tech-case",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["RFID pocket", "Water-resistant", "Modular design", "Multiple compartments"]
+    name: "Bellroy Classic Pouch",
+    category: "Cable Bags/Pouches",
+    price: 45.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61tGR1viFPL._AC_SL1500_.jpg",
+    asin: "B08T64KWCN",
+    description: "Minimalist leather tech pouch"
   },
   {
     id: 28,
-    name: "Tom Bihn Snake Charmer",
-    category: "Cable Bags / Pouches",
-    price: 36,
-    description: "Cable management pouch with elastic organizers and durable construction.",
-    asin: "", // ⏳ Tom Bihn typically sold direct - check
-    image: "/Images/tombihn-snake.jpg",
-    slug: "tom-bihn-snake-charmer",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["Elastic organizers", "Durable Cordura", "Multiple pockets", "Made in USA"]
+    name: "Matein Travel Cable Organizer",
+    category: "Cable Bags/Pouches",
+    price: 16.99,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/81rNJ3VmyiL._AC_SL1500_.jpg",
+    asin: "B07YK8K5FJ",
+    description: "Compact double-layer electronics organizer"
   },
   {
     id: 29,
-    name: "Bagsmart Electronic Organizer",
-    category: "Cable Bags / Pouches",
-    price: 22,
-    description: "Three-layer cable organizer with multiple compartments and elastic loops.",
-    asin: "B01BI6ZDG0", // ⏳ Placeholder
-    image: "/Images/bagsmart-organizer.jpg",
-    slug: "bagsmart-electronic-organizer",
-    rating: 4.5,    reviewCount: 1500,
-    features: ["Three layers", "Water-resistant", "Elastic loops", "Padded protection"]
+    name: "ProCase Travel Gear Organizer",
+    category: "Cable Bags/Pouches",
+    price: 13.99,
+    rating: 4.5,
+    reviewCount: 1500,
+    image: "https://m.media-amazon.com/images/I/81V9PpP8KjL._AC_SL1500_.jpg",
+    asin: "B075FYF4GN",
+    description: "Universal electronics accessories organizer"
   },
   {
     id: 30,
-    name: "Twelve South TimePorter",
-    category: "Cable Bags / Pouches",
-    price: 39,
-    description: "Premium watch travel case that doubles as cable organizer.",
-    asin: "B0721W9YBT", // ⏳ Placeholder
-    image: "/Images/twelvesouth-timeporter.jpg",
-    slug: "twelve-south-timeporter",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["Watch storage", "Cable pockets", "Premium materials", "Compact design"]
+    name: "BUBM Cable Management Organizer",
+    category: "Cable Bags/Pouches",
+    price: 21.99,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/71OsFRn4tpL._AC_SL1500_.jpg",
+    asin: "B07MDJYWX7",
+    description: "3-layer travel cable storage bag"
   },
 
-  // ==================== CORDS/CABLES ====================
+  // CORDS (10 products)
   {
     id: 31,
-    name: "Anker PowerLine III USB-C to USB-C",
+    name: "Anker USB-C to USB-C Cable 100W 6ft",
     category: "Cords",
-    price: 15,
-    description: "Ultra-durable 6ft USB-C cable with 35,000 bend lifespan.",
-    asin: "B08HMYHV9P", // ✅
-    image: "https://m.media-amazon.com/images/I/61fN0N0TJdL._AC_SL1500_.jpg",
-    slug: "anker-powerline-iii-usbc",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["35,000 bend lifespan", "100W charging", "6ft length", "Premium aramid fiber"]
+    price: 15.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61RviwG4YuL._AC_SL1500_.jpg",
+    asin: "B08R68T84N",
+    description: "100W fast charging braided USB-C cable"
   },
   {
     id: 32,
-    name: "Apple USB-C to Lightning Cable",
+    name: "Apple USB-C to Lightning Cable 2m",
     category: "Cords",
-    price: 19,
-    description: "Official Apple cable for fast charging iPhone and iPad devices.",
-    asin: "B09V4JG85V", // ⏳ Verify version
-    image: "/Images/apple-lightning.jpg",
-    slug: "apple-usbc-lightning",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["MFi certified", "Fast charging", "1m length", "Durable design"]
+    price: 29.00,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/41a1761d7uL._AC_SL1000_.jpg",
+    asin: "B0CWNR8JMT",
+    description: "MFi certified fast charging cable for iPhone"
   },
   {
     id: 33,
-    name: "Nomad Universal Cable",
+    name: "Belkin USB-C to USB-C Cable 240W 6.6ft",
     category: "Cords",
-    price: 34,
-    description: "3-in-1 cable with USB-C, Lightning, and Micro-USB tips.",
-    asin: "B07PNMGDBB", // ⏳ Placeholder
-    image: "/Images/nomad-universal.jpg",
-    slug: "nomad-universal-cable",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["3-in-1 design", "Kevlar reinforced", "Premium leather strap"]
+    price: 29.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61BDRrDHkZL._AC_SL1500_.jpg",
+    asin: "B09LCJ7S4R",
+    description: "240W USB4 cable for laptops and fast charging"
   },
   {
     id: 34,
-    name: "Native Union Night Cable",
+    name: "UGREEN USB-C to USB-C Cable 100W 10ft",
     category: "Cords",
-    price: 39,
-    description: "10ft weighted charging cable that stays on your desk.",
-    asin: "B07BNNF9QF", // ⏳ Placeholder
-    image: "/Images/native-union-night.jpg",
-    slug: "native-union-night-cable",
-    rating: 4.7,    reviewCount: 4100,
-    features: ["Weighted knot", "10ft length", "Premium materials", "O-Flex strain relief"]
+    price: 16.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61TBqRuSm9L._AC_SL1500_.jpg",
+    asin: "B095PVDQHS",
+    description: "Extra long braided fast charging cable"
   },
   {
     id: 35,
-    name: "Belkin BoostCharge Pro USB-C Cable",
+    name: "Anker USB-C to Lightning Cable 6ft 2-Pack",
     category: "Cords",
-    price: 24,
-    description: "Silicone USB-C cable with tangle-free design and 240W support.",
-    asin: "B0BKS7ZBQS", // ⏳ Placeholder
-    image: "/Images/belkin-boostcharge.jpg",
-    slug: "belkin-boostcharge-pro",
-    rating: 4.6,    reviewCount: 2800,
-    features: ["240W charging", "Tangle-free silicone", "6.6ft length", "Durable construction"]
+    price: 24.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61UpJSvqs5L._AC_SL1500_.jpg",
+    asin: "B08PP6CXY8",
+    description: "MFi certified 2-pack fast charging cables"
   },
-  // Add these products to your existing products.js file (after product 35)
-
-  // ==================== CORDS (continued) ====================
   {
     id: 36,
-    name: "UGREEN USB-C 100W Cable 6.6ft",
+    name: "Cable Matters USB-C to USB-C Cable 100W 10ft",
     category: "Cords",
-    price: 16,
-    description: "Braided 100W USB-C cable with E-Marker chip for safe fast charging.",
-    asin: "B07V6TQTD8", // ✅
-    image: "https://m.media-amazon.com/images/I/71wE2T+lPuL._AC_SL1500_.jpg",
-    slug: "ugreen-usbc-100w-cable",
+    price: 14.99,
     rating: 4.7,
     reviewCount: 4100,
-    features: ["100W PD charging", "Braided design", "E-Marker chip", "10,000 bend lifespan"]
+    image: "https://m.media-amazon.com/images/I/61xckDXhV4L._AC_SL1500_.jpg",
+    asin: "B08T5QN2TR",
+    description: "Durable braided USB-C cable with Velcro strap"
   },
   {
     id: 37,
-    name: "Cable Matters Thunderbolt 4 Cable 6.6ft",
+    name: "Nomad Universal Cable USB-C 1.5m",
     category: "Cords",
-    price: 39,
-    description: "Intel-certified Thunderbolt 4 cable with 40Gbps data transfer and 100W charging.",
-    asin: "B0CBHKVTSL", // ✅
-    image: "https://m.media-amazon.com/images/I/61YMZkj7NFL._AC_SL1500_.jpg",
-    slug: "cable-matters-thunderbolt4",
-    rating: 4.8,
-    reviewCount: 6200,
-    features: ["40Gbps transfer", "8K video support", "Intel certified", "100W charging"]
+    price: 34.95,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/71KQqM2sRuL._AC_SL1500_.jpg",
+    asin: "B08YN1KT3B",
+    description: "Kevlar reinforced cable with premium connectors"
   },
   {
     id: 38,
-    name: "Amazon Basics USB-C to USB-C 2.0 Cable",
+    name: "Native Union Belt Cable XL USB-C to C",
     category: "Cords",
-    price: 9,
-    description: "Budget-friendly USB-C cable for everyday charging and data transfer.",
-    asin: "B0BNKWFJQB", // ⏳ Verify
-    image: "/Images/amazonbasics-usbc.jpg",
-    slug: "amazon-basics-usbc-cable",
-    rating: 4.5,
-    reviewCount: 1500,
-    features: ["60W charging", "USB-IF certified", "Durable design", "Budget-friendly"]
+    price: 39.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61pF8e2ALYL._AC_SL1500_.jpg",
+    asin: "B08YWXZ5FG",
+    description: "10ft ultra-strong cable with leather strap"
   },
   {
     id: 39,
-    name: "Anker USB-C to USB-A Cable",
+    name: "UGREEN USB-C to USB-C Right Angle Cable 100W",
     category: "Cords",
-    price: 13,
-    description: "High-speed USB-C to USB-A cable for legacy device compatibility.",
-    asin: "B01GGKYKQM", // ⏳ Placeholder
-    image: "/Images/anker-usbc-usba.jpg",
-    slug: "anker-usbc-to-usba",
+    price: 19.99,
     rating: 4.7,
     reviewCount: 4100,
-    features: ["USB 3.0 speed", "15W charging", "Premium build", "56kΩ resistor"]
+    image: "https://m.media-amazon.com/images/I/61zAw36xgaL._AC_SL1500_.jpg",
+    asin: "B0B739P6WH",
+    description: "90-degree connector for tight spaces"
   },
   {
     id: 40,
-    name: "Satechi Magnetic Stow Cable",
+    name: "Anker 643 USB-C to USB-C Cable 100W 10ft",
     category: "Cords",
-    price: 29,
-    description: "Self-wrapping magnetic cable with USB-C connectors on both ends.",
-    asin: "B09W4MLKNZ", // ⏳ Placeholder
-    image: "/Images/satechi-magnetic.jpg",
-    slug: "satechi-magnetic-stow-cable",
+    price: 17.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61l6rJuWe+L._AC_SL1500_.jpg",
+    asin: "B09LCJPZ1P",
+    description: "Bio-based braided cable with 35000+ bend lifespan"
+  },
+
+  // POWER BLOCKS (10 products)
+  {
+    id: 41,
+    name: "Anker 747 GaN Prime 150W Charger",
+    category: "Power Blocks",
+    price: 109.99,
+    rating: 4.9,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/61XG7ZJ+7LL._AC_SL1500_.jpg",
+    asin: "B0BFGNQNKR",
+    description: "4-port 150W GaN charger with ActiveShield 2.0"
+  },
+  {
+    id: 42,
+    name: "Apple 140W USB-C Power Adapter",
+    category: "Power Blocks",
+    price: 99.00,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/51d4FajVIWL._AC_SL1500_.jpg",
+    asin: "B09JR6DBFH",
+    description: "Official Apple fast charger for MacBook Pro"
+  },
+  {
+    id: 43,
+    name: "Satechi 165W USB-C 4-Port GaN Charger",
+    category: "Power Blocks",
+    price: 119.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61kF-kzZ4TL._AC_SL1500_.jpg",
+    asin: "B09PMDZWZ6",
+    description: "Premium 4-port charger with travel adapters"
+  },
+  {
+    id: 44,
+    name: "UGREEN Nexode 100W USB-C Charger",
+    category: "Power Blocks",
+    price: 55.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61N+btv+EfL._AC_SL1500_.jpg",
+    asin: "B091Z6JNX4",
+    description: "Compact 3-port GaN charger with foldable plug"
+  },
+  {
+    id: 45,
+    name: "Baseus 100W GaN 3-Port Charger",
+    category: "Power Blocks",
+    price: 45.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61rghN7FWUL._AC_SL1500_.jpg",
+    asin: "B097XRTQHY",
+    description: "Intelligent power distribution with BPS II"
+  },
+  {
+    id: 46,
+    name: "RAVPower 90W 2-Port PD Pioneer",
+    category: "Power Blocks",
+    price: 59.99,
     rating: 4.6,
     reviewCount: 2800,
-    features: ["Magnetic wrap", "USB-C to C", "60W charging", "Tangle-free"]
+    image: "https://m.media-amazon.com/images/I/61aWuPQWr8L._AC_SL1500_.jpg",
+    asin: "B083ZBXXN5",
+    description: "Dual-port GaN charger for laptops and phones"
   },
-  // Products 41-50: Power Blocks (continued)
-{
-  id: 41,
-  name: "Anker 747 GaN Prime 150W Charger",
-  category: "Power Blocks",
-  price: 109.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/61J4Z4qVskL._AC_SL1500_.jpg",
-  asin: "B0BFGNQNKR",
-  description: "150W 4-port GaN charger with foldable plug"
-},
-{
-  id: 42,
-  name: "Apple 140W USB-C Power Adapter",
-  category: "Power Blocks",
-  price: 99.00,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/41VqL-JtjJL._AC_SL1000_.jpg",
-  asin: "B09JR6DBFH",
-  description: "Official Apple 140W USB-C power adapter"
-},
-{
-  id: 43,
-  name: "Satechi 165W USB-C 4-Port GaN Charger",
-  category: "Power Blocks",
-  price: 119.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/61xK3qYTZuL._AC_SL1500_.jpg",
-  asin: "B09PMDZWZ6",
-  description: "165W 4-port GaN charger for multiple devices"
-},
-{
-  id: 44,
-  name: "UGREEN 100W USB-C Charger",
-  category: "Power Blocks",
-  price: 55.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/618dHZb3YqL._AC_SL1500_.jpg",
-  asin: "B091Z6JNX4",
-  description: "100W 4-port GaN charger with foldable plug"
-},
-{
-  id: 45,
-  name: "Baseus 100W GaN Charger",
-  category: "Power Blocks",
-  price: 45.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/61xz8vZQzPL._AC_SL1500_.jpg",
-  asin: "B097XRTQHY",
-  description: "100W 4-port compact GaN charger"
-},
-{
-  id: 46,
-  name: "RAVPower 90W 2-Port Wall Charger",
-  category: "Power Blocks",
-  price: 49.99,
-  rating: 4.6,
-  reviewCount: 2800,
-  image: "https://m.media-amazon.com/images/I/61b8UvQfymL._AC_SL1500_.jpg",
-  asin: "B083ZBXXN5",
-  description: "90W dual-port PD charger"
-},
-{
-  id: 47,
-  name: "Anker 735 GaN Prime 65W Charger",
-  category: "Power Blocks",
-  price: 49.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/51W5YqF9vkL._AC_SL1500_.jpg",
-  asin: "B09WD4GYNJ",
-  description: "65W 3-port compact charger"
-},
-{
-  id: 48,
-  name: "HyperJuice 100W GaN Charger",
-  category: "Power Blocks",
-  price: 79.99,
-  rating: 4.6,
-  reviewCount: 2800,
-  image: "https://m.media-amazon.com/images/I/61PqOCWgKEL._AC_SL1500_.jpg",
-  asin: "B0D323YZ7B",
-  description: "100W 4-port travel GaN charger"
-},
-{
-  id: 49,
-  name: "Belkin 108W 4-Port GaN Charger",
-  category: "Power Blocks",
-  price: 99.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/61JCkVEtpBL._AC_SL1500_.jpg",
-  asin: "B09RMMMM5W",
-  description: "108W quad-port charging station"
-},
-{
-  id: 50,
-  name: "Nekteck 100W PD 3.0 Wall Charger",
-  category: "Power Blocks",
-  price: 39.99,
-  rating: 4.6,
-  reviewCount: 2800,
-  image: "https://m.media-amazon.com/images/I/61XEOCHsPBL._AC_SL1500_.jpg",
-  asin: "B09MD9HJG6",
-  description: "100W single-port USB-C charger"
-},
-  // ==================== COMPUTER POWER ====================
- // Products 51-60: Computer Power (Laptop Power Banks)
-{
-  id: 51,
-  name: "Anker Prime 20000mAh 200W Power Bank",
-  category: "Computer Power",
-  price: 129.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/61JQZQZQZQL._AC_SL1500_.jpg",
-  asin: "B0BYNZXFM2",
-  description: "200W total output, TSA-approved, smart display"
-},
-{
-  id: 52,
-  name: "Anker 737 Power Bank 24000mAh 140W",
-  category: "Computer Power",
-  price: 109.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-  asin: "B09VPHVT2Z",
-  description: "140W PD 3.1, smart display, 3-port laptop charger"
-},
-{
-  id: 53,
-  name: "UGREEN Nexode 25000mAh 145W Power Bank",
-  category: "Computer Power",
-  price: 89.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/51yVTpKih8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
-  asin: "B0BJQ7F16T",
-  description: "145W fast charging, 3-port USB-C PD battery pack"
-},
-{
-  id: 54,
-  name: "Baseus Laptop Power Bank 20000mAh 100W",
-  category: "Computer Power",
-  price: 59.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/41xSXsoULkL._AC_SR38,50_.jpg",
-  asin: "B0DK8V9LSV",
-  description: "100W PD, slim blade design, digital display"
-},
-{
-  id: 55,
-  name: "Anker Prime 27650mAh 250W Power Bank",
-  category: "Computer Power",
-  price: 149.99,
-  rating: 4.9,
-  reviewCount: 8500,
-  image: "https://m.media-amazon.com/images/I/313A8cqMcaL._AC_US40_.jpg",
-  asin: "B0BYP2F3SG",
-  description: "250W output, smart app, TSA-approved laptop charger"
-},
-{
-  id: 56,
-  name: "Goal Zero Sherpa 100AC 25600mAh",
-  category: "Computer Power",
-  price: 199.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/51CqYdAC6WL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-  asin: "B0BFBTR94M",
-  description: "100W AC outlet, wireless charging, rugged aluminum"
-},
-{
-  id: 57,
-  name: "Zendure SuperMini 10000mAh 20W",
-  category: "Computer Power",
-  price: 39.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/71AXFkV75AL._AC_SL1500_.jpg",
-  asin: "B0D2HDBT6D",
-  description: "Credit card size, 20W PD, ultra-compact design"
-},
-{
-  id: 58,
-  name: "Anker PowerCore+ 26800mAh PD 45W",
-  category: "Computer Power",
-  price: 129.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/31oCsM7gOUL._AC_SR38,50_.jpg",
-  asin: "B07XRJZXKY",
-  description: "45W PD, includes 60W charger, premium laptop battery"
-},
-{
-  id: 59,
-  name: "Zendure SuperMini 10000mAh 20W",
-  category: "Computer Power",
-  price: 39.99,
-  rating: 4.7,
-  reviewCount: 4100,
-  image: "https://m.media-amazon.com/images/I/71ZENDURE20._AC_SL1500_.jpg",
-  asin: "B0D2HDBT6D",
-  description: "Credit card size, 20W PD, ultra-compact design"
-},
-{
-  id: 60,
-  name: "Anker PowerCore+ 26800mAh PD 45W",
-  category: "Computer Power",
-  price: 129.99,
-  rating: 4.8,
-  reviewCount: 6200,
-  image: "https://m.media-amazon.com/images/I/71ANKERPC45._AC_SL1500_.jpg",
-  asin: "B07XRJZXKY",
-  description: "45W PD, includes 60W charger, premium laptop battery"
-}
+  {
+    id: 47,
+    name: "Anker 735 GaN Prime 65W Charger",
+    category: "Power Blocks",
+    price: 45.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/61bZIDT7mLL._AC_SL1500_.jpg",
+    asin: "B09WD4GYNJ",
+    description: "Compact 3-port charger with foldable plug"
+  },
+  {
+    id: 48,
+    name: "HyperJuice 100W GaN Charger",
+    category: "Power Blocks",
+    price: 69.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61JT9Y0BYGL._AC_SL1500_.jpg",
+    asin: "B0D323YZ7B",
+    description: "Dual USB-C port with intelligent power sharing"
+  },
+  {
+    id: 49,
+    name: "Belkin 108W 4-Port GaN Charger",
+    category: "Power Blocks",
+    price: 99.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/61cKkJACCOL._AC_SL1500_.jpg",
+    asin: "B09RMMMM5W",
+    description: "Premium 4-port with intelligent power allocation"
+  },
+  {
+    id: 50,
+    name: "Nekteck 100W PD 3.0 GaN Charger",
+    category: "Power Blocks",
+    price: 49.99,
+    rating: 4.6,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/61f4PXJ0XEL._AC_SL1500_.jpg",
+    asin: "B09MD9HJG6",
+    description: "Single-port fast charger with foldable plug"
+  },
+
+  // COMPUTER POWER (8 products - removed unavailable items)
+  {
+    id: 51,
+    name: "Anker Prime 20000mAh 200W Power Bank",
+    category: "Computer Power",
+    price: 129.99,
+    rating: 4.9,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/61a8M7kzk5L._AC_SL1500_.jpg",
+    asin: "B0BYNZXFM2",
+    description: "200W output, smart display, TSA-approved travel battery"
+  },
+  {
+    id: 52,
+    name: "Anker 737 Power Bank 24000mAh 140W",
+    category: "Computer Power",
+    price: 109.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    asin: "B09VPHVT2Z",
+    description: "140W PD 3.1, smart display, 3-port laptop charger"
+  },
+  {
+    id: 53,
+    name: "UGREEN Nexode 25000mAh 145W Power Bank",
+    category: "Computer Power",
+    price: 89.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/51yVTpKih8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    asin: "B0BJQ7F16T",
+    description: "145W fast charging, 3-port USB-C PD battery pack"
+  },
+  {
+    id: 54,
+    name: "Baseus Laptop Power Bank 20000mAh 100W",
+    category: "Computer Power",
+    price: 59.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/41xSXsoULkL._AC_SR38,50_.jpg",
+    asin: "B0DK8V9LSV",
+    description: "100W PD, slim blade design, digital display"
+  },
+  {
+    id: 55,
+    name: "Anker Prime 27650mAh 250W Power Bank",
+    category: "Computer Power",
+    price: 149.99,
+    rating: 4.9,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/313A8cqMcaL._AC_US40_.jpg",
+    asin: "B0BYP2F3SG",
+    description: "250W output, smart app, TSA-approved laptop charger"
+  },
+  {
+    id: 56,
+    name: "Goal Zero Sherpa 100AC 25600mAh",
+    category: "Computer Power",
+    price: 199.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/51CqYdAC6WL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    asin: "B0BFBTR94M",
+    description: "100W AC outlet, wireless charging, rugged aluminum"
+  },
+  {
+    id: 57,
+    name: "Zendure SuperMini 10000mAh 20W",
+    category: "Computer Power",
+    price: 39.99,
+    rating: 4.7,
+    reviewCount: 4100,
+    image: "https://m.media-amazon.com/images/I/71AXFkV75AL._AC_SL1500_.jpg",
+    asin: "B0D2HDBT6D",
+    description: "Credit card size, 20W PD, ultra-compact design"
+  },
+  {
+    id: 58,
+    name: "Anker PowerCore+ 26800mAh PD 45W",
+    category: "Computer Power",
+    price: 129.99,
+    rating: 4.8,
+    reviewCount: 6200,
+    image: "https://m.media-amazon.com/images/I/31oCsM7gOUL._AC_SR38,50_.jpg",
+    asin: "B07XRJZXKY",
+    description: "45W PD, includes 60W charger, premium laptop battery"
+  }
 ];
-  
+
 // ====================
 // HELPER FUNCTIONS
 // ====================
@@ -749,55 +672,16 @@ export const getProductsByCategory = (category) => {
   return products.filter(product => product.category === category);
 };
 
-// Get all categories
-export const getAllCategories = () => {
+// Get all unique categories
+export const getCategories = () => {
   return [...new Set(products.map(product => product.category))];
 };
 
-// Check if product has Amazon link
-export const hasAmazonLink = (product) => {
-  return product.asin && product.asin !== "";
+// Get featured products (top rated)
+export const getFeaturedProducts = (limit = 6) => {
+  return products
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, limit);
 };
 
-// Get products ready to sell (have ASINs)
-export const getReadyProducts = () => {
-  return products.filter(hasAmazonLink);
-};
-
-// Get products needing ASINs
-export const getProductsNeedingASINs = () => {
-  return products.filter(product => !hasAmazonLink(product));
-};
-// ====================
-// LEGACY EXPORTS (for compatibility)
-// ====================
-
-// Export categories object (your old format)
-export const categories = {
-  "Luggage": { name: "Luggage", slug: "luggage" },
-  "Backpacks": { name: "Backpacks", slug: "backpacks" },
-  "Cable Bags / Pouches": { name: "Cable Bags / Pouches", slug: "cable-bags-pouches" },
-  "Cords": { name: "Cords", slug: "cords" },
-  "Power Blocks": { name: "Power Blocks", slug: "power-blocks" },
-  "Computer Power": { name: "Computer Power", slug: "computer-power" },
-  "Portable Monitors": { name: "Portable Monitors", slug: "portable-monitors" },
-  "Mouse": { name: "Mouse", slug: "mouse" },
-  "Keyboards": { name: "Keyboards", slug: "keyboards" },
-  "Phone Chargers": { name: "Phone Chargers", slug: "phone-chargers" },
-  "Night Bags": { name: "Night Bags", slug: "night-bags" },
-  "Earbuds/Headphones": { name: "Earbuds/Headphones", slug: "earbuds-headphones" },
-  "Organizers": { name: "Organizers", slug: "organizers" },
-  "Recording Devices": { name: "Recording Devices", slug: "recording-devices" },
-  "Clothing Bags": { name: "Clothing Bags", slug: "clothing-bags" },
-  "Tracking Devices": { name: "Tracking Devices", slug: "tracking-devices" }
-};
-
-// Get featured products (products with high ratings)
-export const getFeaturedProducts = () => {
-  return products.filter(product => product.rating >= 4.7).slice(0, 8);
-};
-
-// Get product by ID (alias for compatibility)
-export const getProduct = (id) => {
-  return getProductById(id);
-};
+export default products;
