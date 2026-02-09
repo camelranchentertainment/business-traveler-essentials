@@ -567,7 +567,7 @@ export const products = [
     description: "Single-port fast charger with foldable plug"
   },
 
-  // COMPUTER POWER (8 products - removed unavailable items)
+  // COMPUTER POWER (8 products)
   {
     id: 51,
     name: "Anker Prime 20000mAh 200W Power Bank",
@@ -658,13 +658,52 @@ export const products = [
   }
 ];
 
+// Categories array with all categories
+export const categories = [
+  {
+    name: "Luggage",
+    slug: "luggage",
+    description: "Premium carry-on and checked luggage for business travelers"
+  },
+  {
+    name: "Backpacks",
+    slug: "backpacks",
+    description: "Professional travel backpacks with laptop compartments"
+  },
+  {
+    name: "Cable Bags/Pouches",
+    slug: "cable-bags-pouches",
+    description: "Organize your cables and tech accessories"
+  },
+  {
+    name: "Cords",
+    slug: "cords",
+    description: "High-quality charging cables and adapters"
+  },
+  {
+    name: "Power Blocks",
+    slug: "power-blocks",
+    description: "Fast charging wall adapters and multi-port chargers"
+  },
+  {
+    name: "Computer Power",
+    slug: "computer-power",
+    description: "High-capacity power banks for laptops and devices"
+  }
+];
+
 // ====================
 // HELPER FUNCTIONS
 // ====================
 
-// Get product by ID
+// Get product by ID (named getProduct to match existing imports)
+export const getProduct = (id) => {
+  return products.find(product => product.id === parseInt(id));
+};
+
+// Also export as getProductById for compatibility
 export const getProductById = (id) => {
-  return products.find(product => product.id === id);
+  return products.find(product => product.id === parseInt(id));
 };
 
 // Get products by category
