@@ -732,86 +732,8 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71ANKERPC45._AC_SL1500_.jpg",
   asin: "B07XRJZXKY",
   description: "45W PD, includes 60W charger, premium laptop battery"
-}, 
-// ==========================
-// SUMMARY OF ADDED PRODUCTS
-// ==========================
-// Products 36-40: Cords (5 products)
-// - 3 with verified ASINs ✅
-// - 2 need ASIN verification ⏳
-//
-// Products 41-50: Power Blocks (10 products)  
-// - 3 with verified ASINs ✅ (including #41 which was already done)
-// - 7 need ASIN verification ⏳
-//
-// NEXT STEPS:
-// 1. Copy these 15 products into your products.js (after product 35)
-// 2. Verify placeholder ASINs by searching Amazon
-// 3. Update category exports at bottom to include these
-// 4. Test and deploy!
-  // ... Continue with remaining products ...
-  // For brevity, I'll add key products from each remaining category
-  // You can fill in the rest following this pattern
-
-  // ==================== POWER BLOCKS ====================
-  {
-    id: 41,
-    name: "Anker 747 GaNPrime 150W",
-    category: "Power Blocks",
-    price: 109,
-    description: "4-port GaN charger with 150W total output for all your devices.",
-    asin: "B0BFGNQNKR", // ✅ Verify
-    image: "https://m.media-amazon.com/images/I/61JK6xQhQqL._AC_SL1500_.jpg",
-    slug: "anker-747-ganprime-150w",
-    rating: 4.8,    reviewCount: 6200,
-    reviewCount: 6200,
-    features: ["150W total output", "4 ports", "GaN technology", "ActiveShield 2.0"]
-  },
-  // ==================== EARBUDS/HEADPHONES ====================
-  {
-    id: 111,
-    name: "Sony WH-1000XM5",
-    category: "Earbuds/Headphones",
-    price: 399,
-    description: "Industry-leading noise canceling headphones with exceptional sound.",
-    asin: "B09XS7JWHH", // ✅
-    image: "https://m.media-amazon.com/images/I/61vFO3741VL._AC_SL1500_.jpg",
-    slug: "sony-wh-1000xm5",
-    rating: 4.9,    reviewCount: 8500,
-    features: ["30-hour battery", "AI noise canceling", "Speak-to-chat", "LDAC codec"]
-  },
-  {
-    id: 112,
-    name: "Apple AirPods Pro 2",
-    category: "Earbuds/Headphones",
-    price: 249,
-    description: "Premium true wireless earbuds with adaptive ANC and spatial audio.",
-    asin: "B0CHWRXH8B", // ✅ Verify gen
-    image: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
-    slug: "apple-airpods-pro-2",
-    rating: 4.8,    reviewCount: 6200,
-    features: ["Adaptive ANC", "Spatial audio", "MagSafe charging", "6-hour battery"]
-  },
-
-  // ==================== TRACKING DEVICES ====================
-  {
-    id: 151,
-    name: "Apple AirTag 4-Pack",
-    category: "Tracking Devices",
-    price: 99,
-    description: "Precision tracking tags using Apple's Find My network.",
-    asin: "B0932QJ2JZ", // ✅
-    image: "https://m.media-amazon.com/images/I/71SJXMdQqZL._AC_SL1500_.jpg",
-    slug: "apple-airtag-4-pack",
-    rating: 4.8,    reviewCount: 6200,
-     features: ["Precision finding", "Find My network", "Replaceable battery", "Water-resistant"]
-  },
-
-  // NOTE: Products 36-150 follow the same pattern
-  // Add ASINs progressively as you find them
-  // See ASIN_HELPER.md for instructions on how to batch-add remaining products
-];
-
+},
+  
 // ====================
 // HELPER FUNCTIONS
 // ====================
