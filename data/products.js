@@ -732,7 +732,8 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71ANKERPC45._AC_SL1500_.jpg",
   asin: "B07XRJZXKY",
   description: "45W PD, includes 60W charger, premium laptop battery"
-},
+}
+];
   
 // ====================
 // HELPER FUNCTIONS
