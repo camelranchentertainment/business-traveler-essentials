@@ -658,39 +658,45 @@ export const products = [
   }
 ];
 
-// Categories array with all categories
-export const categories = [
-  {
+// Categories object keyed by slug
+export const categories = {
+  "luggage": {
     name: "Luggage",
     slug: "luggage",
+    icon: "🧳",
     description: "Premium carry-on and checked luggage for business travelers"
   },
-  {
+  "backpacks": {
     name: "Backpacks",
     slug: "backpacks",
+    icon: "🎒",
     description: "Professional travel backpacks with laptop compartments"
   },
-  {
+  "cable-bags-pouches": {
     name: "Cable Bags/Pouches",
     slug: "cable-bags-pouches",
+    icon: "👝",
     description: "Organize your cables and tech accessories"
   },
-  {
+  "cords": {
     name: "Cords",
     slug: "cords",
+    icon: "🔌",
     description: "High-quality charging cables and adapters"
   },
-  {
+  "power-blocks": {
     name: "Power Blocks",
     slug: "power-blocks",
+    icon: "⚡",
     description: "Fast charging wall adapters and multi-port chargers"
   },
-  {
+  "computer-power": {
     name: "Computer Power",
     slug: "computer-power",
+    icon: "🔋",
     description: "High-capacity power banks for laptops and devices"
   }
-];
+};
 
 // ====================
 // HELPER FUNCTIONS
@@ -708,25 +714,26 @@ export const getProductById = (id) => {
 
 // Get products by category (works with both slug and name)
 export const getProductsByCategory = (categorySlugOrName) => {
-  // Try to find category by slug first
-  const category = categories.find(c => 
-    c.slug === categorySlugOrName || 
-    c.name === categorySlugOrName ||
-    c.slug === categorySlugOrName.toLowerCase()
-  );
+  // Try to find category by slug in categories object
+  const category = categories[categorySlugOrName];
   
   if (category) {
     return products.filter(product => product.category === category.name);
   }
   
+  // Try to find by checking all category names
+  const categoryObj = Object.values(categories).find(c => c.name === categorySlugOrName);
+  if (categoryObj) {
+    return products.filter(product => product.category === categoryObj.name);
+  }
+  
   // Fallback to direct match
-  const result = products.filter(product => product.category === categorySlugOrName);
-  return result.length > 0 ? result : [];
+  return products.filter(product => product.category === categorySlugOrName);
 };
 
-// Get all unique categories
+// Get all unique categories (returns array of category names)
 export const getCategories = () => {
-  return [...new Set(products.map(product => product.category))];
+  return Object.values(categories).map(cat => cat.name);
 };
 
 // Get featured products (top rated)
