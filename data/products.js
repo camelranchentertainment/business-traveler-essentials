@@ -706,9 +706,22 @@ export const getProductById = (id) => {
   return products.find(product => product.id === parseInt(id));
 };
 
-// Get products by category
-export const getProductsByCategory = (category) => {
-  return products.filter(product => product.category === category);
+// Get products by category (works with both slug and name)
+export const getProductsByCategory = (categorySlugOrName) => {
+  // Try to find category by slug first
+  const category = categories.find(c => 
+    c.slug === categorySlugOrName || 
+    c.name === categorySlugOrName ||
+    c.slug === categorySlugOrName.toLowerCase()
+  );
+  
+  if (category) {
+    return products.filter(product => product.category === category.name);
+  }
+  
+  // Fallback to direct match
+  const result = products.filter(product => product.category === categorySlugOrName);
+  return result.length > 0 ? result : [];
 };
 
 // Get all unique categories
