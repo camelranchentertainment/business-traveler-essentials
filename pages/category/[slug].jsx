@@ -5,17 +5,32 @@ import Footer from '../../components/Footer';
 import ProductCard from '../../components/ProductCard';
 import { getProductsByCategory, categories } from '../../data/products';
 
-export default function CategoryPage() {
-  const router = useRouter();
-  const { slug } = router.query;
+export async function getStaticPaths() {
+  // Generate paths for all category slugs
+  const paths = Object.keys(categories).map((slug) => ({
+    params: { slug }
+  }));
 
-  if (!slug) {
-    return null;
-  }
+  return {
+    paths,
+    fallback: false
+  };
+}
 
+export async function getStaticProps({ params }) {
+  const { slug } = params;
   const category = categories[slug];
   const products = getProductsByCategory(slug);
 
+  return {
+    props: {
+      category,
+      products
+    }
+  };
+}
+
+export default function CategoryPage({ category, products }) {
   if (!category) {
     return (
       <>
