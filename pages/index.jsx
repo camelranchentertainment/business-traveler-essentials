@@ -127,7 +127,7 @@ export default function Home() {
 
               <div className="text-center mt-12">
                 <Link 
-                  href="/category/tech-essentials" 
+                  href="/category/luggage" 
                   className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
                 >
                   View All Products
