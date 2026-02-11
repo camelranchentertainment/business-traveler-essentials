@@ -70,7 +70,7 @@ export const products = [
   },
   {
     id: 7,
-    name: "Monos Carry-On Pro Plus Luggage 23"",
+    name: "Monos Carry-On Pro Plus Luggage 23\"",
     category: "Luggage",
     price: 315.0,
     rating: 0.0,
@@ -81,7 +81,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "July Carry On Pro - 20" Hardshell with Front Pocket",
+    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
     category: "Luggage",
     price: 325.0,
     rating: 4.5,
