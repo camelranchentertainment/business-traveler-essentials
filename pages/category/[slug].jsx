@@ -69,7 +69,7 @@ export default function CategoryPage({ category, products }) {
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center space-x-4 mb-4">
-                <span className="text-6xl">{category.icon}</span>
+                <img src={category.icon} alt={category.name} className="w-20 h-20" />
                 <div>
                   <h1 className="text-4xl md:text-5xl font-bold mb-2">{category.name}</h1>
                   <p className="text-xl text-blue-100">{category.description}</p>
