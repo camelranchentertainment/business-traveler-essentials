@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
               <div className="max-w-3xl">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                   Travel Smarter, Work Better
