@@ -3,11 +3,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import ProductCard from '../components/ProductCard';
-import { getFeaturedProducts, categories } from '../data/products';
+import { categories } from '../data/products';
 
 export default function Home() {
-  const featuredProducts = getFeaturedProducts(6);
 
   return (
     <>
@@ -64,50 +62,157 @@ export default function Home() {
           {/* Categories Grid */}
           <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-3xl font-bold text-white mb-8 text-center">Shop by Category</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {Object.values(categories).map((category) => (
-                  <Link
-                    key={category.slug}
-                    href={`/category/${category.slug}`}
-                    className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-700 hover:border-blue-500"
-                  >
-                    <img src={category.icon} alt={category.name} className="w-16 h-16 mb-4" />
-                    <h3 className="font-semibold text-xl mb-2 text-white group-hover:text-blue-400 transition-colors">
-                      {category.name}
-                    </h3>
-                    <p className="text-gray-400 mb-4">{category.description}</p>
-                    <div className="text-blue-400 font-medium group-hover:translate-x-2 transition-transform inline-block">
-                      Browse products →
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* Featured Products */}
-          <section id="featured-products" className="py-16 bg-gradient-to-b from-gray-900 to-black">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-white mb-4">Featured Products</h2>
-                <p className="text-gray-400 max-w-2xl mx-auto">
-                  Our top-rated essentials trusted by business travelers worldwide
-                </p>
-              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Shop by Category</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {featuredProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
+                {/* Luggage Category */}
+                <Link href="/category/luggage">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80"
+                      alt="Luggage"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Luggage</h3>
+                        <p className="text-gray-200 text-sm">Premium carry-on and checked luggage</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
 
-              <div className="text-center mt-12">
-                <Link 
-                  href="/category/luggage" 
-                  className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-                >
-                  View All Products
+                {/* Backpacks Category */}
+                <Link href="/category/backpacks">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+                      alt="Backpacks"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Backpacks</h3>
+                        <p className="text-gray-200 text-sm">Professional travel backpacks</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Tech Organizers Category */}
+                <Link href="/category/tech-organizers">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80"
+                      alt="Tech Organizers"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Tech Organizers</h3>
+                        <p className="text-gray-200 text-sm">Cable bags and tech pouches</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Charging Cables Category */}
+                <Link href="/category/charging-cables">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1591290619762-c588cf8729a5?auto=format&fit=crop&w=800&q=80"
+                      alt="Charging Cables"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Charging Cables</h3>
+                        <p className="text-gray-200 text-sm">USB-C, Lightning, and more</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Power Adapters Category */}
+                <Link href="/category/power-adapters">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80"
+                      alt="Power Adapters"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Power Adapters</h3>
+                        <p className="text-gray-200 text-sm">Wall chargers and USB hubs</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Portable Power Category */}
+                <Link href="/category/portable-power">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1609592428124-c1e0e370ff31?auto=format&fit=crop&w=800&q=80"
+                      alt="Portable Power"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Portable Power</h3>
+                        <p className="text-gray-200 text-sm">Power banks and battery packs</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
                 </Link>
               </div>
             </div>
