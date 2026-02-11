@@ -18,6 +18,21 @@ export default function ProductCard({ product }) {
             alt={product.name}
             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            onError={(e) => {
+              // Retry with direct URL if proxy fails
+              if (!e.target.src.includes('retry=1')) {
+                e.target.src = product.image + '?retry=1';
+              } else {
+                // Show category-based placeholder
+                e.target.style.display = 'none';
+                const parent = e.target.parentElement;
+                parent.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                const text = document.createElement('div');
+                text.className = 'text-white text-6xl font-bold';
+                text.textContent = product.category.charAt(0);
+                parent.appendChild(text);
+              }
+            }}
           />
           
           {/* Bestseller badge if rating > 4.7 */}
