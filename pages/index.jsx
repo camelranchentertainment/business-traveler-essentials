@@ -95,7 +95,7 @@ export default function Home() {
                     href={`/category/${category.slug}`}
                     className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-700 hover:border-blue-500"
                   >
-                    <div className="text-5xl mb-4">{category.icon}</div>
+                    <img src={category.icon} alt={category.name} className="w-16 h-16 mb-4" />
                     <h3 className="font-semibold text-xl mb-2 text-white group-hover:text-blue-400 transition-colors">
                       {category.name}
                     </h3>
