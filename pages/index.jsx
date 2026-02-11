@@ -62,23 +62,20 @@ export default function Home() {
           </section>
 
           {/* Value Propositions */}
-          <section className="py-12 bg-gradient-to-b from-gray-900 to-black border-b border-gray-800">
+          <section className="py-16 bg-gradient-to-b from-gray-900 to-black border-y border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-4xl mb-4">✓</div>
-                  <h3 className="font-semibold text-lg mb-2 text-white">Expertly Curated</h3>
-                  <p className="text-gray-400">Every product tested and recommended by experienced business travelers</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 border-r border-gray-700">
+                  <h3 className="font-bold text-xl mb-3 text-white">Expertly Curated</h3>
+                  <p className="text-gray-400 leading-relaxed">Tested by experienced business travelers in real-world conditions</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl mb-4">⭐</div>
-                  <h3 className="font-semibold text-lg mb-2 text-white">Top-Rated Products</h3>
-                  <p className="text-gray-400">Only products with 4.5+ star ratings and thousands of reviews</p>
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 border-r border-gray-700">
+                  <h3 className="font-bold text-xl mb-3 text-white">Top-Rated</h3>
+                  <p className="text-gray-400 leading-relaxed">Only 4.5+ star products with thousands of verified reviews</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl mb-4">🎯</div>
-                  <h3 className="font-semibold text-lg mb-2 text-white">Time-Saving</h3>
-                  <p className="text-gray-400">Skip the research - we've done the work for you</p>
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8">
+                  <h3 className="font-bold text-xl mb-3 text-white">Time-Saving</h3>
+                  <p className="text-gray-400 leading-relaxed">Skip the research – comprehensive analysis done for you</p>
                 </div>
               </div>
             </div>
