@@ -15,7 +15,7 @@ export const products = [
     price: 189.99,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/81fctSnZRRL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B013WFNNZI.jpg",
     asin: "B013WFNNZI",
     description: "Durable scratch-resistant polycarbonate hardside with micro-diamond texture"
   },
@@ -26,7 +26,7 @@ export const products = [
     price: 129.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/81VACB3+VxL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07K8TQV9D.jpg",
     asin: "B07K8TQV9D",
     description: "Lightweight carry-on designed for frequent travelers"
   },
@@ -37,7 +37,7 @@ export const products = [
     price: 295.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/51lC7DF+4VL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08X4ZMZQV.jpg",
     asin: "B08X4ZMZQV",
     description: "Premium polycarbonate shell with compression system"
   },
@@ -48,7 +48,7 @@ export const products = [
     price: 650.00,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/71cC+2gWCrL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07YYSM5HG.jpg",
     asin: "B07YYSM5HG",
     description: "Iconic aluminum suitcase with TSA-approved lock"
   },
@@ -59,7 +59,7 @@ export const products = [
     price: 249.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/71uWLd7CFXL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B01M7S8XY9.jpg",
     asin: "B01M7S8XY9",
     description: "Vintage-inspired hardside with premium leather details"
   },
@@ -70,7 +70,7 @@ export const products = [
     price: 589.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/81kqQVcP0yL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B002VPE1MS.jpg",
     asin: "B002VPE1MS",
     description: "Expandable carry-on with lifetime warranty"
   },
@@ -81,7 +81,7 @@ export const products = [
     price: 325.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/51vNHz-HIRL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B096NZTMFP.jpg",
     asin: "B096NZTMFP",
     description: "German polycarbonate shell with antimicrobial lining"
   },
@@ -92,7 +92,7 @@ export const products = [
     price: 245.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/71-YYz7GKZL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0B3HRMQXY.jpg",
     asin: "B0B3HRMQXY",
     description: "Lightweight polycarbonate with Japanese Hinomoto wheels"
   },
@@ -103,7 +103,7 @@ export const products = [
     price: 795.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71dDXL+PbVL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07NSVTTMC.jpg",
     asin: "B07NSVTTMC",
     description: "Premium ballistic nylon with TUMI Tracer recovery program"
   },
@@ -114,7 +114,7 @@ export const products = [
     price: 258.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/71DjtM7zQTL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09NWQDK2M.jpg",
     asin: "B09NWQDK2M",
     description: "Polycarbonate shell with built-in front pocket"
   },
@@ -127,7 +127,7 @@ export const products = [
     price: 299.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71oHHHwCo0L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07Y8R7T5N.jpg",
     asin: "B07Y8R7T5N",
     description: "20-24L expandable carry-on backpack with laptop compartment"
   },
@@ -138,7 +138,7 @@ export const products = [
     price: 299.95,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/71RYdZXmKaL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07MLCHN9R.jpg",
     asin: "B07MLCHN9R",
     description: "Adventure-ready backpack with expandable capacity"
   },
@@ -149,7 +149,7 @@ export const products = [
     price: 159.95,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/91FPVNqRbzL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07H5YRP7V.jpg",
     asin: "B07H5YRP7V",
     description: "Lightweight carry-on sized backpack for travel"
   },
@@ -160,7 +160,7 @@ export const products = [
     price: 215.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/81VPQC6Z-QL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07PKGBHGK.jpg",
     asin: "B07PKGBHGK",
     description: "Professional travel backpack with TSA-friendly laptop access"
   },
@@ -171,7 +171,7 @@ export const products = [
     price: 290.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71z8iBVXIFL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0B8X7HNPL.jpg",
     asin: "B0B8X7HNPL",
     description: "Minimalist carry-on backpack with organization system"
   },
@@ -182,7 +182,7 @@ export const products = [
     price: 179.95,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/81X8rO5jtEL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B01LZWMMQB.jpg",
     asin: "B01LZWMMQB",
     description: "Durable travel backpack with laptop protection"
   },
@@ -193,7 +193,7 @@ export const products = [
     price: 189.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/81oVxB0GWTL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07YCF9QFH.jpg",
     asin: "B07YCF9QFH",
     description: "Versatile travel backpack with panel loading"
   },
@@ -204,7 +204,7 @@ export const products = [
     price: 199.95,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/71t8u7pjJCL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07FMHH8DR.jpg",
     asin: "B07FMHH8DR",
     description: "Sustainable travel backpack with compression straps"
   },
@@ -215,7 +215,7 @@ export const products = [
     price: 149.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71YQ7qbmIiL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07YNMV57V.jpg",
     asin: "B07YNMV57V",
     description: "Weather-resistant backpack made from recycled materials"
   },
@@ -226,7 +226,7 @@ export const products = [
     price: 249.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/81oM2pDAp3L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08T1PXQF7.jpg",
     asin: "B08T1PXQF7",
     description: "Premium leather and fabric backpack with hidden pockets"
   },
@@ -239,7 +239,7 @@ export const products = [
     price: 59.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71pPqQBtaAL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B086VK9Q1Y.jpg",
     asin: "B086VK9Q1Y",
     description: "Premium leather tech organizer with magnetic closure"
   },
@@ -250,7 +250,7 @@ export const products = [
     price: 59.95,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/81ydBHxP+tL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07MLCSHVV.jpg",
     asin: "B07MLCSHVV",
     description: "Modular tech organizer with weatherproof zippers"
   },
@@ -261,7 +261,7 @@ export const products = [
     price: 49.95,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/81p1npO0HJL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BJVYVDBQ.jpg",
     asin: "B0BJVYVDBQ",
     description: "Premium Horween leather tech organizer"
   },
@@ -272,7 +272,7 @@ export const products = [
     price: 24.99,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/81sHYgFcqkL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B002HU27UW.jpg",
     asin: "B002HU27UW",
     description: "Elastic grid organizer for cables and accessories"
   },
@@ -283,7 +283,7 @@ export const products = [
     price: 19.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/81bh-wjwCqL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B017SKRWL4.jpg",
     asin: "B017SKRWL4",
     description: "3-layer cable organizer with multiple compartments"
   },
@@ -294,7 +294,7 @@ export const products = [
     price: 29.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71OZGvLUKOL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0924GZPFY.jpg",
     asin: "B0924GZPFY",
     description: "Modular tech pouch with customizable dividers"
   },
@@ -305,7 +305,7 @@ export const products = [
     price: 45.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61tGR1viFPL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08T64KWCN.jpg",
     asin: "B08T64KWCN",
     description: "Minimalist leather tech pouch"
   },
@@ -316,7 +316,7 @@ export const products = [
     price: 16.99,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/81rNJ3VmyiL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07YK8K5FJ.jpg",
     asin: "B07YK8K5FJ",
     description: "Compact double-layer electronics organizer"
   },
@@ -327,7 +327,7 @@ export const products = [
     price: 13.99,
     rating: 4.5,
     reviewCount: 1500,
-    image: "https://m.media-amazon.com/images/I/81V9PpP8KjL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B075FYF4GN.jpg",
     asin: "B075FYF4GN",
     description: "Universal electronics accessories organizer"
   },
@@ -338,7 +338,7 @@ export const products = [
     price: 21.99,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/71OsFRn4tpL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07MDJYWX7.jpg",
     asin: "B07MDJYWX7",
     description: "3-layer travel cable storage bag"
   },
@@ -351,7 +351,7 @@ export const products = [
     price: 15.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61RviwG4YuL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08R68T84N.jpg",
     asin: "B08R68T84N",
     description: "100W fast charging braided USB-C cable"
   },
@@ -362,7 +362,7 @@ export const products = [
     price: 29.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/41a1761d7uL._AC_SL1000_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0CWNR8JMT.jpg",
     asin: "B0CWNR8JMT",
     description: "MFi certified fast charging cable for iPhone"
   },
@@ -373,7 +373,7 @@ export const products = [
     price: 29.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61BDRrDHkZL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09LCJ7S4R.jpg",
     asin: "B09LCJ7S4R",
     description: "240W USB4 cable for laptops and fast charging"
   },
@@ -384,7 +384,7 @@ export const products = [
     price: 16.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61TBqRuSm9L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B095PVDQHS.jpg",
     asin: "B095PVDQHS",
     description: "Extra long braided fast charging cable"
   },
@@ -395,7 +395,7 @@ export const products = [
     price: 24.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61UpJSvqs5L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08PP6CXY8.jpg",
     asin: "B08PP6CXY8",
     description: "MFi certified 2-pack fast charging cables"
   },
@@ -406,7 +406,7 @@ export const products = [
     price: 14.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61xckDXhV4L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08T5QN2TR.jpg",
     asin: "B08T5QN2TR",
     description: "Durable braided USB-C cable with Velcro strap"
   },
@@ -417,7 +417,7 @@ export const products = [
     price: 34.95,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/71KQqM2sRuL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08YN1KT3B.jpg",
     asin: "B08YN1KT3B",
     description: "Kevlar reinforced cable with premium connectors"
   },
@@ -428,7 +428,7 @@ export const products = [
     price: 39.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61pF8e2ALYL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B08YWXZ5FG.jpg",
     asin: "B08YWXZ5FG",
     description: "10ft ultra-strong cable with leather strap"
   },
@@ -439,7 +439,7 @@ export const products = [
     price: 19.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61zAw36xgaL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0B739P6WH.jpg",
     asin: "B0B739P6WH",
     description: "90-degree connector for tight spaces"
   },
@@ -450,7 +450,7 @@ export const products = [
     price: 17.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61l6rJuWe+L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09LCJPZ1P.jpg",
     asin: "B09LCJPZ1P",
     description: "Bio-based braided cable with 35000+ bend lifespan"
   },
@@ -463,7 +463,7 @@ export const products = [
     price: 109.99,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/61XG7ZJ+7LL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BFGNQNKR.jpg",
     asin: "B0BFGNQNKR",
     description: "4-port 150W GaN charger with ActiveShield 2.0"
   },
@@ -474,7 +474,7 @@ export const products = [
     price: 99.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/51d4FajVIWL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09JR6DBFH.jpg",
     asin: "B09JR6DBFH",
     description: "Official Apple fast charger for MacBook Pro"
   },
@@ -485,7 +485,7 @@ export const products = [
     price: 119.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61kF-kzZ4TL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09PMDZWZ6.jpg",
     asin: "B09PMDZWZ6",
     description: "Premium 4-port charger with travel adapters"
   },
@@ -496,7 +496,7 @@ export const products = [
     price: 55.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61N+btv+EfL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B091Z6JNX4.jpg",
     asin: "B091Z6JNX4",
     description: "Compact 3-port GaN charger with foldable plug"
   },
@@ -507,7 +507,7 @@ export const products = [
     price: 45.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61rghN7FWUL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B097XRTQHY.jpg",
     asin: "B097XRTQHY",
     description: "Intelligent power distribution with BPS II"
   },
@@ -518,7 +518,7 @@ export const products = [
     price: 59.99,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/61aWuPQWr8L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B083ZBXXN5.jpg",
     asin: "B083ZBXXN5",
     description: "Dual-port GaN charger for laptops and phones"
   },
@@ -529,7 +529,7 @@ export const products = [
     price: 45.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/61bZIDT7mLL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09WD4GYNJ.jpg",
     asin: "B09WD4GYNJ",
     description: "Compact 3-port charger with foldable plug"
   },
@@ -540,7 +540,7 @@ export const products = [
     price: 69.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61JT9Y0BYGL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0D323YZ7B.jpg",
     asin: "B0D323YZ7B",
     description: "Dual USB-C port with intelligent power sharing"
   },
@@ -551,7 +551,7 @@ export const products = [
     price: 99.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/61cKkJACCOL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09RMMMM5W.jpg",
     asin: "B09RMMMM5W",
     description: "Premium 4-port with intelligent power allocation"
   },
@@ -562,7 +562,7 @@ export const products = [
     price: 49.99,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/61f4PXJ0XEL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09MD9HJG6.jpg",
     asin: "B09MD9HJG6",
     description: "Single-port fast charger with foldable plug"
   },
@@ -575,7 +575,7 @@ export const products = [
     price: 129.99,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/61a8M7kzk5L._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BYNZXFM2.jpg",
     asin: "B0BYNZXFM2",
     description: "200W output, smart display, TSA-approved travel battery"
   },
@@ -586,7 +586,7 @@ export const products = [
     price: 109.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    image: "https://m.media-amazon.com/images/P/B09VPHVT2Z.jpg",
     asin: "B09VPHVT2Z",
     description: "140W PD 3.1, smart display, 3-port laptop charger"
   },
@@ -597,7 +597,7 @@ export const products = [
     price: 89.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/51yVTpKih8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BJQ7F16T.jpg",
     asin: "B0BJQ7F16T",
     description: "145W fast charging, 3-port USB-C PD battery pack"
   },
@@ -608,7 +608,7 @@ export const products = [
     price: 59.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/41xSXsoULkL._AC_SR38,50_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0DK8V9LSV.jpg",
     asin: "B0DK8V9LSV",
     description: "100W PD, slim blade design, digital display"
   },
@@ -619,7 +619,7 @@ export const products = [
     price: 149.99,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/313A8cqMcaL._AC_US40_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BYP2F3SG.jpg",
     asin: "B0BYP2F3SG",
     description: "250W output, smart app, TSA-approved laptop charger"
   },
@@ -630,7 +630,7 @@ export const products = [
     price: 199.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/51CqYdAC6WL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0BFBTR94M.jpg",
     asin: "B0BFBTR94M",
     description: "100W AC outlet, wireless charging, rugged aluminum"
   },
@@ -641,7 +641,7 @@ export const products = [
     price: 39.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/I/71AXFkV75AL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/P/B0D2HDBT6D.jpg",
     asin: "B0D2HDBT6D",
     description: "Credit card size, 20W PD, ultra-compact design"
   },
@@ -652,7 +652,7 @@ export const products = [
     price: 129.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/I/31oCsM7gOUL._AC_SR38,50_.jpg",
+    image: "https://m.media-amazon.com/images/P/B07XRJZXKY.jpg",
     asin: "B07XRJZXKY",
     description: "45W PD, includes 60W charger, premium laptop battery"
   }
@@ -663,37 +663,37 @@ export const categories = {
   "luggage": {
     name: "Luggage",
     slug: "luggage",
-    icon: "https://api.iconify.design/mdi/bag-suitcase.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/bag-suitcase.svg?color=%232563eb&width=64",
     description: "Premium carry-on and checked luggage for business travelers"
   },
   "backpacks": {
     name: "Backpacks",
     slug: "backpacks",
-    icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%232563eb&width=64",
     description: "Professional travel backpacks with laptop compartments"
   },
   "cable-bags-pouches": {
     name: "Cable Bags/Pouches",
     slug: "cable-bags-pouches",
-    icon: "https://api.iconify.design/mdi/cable-data.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/cable-data.svg?color=%232563eb&width=64",
     description: "Organize your cables and tech accessories"
   },
   "cords": {
     name: "Cords",
     slug: "cords",
-    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%232563eb&width=64",
     description: "High-quality charging cables and adapters"
   },
   "power-blocks": {
     name: "Power Blocks",
     slug: "power-blocks",
-    icon: "https://api.iconify.design/mdi/power-socket-us.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/power-socket-us.svg?color=%232563eb&width=64",
     description: "Fast charging wall adapters and multi-port chargers"
   },
   "computer-power": {
     name: "Computer Power",
     slug: "computer-power",
-    icon: "https://api.iconify.design/mdi/battery-charging.svg?color=%23ffffff&width=64",
+    icon: "https://api.iconify.design/mdi/battery-charging.svg?color=%232563eb&width=64",
     description: "High-capacity power banks for laptops and devices"
   }
 };
