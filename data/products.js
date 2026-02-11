@@ -15,7 +15,7 @@ export const products = [
     price: 189.99,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/P/B013WFNNZI.jpg",
+    image: "https://m.media-amazon.com/images/I/81fctSnZRRL._AC_SL1500_.jpg",
     asin: "B013WFNNZI",
     description: "Durable scratch-resistant polycarbonate hardside with micro-diamond texture"
   },
@@ -26,7 +26,7 @@ export const products = [
     price: 129.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B07K8TQV9D.jpg",
+    image: "https://m.media-amazon.com/images/I/81VACB3+VxL._AC_SL1500_.jpg",
     asin: "B07K8TQV9D",
     description: "Lightweight carry-on designed for frequent travelers"
   },
@@ -37,7 +37,7 @@ export const products = [
     price: 295.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B08X4ZMZQV.jpg",
+    image: "https://m.media-amazon.com/images/I/51lC7DF+4VL._AC_SL1500_.jpg",
     asin: "B08X4ZMZQV",
     description: "Premium polycarbonate shell with compression system"
   },
@@ -48,7 +48,7 @@ export const products = [
     price: 650.00,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/P/B07YYSM5HG.jpg",
+    image: "https://m.media-amazon.com/images/I/71cC+2gWCrL._AC_SL1500_.jpg",
     asin: "B07YYSM5HG",
     description: "Iconic aluminum suitcase with TSA-approved lock"
   },
@@ -59,7 +59,7 @@ export const products = [
     price: 249.99,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B01M7S8XY9.jpg",
+    image: "https://m.media-amazon.com/images/I/71uWLd7CFXL._AC_SL1500_.jpg",
     asin: "B01M7S8XY9",
     description: "Vintage-inspired hardside with premium leather details"
   },
@@ -70,7 +70,7 @@ export const products = [
     price: 589.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B002VPE1MS.jpg",
+    image: "https://m.media-amazon.com/images/I/81kqQVcP0yL._AC_SL1500_.jpg",
     asin: "B002VPE1MS",
     description: "Expandable carry-on with lifetime warranty"
   },
@@ -81,7 +81,7 @@ export const products = [
     price: 325.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B096NZTMFP.jpg",
+    image: "https://m.media-amazon.com/images/I/51vNHz-HIRL._AC_SL1500_.jpg",
     asin: "B096NZTMFP",
     description: "German polycarbonate shell with antimicrobial lining"
   },
@@ -92,7 +92,7 @@ export const products = [
     price: 245.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/P/B0B3HRMQXY.jpg",
+    image: "https://m.media-amazon.com/images/I/71-YYz7GKZL._AC_SL1500_.jpg",
     asin: "B0B3HRMQXY",
     description: "Lightweight polycarbonate with Japanese Hinomoto wheels"
   },
@@ -103,7 +103,7 @@ export const products = [
     price: 795.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B07NSVTTMC.jpg",
+    image: "https://m.media-amazon.com/images/I/71dDXL+PbVL._AC_SL1500_.jpg",
     asin: "B07NSVTTMC",
     description: "Premium ballistic nylon with TUMI Tracer recovery program"
   },
@@ -114,7 +114,7 @@ export const products = [
     price: 258.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/P/B09NWQDK2M.jpg",
+    image: "https://m.media-amazon.com/images/I/71DjtM7zQTL._AC_SL1500_.jpg",
     asin: "B09NWQDK2M",
     description: "Polycarbonate shell with built-in front pocket"
   },
@@ -127,7 +127,7 @@ export const products = [
     price: 299.99,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B07Y8R7T5N.jpg",
+    image: "https://m.media-amazon.com/images/I/71oHHHwCo0L._AC_SL1500_.jpg",
     asin: "B07Y8R7T5N",
     description: "20-24L expandable carry-on backpack with laptop compartment"
   },
@@ -138,7 +138,7 @@ export const products = [
     price: 299.95,
     rating: 4.9,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/P/B07MLCHN9R.jpg",
+    image: "https://m.media-amazon.com/images/I/71RYdZXmKaL._AC_SL1500_.jpg",
     asin: "B07MLCHN9R",
     description: "Adventure-ready backpack with expandable capacity"
   },
@@ -149,7 +149,7 @@ export const products = [
     price: 159.95,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B07H5YRP7V.jpg",
+    image: "https://m.media-amazon.com/images/I/91FPVNqRbzL._AC_SL1500_.jpg",
     asin: "B07H5YRP7V",
     description: "Lightweight carry-on sized backpack for travel"
   },
@@ -160,7 +160,7 @@ export const products = [
     price: 215.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B07PKGBHGK.jpg",
+    image: "https://m.media-amazon.com/images/I/81VPQC6Z-QL._AC_SL1500_.jpg",
     asin: "B07PKGBHGK",
     description: "Professional travel backpack with TSA-friendly laptop access"
   },
@@ -171,7 +171,7 @@ export const products = [
     price: 290.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B0B8X7HNPL.jpg",
+    image: "https://m.media-amazon.com/images/I/71z8iBVXIFL._AC_SL1500_.jpg",
     asin: "B0B8X7HNPL",
     description: "Minimalist carry-on backpack with organization system"
   },
@@ -182,7 +182,7 @@ export const products = [
     price: 179.95,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B01LZWMMQB.jpg",
+    image: "https://m.media-amazon.com/images/I/81X8rO5jtEL._AC_SL1500_.jpg",
     asin: "B01LZWMMQB",
     description: "Durable travel backpack with laptop protection"
   },
@@ -193,7 +193,7 @@ export const products = [
     price: 189.00,
     rating: 4.6,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/P/B07YCF9QFH.jpg",
+    image: "https://m.media-amazon.com/images/I/81oVxB0GWTL._AC_SL1500_.jpg",
     asin: "B07YCF9QFH",
     description: "Versatile travel backpack with panel loading"
   },
@@ -204,7 +204,7 @@ export const products = [
     price: 199.95,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B07FMHH8DR.jpg",
+    image: "https://m.media-amazon.com/images/I/71t8u7pjJCL._AC_SL1500_.jpg",
     asin: "B07FMHH8DR",
     description: "Sustainable travel backpack with compression straps"
   },
@@ -215,7 +215,7 @@ export const products = [
     price: 149.00,
     rating: 4.8,
     reviewCount: 6200,
-    image: "https://m.media-amazon.com/images/P/B07YNMV57V.jpg",
+    image: "https://m.media-amazon.com/images/I/71YQ7qbmIiL._AC_SL1500_.jpg",
     asin: "B07YNMV57V",
     description: "Weather-resistant backpack made from recycled materials"
   },
@@ -226,7 +226,7 @@ export const products = [
     price: 249.00,
     rating: 4.7,
     reviewCount: 4100,
-    image: "https://m.media-amazon.com/images/P/B08T1PXQF7.jpg",
+    image: "https://m.media-amazon.com/images/I/81oM2pDAp3L._AC_SL1500_.jpg",
     asin: "B08T1PXQF7",
     description: "Premium leather and fabric backpack with hidden pockets"
   },
