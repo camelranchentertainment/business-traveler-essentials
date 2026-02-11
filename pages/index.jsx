@@ -214,6 +214,131 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
+
+                {/* Neck Pillows Category */}
+                <Link href="/category/neck-pillows">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+                      alt="Neck Pillows"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Neck Pillows</h3>
+                        <p className="text-gray-200 text-sm">Travel comfort and support</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Packing Cubes Category */}
+                <Link href="/category/packing-cubes">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80"
+                      alt="Packing Cubes"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Packing Cubes</h3>
+                        <p className="text-gray-200 text-sm">Compression bags and organizers</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Laptop Sleeves Category */}
+                <Link href="/category/laptop-sleeves">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                      alt="Laptop Sleeves"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Laptop Sleeves</h3>
+                        <p className="text-gray-200 text-sm">Protective laptop cases</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Travel Adapters Category */}
+                <Link href="/category/travel-adapters">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=800&q=80"
+                      alt="Travel Adapters"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Travel Adapters</h3>
+                        <p className="text-gray-200 text-sm">International plug adapters</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Headphones Category */}
+                <Link href="/category/headphones">
+                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80"
+                      alt="Headphones"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-8">
+                      <div>
+                        <h3 className="text-3xl font-bold text-white mb-2">Headphones</h3>
+                        <p className="text-gray-200 text-sm">Noise-canceling and wireless earbuds</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </section>
