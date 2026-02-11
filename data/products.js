@@ -245,11 +245,29 @@ export const categories = {
     icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%232563eb&width=64",
     description: "Professional travel backpacks"
   },
-  "accessories": {
-    name: "Travel Accessories",
-    slug: "accessories",
+  "tech-organizers": {
+    name: "Tech Organizers",
+    slug: "tech-organizers",
+    icon: "https://api.iconify.design/mdi/briefcase.svg?color=%232563eb&width=64",
+    description: "Cable bags and tech pouches"
+  },
+  "charging-cables": {
+    name: "Charging Cables",
+    slug: "charging-cables",
     icon: "https://api.iconify.design/mdi/cable-data.svg?color=%232563eb&width=64",
-    description: "Chargers, cables, and organizers"
+    description: "USB-C, Lightning, and more"
+  },
+  "power-adapters": {
+    name: "Power Adapters",
+    slug: "power-adapters",
+    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%232563eb&width=64",
+    description: "Wall chargers and USB hubs"
+  },
+  "portable-power": {
+    name: "Portable Power",
+    slug: "portable-power",
+    icon: "https://api.iconify.design/mdi/battery-charging-high.svg?color=%232563eb&width=64",
+    description: "Power banks and battery packs"
   }
 };
 
