@@ -12,13 +12,12 @@ export default function ProductCard({ product }) {
         rel={product.asin ? "noopener noreferrer nofollow" : ""}
       >
         <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
-          {/* Amazon Product Image via proxy */}
+          {/* Amazon Product Image via API proxy */}
           <img 
-            src={product.image.replace('https://m.media-amazon.com', 'https://wsrv.nl/?url=m.media-amazon.com')}
+            src={`/api/image-proxy?url=${encodeURIComponent(product.image)}`}
             alt={product.name}
             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
-            crossOrigin="anonymous"
           />
           
           {/* Bestseller badge if rating > 4.7 */}
