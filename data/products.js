@@ -268,6 +268,36 @@ export const categories = {
     slug: "portable-power",
     icon: "https://api.iconify.design/mdi/battery-charging-high.svg?color=%232563eb&width=64",
     description: "Power banks and battery packs"
+  },
+  "neck-pillows": {
+    name: "Neck Pillows",
+    slug: "neck-pillows",
+    icon: "https://api.iconify.design/mdi/pillow.svg?color=%232563eb&width=64",
+    description: "Travel comfort and support"
+  },
+  "packing-cubes": {
+    name: "Packing Cubes",
+    slug: "packing-cubes",
+    icon: "https://api.iconify.design/mdi/package-variant.svg?color=%232563eb&width=64",
+    description: "Compression bags and organizers"
+  },
+  "laptop-sleeves": {
+    name: "Laptop Sleeves",
+    slug: "laptop-sleeves",
+    icon: "https://api.iconify.design/mdi/laptop.svg?color=%232563eb&width=64",
+    description: "Protective laptop cases"
+  },
+  "travel-adapters": {
+    name: "Travel Adapters",
+    slug: "travel-adapters",
+    icon: "https://api.iconify.design/mdi/earth.svg?color=%232563eb&width=64",
+    description: "International plug adapters"
+  },
+  "headphones": {
+    name: "Headphones",
+    slug: "headphones",
+    icon: "https://api.iconify.design/mdi/headphones.svg?color=%232563eb&width=64",
+    description: "Noise-canceling and wireless earbuds"
   }
 };
 
