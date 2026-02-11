@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function ProductCard({ product }) {
   return (
     <div className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-blue-500">
@@ -12,27 +10,12 @@ export default function ProductCard({ product }) {
         rel={product.asin ? "noopener noreferrer nofollow" : ""}
       >
         <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
-          {/* Amazon Product Image via API proxy */}
+          {/* Product Image - Direct from Amazon */}
           <img 
-            src={`/api/image-proxy?url=${encodeURIComponent(product.image)}`}
+            src={product.image}
             alt={product.name}
             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
-            onError={(e) => {
-              // Retry with direct URL if proxy fails
-              if (!e.target.src.includes('retry=1')) {
-                e.target.src = product.image + '?retry=1';
-              } else {
-                // Show category-based placeholder
-                e.target.style.display = 'none';
-                const parent = e.target.parentElement;
-                parent.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                const text = document.createElement('div');
-                text.className = 'text-white text-6xl font-bold';
-                text.textContent = product.category.charAt(0);
-                parent.appendChild(text);
-              }
-            }}
           />
           
           {/* Bestseller badge if rating > 4.7 */}
@@ -66,19 +49,6 @@ export default function ProductCard({ product }) {
               {product.rating} ({product.reviewCount.toLocaleString()})
             </span>
           </div>
-          
-          {/* Features - only show if features exist */}
-          {product.features && product.features.length > 0 && (
-            <div className="mb-4">
-              <div className="flex flex-wrap gap-1">
-                {product.features.slice(0, 2).map((feature, idx) => (
-                  <span key={idx} className="text-xs bg-blue-900 text-blue-300 px-2 py-1 rounded">
-                    {feature}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
           
           {/* Price and CTA */}
           <div className="flex items-center justify-between pt-4 border-t border-gray-700">
