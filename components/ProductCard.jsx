@@ -3,15 +3,15 @@ import Link from 'next/link';
 export default function ProductCard({ product }) {
   return (
     <div className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100">
-     <a 
-  href={product.asin 
-    ? `https://www.amazon.com/dp/${product.asin}?tag=businesst02d1-20`
-    : '#'
-  }
-  target={product.asin ? "_blank" : "_self"}
-  rel={product.asin ? "noopener noreferrer nofollow" : ""}
->
-  <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
+      <a 
+        href={product.asin 
+          ? `https://www.amazon.com/dp/${product.asin}?tag=businesst02d1-20`
+          : '#'
+        }
+        target={product.asin ? "_blank" : "_self"}
+        rel={product.asin ? "noopener noreferrer nofollow" : ""}
+      >
+        <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
           {/* Amazon Product Image */}
           <img 
             src={product.image}
@@ -65,25 +65,27 @@ export default function ProductCard({ product }) {
             </span>
           </div>
           
-          {/* Features */}
-          <div className="mb-4">
-            <div className="flex flex-wrap gap-1">
-              {product.features.slice(0, 2).map((feature, idx) => (
-                <span key={idx} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">
-                  {feature}
-                </span>
-              ))}
+          {/* Features - only show if features exist */}
+          {product.features && product.features.length > 0 && (
+            <div className="mb-4">
+              <div className="flex flex-wrap gap-1">
+                {product.features.slice(0, 2).map((feature, idx) => (
+                  <span key={idx} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">
+                    {feature}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
           
           {/* Price and CTA */}
           <div className="flex items-center justify-between pt-4 border-t border-gray-100">
             <div className="text-2xl font-bold text-gray-900">
               ${product.price}
             </div>
-           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
-             {product.asin ? 'View on Amazon →' : 'Coming Soon'}
-           </button>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
+              {product.asin ? 'View on Amazon →' : 'Coming Soon'}
+            </button>
           </div>
         </div>
       </a>
