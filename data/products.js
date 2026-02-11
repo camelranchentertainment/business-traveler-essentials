@@ -663,37 +663,37 @@ export const categories = {
   "luggage": {
     name: "Luggage",
     slug: "luggage",
-    icon: "🧳",
+    icon: "https://api.iconify.design/mdi/bag-suitcase.svg?color=%23ffffff&width=64",
     description: "Premium carry-on and checked luggage for business travelers"
   },
   "backpacks": {
     name: "Backpacks",
     slug: "backpacks",
-    icon: "🎒",
+    icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%23ffffff&width=64",
     description: "Professional travel backpacks with laptop compartments"
   },
   "cable-bags-pouches": {
     name: "Cable Bags/Pouches",
     slug: "cable-bags-pouches",
-    icon: "👝",
+    icon: "https://api.iconify.design/mdi/cable-data.svg?color=%23ffffff&width=64",
     description: "Organize your cables and tech accessories"
   },
   "cords": {
     name: "Cords",
     slug: "cords",
-    icon: "🔌",
+    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%23ffffff&width=64",
     description: "High-quality charging cables and adapters"
   },
   "power-blocks": {
     name: "Power Blocks",
     slug: "power-blocks",
-    icon: "⚡",
+    icon: "https://api.iconify.design/mdi/power-socket-us.svg?color=%23ffffff&width=64",
     description: "Fast charging wall adapters and multi-port chargers"
   },
   "computer-power": {
     name: "Computer Power",
     slug: "computer-power",
-    icon: "🔋",
+    icon: "https://api.iconify.design/mdi/battery-charging.svg?color=%23ffffff&width=64",
     description: "High-capacity power banks for laptops and devices"
   }
 };
