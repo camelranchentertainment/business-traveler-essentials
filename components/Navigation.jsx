@@ -36,7 +36,7 @@ export default function Navigation() {
                     className="block px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100 last:border-b-0"
                   >
                     <div className="flex items-center space-x-3">
-                      <span className="text-2xl">{category.icon}</span>
+                      <img src={category.icon} alt={category.name} className="w-8 h-8" />
                       <div>
                         <div className="font-medium text-gray-900">{category.name}</div>
                         <div className="text-xs text-gray-600">{category.description.substring(0, 40)}...</div>
@@ -82,9 +82,10 @@ export default function Navigation() {
                 <Link
                   key={category.slug}
                   href={`/category/${category.slug}`}
-                  className="block py-2 pl-4 text-gray-700 hover:text-blue-600"
+                  className="flex items-center space-x-2 py-2 pl-4 text-gray-700 hover:text-blue-600"
                 >
-                  {category.icon} {category.name}
+                  <img src={category.icon} alt={category.name} className="w-6 h-6" />
+                  <span>{category.name}</span>
                 </Link>
               ))}
             </div>
