@@ -14,10 +14,11 @@ export default function ProductCard({ product }) {
         <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
           {/* Amazon Product Image via proxy */}
           <img 
-            src={`https://images.weserv.nl/?url=${encodeURIComponent(product.image)}&w=500&h=500&fit=contain&bg=white`}
+            src={product.image.replace('https://m.media-amazon.com', 'https://wsrv.nl/?url=m.media-amazon.com')}
             alt={product.name}
             className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            crossOrigin="anonymous"
           />
           
           {/* Bestseller badge if rating > 4.7 */}
