@@ -61,36 +61,6 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Decorative Airport Image Strip */}
-          <section className="relative h-32 overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=80"
-              alt="Airport"
-              className="w-full h-full object-cover blur-sm opacity-40"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80"></div>
-          </section>
-
-          {/* Value Propositions */}
-          <section className="py-16 bg-gradient-to-b from-gray-900 to-black border-b border-gray-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 border-r border-gray-700">
-                  <h3 className="font-bold text-xl mb-3 text-white">Expertly Curated</h3>
-                  <p className="text-gray-400 leading-relaxed">Tested by experienced business travelers in real-world conditions</p>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8 border-r border-gray-700">
-                  <h3 className="font-bold text-xl mb-3 text-white">Top-Rated</h3>
-                  <p className="text-gray-400 leading-relaxed">Only 4.5+ star products with thousands of verified reviews</p>
-                </div>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-8">
-                  <h3 className="font-bold text-xl mb-3 text-white">Time-Saving</h3>
-                  <p className="text-gray-400 leading-relaxed">Skip the research – comprehensive analysis done for you</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Categories Grid */}
           <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
