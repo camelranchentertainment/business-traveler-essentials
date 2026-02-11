@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Categories</h3>
             <ul className="space-y-2">
-              {Object.values(categories).slice(0, 6).map((category) => (
+              {Object.values(categories).map((category) => (
                 <li key={category.slug}>
                   <Link href={`/category/${category.slug}`} className="text-sm hover:text-white transition-colors">
                     {category.name}
