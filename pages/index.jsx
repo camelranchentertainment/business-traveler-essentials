@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen flex flex-col bg-gray-50">
+      <div className="min-h-screen flex flex-col bg-black">
         <Navigation />
 
         <main className="flex-grow">
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
               <div className="max-w-3xl">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                   Travel Smarter, Work Better
@@ -62,45 +62,45 @@ export default function Home() {
           </section>
 
           {/* Value Propositions */}
-          <section className="py-12 bg-white border-b border-gray-200">
+          <section className="py-12 bg-gradient-to-b from-gray-900 to-black border-b border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="text-4xl mb-4">✓</div>
-                  <h3 className="font-semibold text-lg mb-2">Expertly Curated</h3>
-                  <p className="text-gray-600">Every product tested and recommended by experienced business travelers</p>
+                  <h3 className="font-semibold text-lg mb-2 text-white">Expertly Curated</h3>
+                  <p className="text-gray-400">Every product tested and recommended by experienced business travelers</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl mb-4">⭐</div>
-                  <h3 className="font-semibold text-lg mb-2">Top-Rated Products</h3>
-                  <p className="text-gray-600">Only products with 4.5+ star ratings and thousands of reviews</p>
+                  <h3 className="font-semibold text-lg mb-2 text-white">Top-Rated Products</h3>
+                  <p className="text-gray-400">Only products with 4.5+ star ratings and thousands of reviews</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl mb-4">🎯</div>
-                  <h3 className="font-semibold text-lg mb-2">Time-Saving</h3>
-                  <p className="text-gray-600">Skip the research - we've done the work for you</p>
+                  <h3 className="font-semibold text-lg mb-2 text-white">Time-Saving</h3>
+                  <p className="text-gray-400">Skip the research - we've done the work for you</p>
                 </div>
               </div>
             </div>
           </section>
 
           {/* Categories Grid */}
-          <section className="py-16">
+          <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Shop by Category</h2>
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">Shop by Category</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {Object.values(categories).map((category) => (
                   <Link
                     key={category.slug}
                     href={`/category/${category.slug}`}
-                    className="group bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100"
+                    className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-700 hover:border-blue-500"
                   >
                     <div className="text-5xl mb-4">{category.icon}</div>
-                    <h3 className="font-semibold text-xl mb-2 text-gray-900 group-hover:text-blue-600 transition-colors">
+                    <h3 className="font-semibold text-xl mb-2 text-white group-hover:text-blue-400 transition-colors">
                       {category.name}
                     </h3>
-                    <p className="text-gray-600 mb-4">{category.description}</p>
-                    <div className="text-blue-600 font-medium group-hover:translate-x-2 transition-transform inline-block">
+                    <p className="text-gray-400 mb-4">{category.description}</p>
+                    <div className="text-blue-400 font-medium group-hover:translate-x-2 transition-transform inline-block">
                       Browse products →
                     </div>
                   </Link>
@@ -110,11 +110,11 @@ export default function Home() {
           </section>
 
           {/* Featured Products */}
-          <section id="featured-products" className="py-16 bg-gray-50">
+          <section id="featured-products" className="py-16 bg-gradient-to-b from-gray-900 to-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Products</h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
+                <h2 className="text-3xl font-bold text-white mb-4">Featured Products</h2>
+                <p className="text-gray-400 max-w-2xl mx-auto">
                   Our top-rated essentials trusted by business travelers worldwide
                 </p>
               </div>
