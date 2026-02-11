@@ -112,6 +112,116 @@ export const products = [
     asin: "B0FrKNR6KF",
     description: "20 Inch Suitcase with Front Compartment & Cup Holder, Coffee-Infused PC Hard Shell, Eco-Friendly, TSA Lock, 360° Spinner Wheels"
   },
+  {
+    id: 11,
+    name: "Peak Design Travel Backpack 45L",
+    category: "Backpacks",
+    price: 299.95,
+    rating: 4.5,
+    reviewCount: 122,
+    image: "https://m.media-amazon.com/images/I/51tujQGaEVL._AC_SL1000_.jpg",
+    asin: "B0DDL4YW86",
+    description: "Black, Expandable 35-45L Design, Rear and Top Access, Weatherproof Shell, Laptop Sleeve, Ideal for Travel or Everyday Carry, Versatile Backpack"
+  },
+  {
+    id: 12,
+    name: "Peak Design Travel Backpack 30L",
+    category: "Backpacks",
+    price: 239.95,
+    rating: 4.3,
+    reviewCount: 225,
+    image: "https://m.media-amazon.com/images/I/718sLgvnN7L._AC_SL1500_.jpg",
+    asin: "B09RZN3MBC",
+    description: "Midnight, Expandable 27-33L Design, Rear and Top Access, Weatherproof Shell, Laptop Sleeve, Ideal for Travel or Everyday Carry, Versatile Backpack"
+  },
+  {
+    id: 13,
+    name: "Timbuk2 Authority Deluxe Laptop Backpack",
+    category: "Backpacks",
+    price: 185.0,
+    rating: 4.7,
+    reviewCount: 835,
+    image: "https://m.media-amazon.com/images/I/711G-5qbckL._AC_SL1500_.jpg",
+    asin: "B09DD7KYCW",
+    description: "Eco Static, 20L, Fits 15–17 Inch Laptops, Organized Design with Water Bottle Pocket, Compression Straps & Luggage Pass-Through"
+  },
+  {
+    id: 14,
+    name: "Nomatic Travel Bag 40L",
+    category: "Backpacks",
+    price: 329.99,
+    rating: 4.6,
+    reviewCount: 555,
+    image: "https://m.media-amazon.com/images/I/71ywdvI8M9L._AC_SL1500_.jpg",
+    asin: "B0721NW4Z2",
+    description: "Convertible Duffel/Backpack, Carry-on Size, Everyday Use Laptop Bag, TSA Compliant"
+  },
+  {
+    id: 15,
+    name: "Tortuga 40L Travel Backpack Pro",
+    category: "Backpacks",
+    price: 350.0,
+    rating: 4.2,
+    reviewCount: 49,
+    image: "https://m.media-amazon.com/images/I/718ZMSAHMdL._AC_SL1500_.jpg",
+    asin: "B0DZTGYB49",
+    description: "Large Carry-On Travel Backpack for Men and Women - Durable, Comfortable, Easy to Pack, Airline-Approved Bag with Laptop Compartment"
+  },
+  {
+    id: 16,
+    name: "Osprey Farpoint 40",
+    category: "Backpacks",
+    price: 111.0,
+    rating: 4.6,
+    reviewCount: 2277,
+    image: "https://m.media-amazon.com/images/I/81Egri2WivL._AC_SL1500_.jpg",
+    asin: "B09KQ2VJCW",
+    description: "Travel Backpack, Tunnel Vision"
+  },
+  {
+    id: 17,
+    name: "OGIO Renegade Backpack (Renegade, Black Pindot)",
+    category: "Backpacks",
+    price: 159.99,
+    rating: 4.6,
+    reviewCount: 5420,
+    image: "https://m.media-amazon.com/images/I/61v-8Rk+weL._AC_SL1000_.jpg",
+    asin: "B00AZU4G00",
+    description: "OGIO Renegade Backpack (Renegade, Black Pindot)"
+  },
+  {
+    id: 18,
+    name: "Samsonite Mother Lode Travel Backpack",
+    category: "Backpacks",
+    price: 154.29,
+    rating: 4.7,
+    reviewCount: 44,
+    image: "https://m.media-amazon.com/images/I/91KIXPD1CQL._AC_SL1500_.jpg",
+    asin: "B0DH99D741",
+    description: "Samsonite Mother Lode Travel Backpack - Heather Graphite"
+  },
+  {
+    id: 19,
+    name: "The North Face Recon Backpack",
+    category: "Backpacks",
+    price: 125.0,
+    rating: 4.7,
+    reviewCount: 6295,
+    image: "https://m.media-amazon.com/images/I/81It0IIEVLL._AC_SL1500_.jpg",
+    asin: "B0CNBCZGRZ",
+    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16\" Laptop Sleeve, 2 Water Bottle Pockets"
+  },
+  {
+    id: 20,
+    name: "Thule Crossover 32L Backpack",
+    category: "Backpacks",
+    price: 119.89,
+    rating: 4.6,
+    reviewCount: 1658,
+    image: "https://m.media-amazon.com/images/I/91ivq4AXW2L._AC_SL1500_.jpg",
+    asin: "B0FBMLQW7Z",
+    description: "Thule Crossover 32L Backpack New"
+  },
 ];
 
 // Amazon affiliate configuration
