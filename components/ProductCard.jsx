@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
         target={product.asin ? "_blank" : "_self"}
         rel={product.asin ? "noopener noreferrer nofollow" : ""}
       >
-        <div className="relative h-64 bg-white overflow-hidden flex items-center justify-center">
+        <div className="relative h-80 bg-white overflow-hidden flex items-center justify-center">
           {/* Product Image - Direct from Amazon */}
           <img 
             src={product.image}
