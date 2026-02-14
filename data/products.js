@@ -1,5 +1,5 @@
 // Auto-generated from products-database.xlsx
-// Tech Organizers images UPDATED!
+// 38 PRODUCTS: Luggage, Backpacks, Tech Organizers, Charging Cables!
 
 export const products = [
   {
@@ -320,6 +320,105 @@ export const products = [
     image: "https://m.media-amazon.com/images/I/813ZkN5qJxL._AC_SX679_.jpg",
     asin: "B086SRMJJP",
     description: "Native Union Stow Organizer"
+  },
+  {
+    id: 30,
+    name: "Anker Powerline+ III USB-C to Lightning (6ft)",
+    category: "Charging Cables",
+    price: 16.99,
+    rating: 4.7,
+    reviewCount: 29958,
+    image: "https://m.media-amazon.com/images/I/61H3u4lvD0L._AC_SX466_.jpg",
+    asin: "B08H87VZJ9",
+    description: "Anker Powerline+ III USB-C to Lightning (6ft)"
+  },
+  {
+    id: 31,
+    name: "Native Union Belt Cable XL USB-C to Lightning 10ft",
+    category: "Charging Cables",
+    price: 34.99,
+    rating: 4.5,
+    reviewCount: 932,
+    image: "https://m.media-amazon.com/images/I/71A73LY4dXL._SL1500_.jpg",
+    asin: "B082TZ7ZCQ",
+    description: "Native Union Belt Cable XL USB-C to Lightning 10ft"
+  },
+  {
+    id: 32,
+    name: "Apple USB-C to Lightning Cable 1m",
+    category: "Charging Cables",
+    price: 19.0,
+    rating: 4.7,
+    reviewCount: 9821,
+    image: "https://m.media-amazon.com/images/I/61PduSmu8GL._AC_SX679_.jpg",
+    asin: "B0CX22JSR3",
+    description: "Apple USB-C to Lightning Cable 1m"
+  },
+  {
+    id: 33,
+    name: "Anker New Nylon USB-C to USB-C Cable 6ft 2-Pack",
+    category: "Charging Cables",
+    price: 12.99,
+    rating: 4.7,
+    reviewCount: 76570,
+    image: "https://m.media-amazon.com/images/I/71lKneFJ7lL._AC_SL1500_.jpg",
+    asin: "B088N7KPZN",
+    description: "Anker New Nylon USB-C to USB-C Cable 6ft 2-Pack"
+  },
+  {
+    id: 34,
+    name: "Belkin Boost Charge USB-C to USB-C Cable 10ft",
+    category: "Charging Cables",
+    price: 22.99,
+    rating: 4.6,
+    reviewCount: 405,
+    image: "https://m.media-amazon.com/images/I/6165rCwQAjL._AC_SX679_.jpg",
+    asin: "B09K6CS3W1",
+    description: "Belkin Boost Charge USB-C to USB-C Cable 10ft"
+  },
+  {
+    id: 35,
+    name: "Anker USB-C to USB-A Cable 6ft 2-Pack",
+    category: "Charging Cables",
+    price: 9.99,
+    rating: 4.7,
+    reviewCount: 140025,
+    image: "https://m.media-amazon.com/images/I/71ktCShMN+L._SX425_.jpg",
+    asin: "B07DC5PPFV",
+    description: "Anker USB-C to USB-A Cable 6ft 2-Pack"
+  },
+  {
+    id: 36,
+    name: "Anker Powerline II 3-in-1 Cable",
+    category: "Charging Cables",
+    price: 17.99,
+    rating: 4.4,
+    reviewCount: 16580,
+    image: "https://m.media-amazon.com/images/I/71YDoVygXpL._AC_SL1500_.jpg",
+    asin: "B07215381G",
+    description: "Anker Powerline II 3-in-1 Cable"
+  },
+  {
+    id: 37,
+    name: "Magnetic USB C Adapter, 24Pins Type C Connector, PD 100W Fast Charging 10Gbs Data Transfer",
+    category: "Charging Cables",
+    price: 8.99,
+    rating: 4.4,
+    reviewCount: 514,
+    image: "https://m.media-amazon.com/images/I/41gVt5tw3tL._AC_.jpg",
+    asin: "B095M1JHFN",
+    description: "Magnetic USB C Adapter, 24Pins Type C Connector, PD 100W Fast Charging 10Gbs Data Transfer"
+  },
+  {
+    id: 38,
+    name: "USB C Splitter with 100W Fast Charging, Dual USB C Headphone and Charger Adapter Dongle for iPhone 16/15 Series, iPad, MacBook, Galaxy S24/S23 and More",
+    category: "Charging Cables",
+    price: 8.99,
+    rating: 3.9,
+    reviewCount: 217,
+    image: "https://m.media-amazon.com/images/I/61Yf3-RkvkL._AC_SL1500_.jpg",
+    asin: "B0DT59DB6M",
+    description: "USB C Splitter with 100W Fast Charging, Dual USB C Headphone and Charger Adapter Dongle for iPhone 16/15 Series, iPad, MacBook, Galaxy S24/S23 and More"
   },
 ];
 
