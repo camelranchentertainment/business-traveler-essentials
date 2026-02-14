@@ -1,5 +1,5 @@
 // Auto-generated from products-database.xlsx
-// 56 PRODUCTS ACROSS 6 COMPLETE CATEGORIES!
+// 74 PRODUCTS ACROSS 8 COMPLETE CATEGORIES!
 
 export const products = [
   {
@@ -617,6 +617,204 @@ export const products = [
     image: "https://m.media-amazon.com/images/I/71E5yD659wL._AC_SL1500_.jpg",
     asin: "B0DY2JYCG1",
     description: "Mophie Powerstation XXL 20,000mAh USB-C PD"
+  },
+  {
+    id: 57,
+    name: "Cabeau Evolution S3 Travel Neck Pillow",
+    category: "Neck Pillows",
+    price: 44.95,
+    rating: 4.2,
+    reviewCount: 31418,
+    image: "https://m.media-amazon.com/images/I/51193RXQ1SL._AC_SL1080_.jpg",
+    asin: "B079X4S4DQ",
+    description: "Cabeau Evolution S3 Travel Neck Pillow"
+  },
+  {
+    id: 58,
+    name: "BCOZZY Travel Pillow Chin Supporting Neck Pillow",
+    category: "Neck Pillows",
+    price: 44.95,
+    rating: 4.2,
+    reviewCount: 31418,
+    image: "https://m.media-amazon.com/images/I/81DxyinQWyL._AC_SL1500_.jpg",
+    asin: "B01DODMU9I",
+    description: "BCOZZY Travel Pillow Chin Supporting Neck Pillow"
+  },
+  {
+    id: 59,
+    name: "Trtl Travel Pillow - Scientifically Proven Neck Support",
+    category: "Neck Pillows",
+    price: 59.99,
+    rating: 4.6,
+    reviewCount: 1344,
+    image: "https://m.media-amazon.com/images/I/61Ev4Ik4L8L._AC_SL1500_.jpg",
+    asin: "B00LB7REBE",
+    description: "Trtl Travel Pillow - Scientifically Proven Neck Support"
+  },
+  {
+    id: 60,
+    name: "MLVOC 100% Pure Memory Foam Travel Neck Pillow",
+    category: "Neck Pillows",
+    price: 23.99,
+    rating: 4.3,
+    reviewCount: 34415,
+    image: "https://m.media-amazon.com/images/I/81Fy+yZT+xL._AC_SL1500_.jpg",
+    asin: "B082K8ZNQ1",
+    description: "MLVOC 100% Pure Memory Foam Travel Neck Pillow"
+  },
+  {
+    id: 61,
+    name: "Travelrest Nest Ultimate Memory Foam Travel Pillow",
+    category: "Neck Pillows",
+    price: 44.95,
+    rating: 4.4,
+    reviewCount: 7600,
+    image: "https://m.media-amazon.com/images/I/815kx1LtluL._AC_SL1500_.jpg",
+    asin: "B01AWWQTBE",
+    description: "Travelrest Nest Ultimate Memory Foam Travel Pillow"
+  },
+  {
+    id: 62,
+    name: "Ostrich Pillow Go Neck Pillow Premium Memory Foam",
+    category: "Neck Pillows",
+    price: 69.0,
+    rating: 4.2,
+    reviewCount: 7633,
+    image: "https://m.media-amazon.com/images/I/81fvHsB0yXL._AC_SL1500_.jpg",
+    asin: "B07MDHYKRQ",
+    description: "Ostrich Pillow Go Neck Pillow Premium Memory Foam"
+  },
+  {
+    id: 63,
+    name: "Cabeau Evolution Cool Travel Neck Pillow Memory Foam",
+    category: "Neck Pillows",
+    price: 44.95,
+    rating: 4.1,
+    reviewCount: 1700,
+    image: "https://m.media-amazon.com/images/I/71thMFMjxuL._AC_SL1500_.jpg",
+    asin: "B01N0WP4C2",
+    description: "Cabeau Evolution Cool Travel Neck Pillow Memory Foam"
+  },
+  {
+    id: 64,
+    name: "Huzi Infinity Pillow Travel Neck Pillow",
+    category: "Neck Pillows",
+    price: 39.99,
+    rating: 4.5,
+    reviewCount: 8000,
+    image: "https://m.media-amazon.com/images/I/71NFInNPOcL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    asin: "B01N0UFEEC",
+    description: "Huzi Infinity Pillow Travel Neck Pillow"
+  },
+  {
+    id: 65,
+    name: "J-pillow Travel Chin Supporting Pillow",
+    category: "Neck Pillows",
+    price: 29.99,
+    rating: 4.5,
+    reviewCount: 5000,
+    image: "https://m.media-amazon.com/images/I/51jF6KHYO4L._AC_.jpg",
+    asin: "B00LWFRGD4",
+    description: "J-pillow Travel Chin Supporting Pillow"
+  },
+  {
+    id: 66,
+    name: "BAGAIL 6-Set Compression Packing Cubes",
+    category: "Packing Cubes",
+    price: 26.99,
+    rating: 4.5,
+    reviewCount: 42000,
+    image: "https://m.media-amazon.com/images/I/91czenj1oWL._AC_SX679_.jpg",
+    asin: "B01N1UIPSO",
+    description: "BAGAIL 6-Set Compression Packing Cubes"
+  },
+  {
+    id: 67,
+    name: "Amazon Essentials 4-Piece Packing Cubes Set",
+    category: "Packing Cubes",
+    price: 16.99,
+    rating: 4.4,
+    reviewCount: 87000,
+    image: "https://m.media-amazon.com/images/I/71GCQqyqpRL._AC_SL1500_.jpg",
+    asin: "B014VBHL96",
+    description: "Amazon Essentials 4-Piece Packing Cubes Set"
+  },
+  {
+    id: 68,
+    name: "Eagle Creek Pack-It Specter Cube Set 3pc",
+    category: "Packing Cubes",
+    price: 59.0,
+    rating: 4.5,
+    reviewCount: 76,
+    image: "https://m.media-amazon.com/images/I/61kfYPhejnL._AC_SL1280_.jpg",
+    asin: "B0D5F6Y5Y9",
+    description: "Eagle Creek Pack-It Specter Cube Set 3pc"
+  },
+  {
+    id: 69,
+    name: "Gonex Compression Packing Cubes 6-Set",
+    category: "Packing Cubes",
+    price: 25.99,
+    rating: 4.5,
+    reviewCount: 10303,
+    image: "https://m.media-amazon.com/images/I/71UhLm73xpL._AC_SL1500_.jpg",
+    asin: "B0CQP6Z88D",
+    description: "Gonex Compression Packing Cubes 6-Set"
+  },
+  {
+    id: 70,
+    name: "Shacke Pak 5-Set Packing Cubes",
+    category: "Packing Cubes",
+    price: 27.99,
+    rating: 4.8,
+    reviewCount: 23553,
+    image: "https://m.media-amazon.com/images/I/81v+OsQcE8L._AC_SL1500_.jpg",
+    asin: "B07C7WGDQZ",
+    description: "Shacke Pak 5-Set Packing Cubes"
+  },
+  {
+    id: 71,
+    name: "Well Traveled 4-Piece Compression Set",
+    category: "Packing Cubes",
+    price: 25.99,
+    rating: 4.3,
+    reviewCount: 6800,
+    image: "https://m.media-amazon.com/images/I/81QZXZcSWmL._AC_SL1500_.jpg",
+    asin: "B07YMTPJQ5",
+    description: "Well Traveled 4-Piece Compression Set"
+  },
+  {
+    id: 72,
+    name: "Thule Compression Packing Cube Set",
+    category: "Packing Cubes",
+    price: 52.69,
+    rating: 4.8,
+    reviewCount: 1430,
+    image: "https://m.media-amazon.com/images/I/81TLNeAfW1L._AC_SL1500_.jpg",
+    asin: "B0CY3T7DYP",
+    description: "Thule Compression Packing Cube Set"
+  },
+  {
+    id: 73,
+    name: "LeanTravel Premium Compression Packing Cubes ",
+    category: "Packing Cubes",
+    price: 49.99,
+    rating: 4.6,
+    reviewCount: 6575,
+    image: "https://m.media-amazon.com/images/I/81S8Jbz6O-L._AC_SL1402_.jpg",
+    asin: "B074KQ4C85",
+    description: "LeanTravel Premium Compression Packing Cubes "
+  },
+  {
+    id: 74,
+    name: "Osprey Ultralight Packing Cube Set",
+    category: "Packing Cubes",
+    price: 37.25,
+    rating: 4.6,
+    reviewCount: 520,
+    image: "https://m.media-amazon.com/images/I/51bVdXMwWBL._AC_SL1500_.jpg",
+    asin: "B0BKQFQN16",
+    description: "Osprey Ultralight Packing Cube Set"
   },
 ];
 
