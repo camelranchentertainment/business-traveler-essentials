@@ -1,74 +1,418 @@
-export default function ProductCard({ product }) {
-return (
-<div className="group bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-700 hover:border-blue-500">
-<a
-href={product.asin
-? `https://www.amazon.com/dp/${product.asin}?tag=businesst02d1-20`
-: ‘#’
-}
-target={product.asin ? “_blank” : “_self”}
-rel={product.asin ? “noopener noreferrer nofollow” : “”}
->
-<div className="relative h-80 bg-white overflow-hidden flex items-center justify-center">
-{/* Product Image - Direct from Amazon */}
-<img
-src={product.image}
-alt={product.name}
-className=“w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300”
-loading=“lazy”
-referrerPolicy=“no-referrer”
-onError={(e) => {
-e.target.onerror = null;
-e.target.src = ‘data:image/svg+xml,%3Csvg xmlns=“http://www.w3.org/2000/svg” width=“400” height=“400”%3E%3Crect fill=”%23f3f4f6” width=“400” height=“400”/%3E%3Ctext fill=”%239ca3af” font-family=“sans-serif” font-size=“18” x=“50%25” y=“50%25” text-anchor=“middle”%3EImage Unavailable%3C/text%3E%3C/svg%3E’;
-}}
-/>
+// Auto-generated from products-database.xlsx
+// Tech Organizers images UPDATED!
 
-```
-      {/* Bestseller badge if rating > 4.7 */}
-      {product.rating >= 4.7 && (
-        <div className="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10">
-          Bestseller
-        </div>
-      )}
-    </div>
-    
-    <div className="p-6">
-      <h3 className="font-semibold text-lg mb-2 text-white group-hover:text-blue-400 transition-colors line-clamp-2">
-        {product.name}
-      </h3>
-      
-      <p className="text-gray-400 text-sm mb-4 line-clamp-2">
-        {product.description}
-      </p>
-      
-      {/* Rating */}
-      <div className="flex items-center gap-2 mb-4">
-        <div className="flex text-amber-400">
-          {[...Array(5)].map((_, i) => (
-            <span key={i}>
-              {i < Math.floor(product.rating) ? '★' : 
-               i < product.rating ? '★' : '☆'}
-            </span>
-          ))}
-        </div>
-        <span className="text-sm text-gray-400">
-          {product.rating} ({product.reviewCount.toLocaleString()})
-        </span>
-      </div>
-      
-      {/* Price and CTA */}
-      <div className="flex items-center justify-between pt-4 border-t border-gray-700">
-        <div className="text-2xl font-bold text-white">
-          ${product.price}
-        </div>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors text-sm">
-          {product.asin ? 'View on Amazon →' : 'Coming Soon'}
-        </button>
-      </div>
-    </div>
-  </a>
-</div>
-```
+export const products = [
+  {
+    id: 1,
+    name: "Samsonite Freeform Hardside Carry-On",
+    category: "Luggage",
+    price: 139.99,
+    rating: 4.8,
+    reviewCount: 15200,
+    image: "https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg",
+    asin: "B01M0A3BKH",
+    description: "Lightweight hardside spinner with 10-year warranty"
+  },
+  {
+    id: 2,
+    name: "Briggs & Riley Baseline Essential",
+    category: "Luggage",
+    price: 589.0,
+    rating: 4.7,
+    reviewCount: 790,
+    image: "https://m.media-amazon.com/images/I/81-nJonebXL._AC_SL1500_.jpg",
+    asin: "B09Y282JQD",
+    description: "Expandable carry-on with lifetime warranty"
+  },
+  {
+    id: 3,
+    name: "TUMI Alpha 3 International Carry-On",
+    category: "Luggage",
+    price: 895.0,
+    rating: 4.9,
+    reviewCount: 1200,
+    image: "https://m.media-amazon.com/images/I/81UKNDaQDkL._AC_SL1500_.jpg",
+    asin: "B07MQWFCHC",
+    description: "Premium ballistic nylon with USB port"
+  },
+  {
+    id: 4,
+    name: "Travelpro Maxlite 5 Softside Expandable Luggage",
+    category: "Luggage",
+    price: 191.24,
+    rating: 4.4,
+    reviewCount: 13185,
+    image: "https://m.media-amazon.com/images/I/81wtzkY1GdL._AC_SL1500_.jpg",
+    asin: "B07BLD9NMM",
+    description: "Softside Expandable Luggage with 4 Spinner Wheels, Lightweight Suitcase"
+  },
+  {
+    id: 5,
+    name: "Away Bigger Carry-On Luggage",
+    category: "Luggage",
+    price: 295.0,
+    rating: 4.6,
+    reviewCount: 304,
+    image: "https://m.media-amazon.com/images/I/61zdJAXZGmL._AC_SL1500_.jpg",
+    asin: "B0DLHL7KXB",
+    description: "Lightweight Hardside Large Suitcase with Spinner Wheels, TSA Lock, Airline Approved"
+  },
+  {
+    id: 6,
+    name: "DELSEY PARIS Chatelet Air 2.0",
+    category: "Luggage",
+    price: 256.0,
+    rating: 4.5,
+    reviewCount: 1207,
+    image: "https://m.media-amazon.com/images/I/81ksfPd+C6L._AC_SL1500_.jpg",
+    asin: "B09R3CVWPN",
+    description: "Hardside Luggage with Spinner Wheels, Chocolate Brown, Carry on 19 Inch"
+  },
+  {
+    id: 7,
+    name: "Monos Carry-On Pro Plus Luggage 23\"",
+    category: "Luggage",
+    price: 315.0,
+    rating: 0.0,
+    reviewCount: 0,
+    image: "https://m.media-amazon.com/images/I/61tfvca0QzL._AC_SL1500_.jpg",
+    asin: "B0DW9DSDHJ",
+    description: "Hardside Spinner Suitcase with TSA Lock & Front Pocket, Airline Approved"
+  },
+  {
+    id: 8,
+    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
+    category: "Luggage",
+    price: 325.0,
+    rating: 4.5,
+    reviewCount: 36,
+    image: "https://m.media-amazon.com/images/I/61i35uvCEFL._AC_SL1500_.jpg",
+    asin: "B0FL5KP8TN",
+    description: "Airline Approved Carry On Luggage with Wheels, TSA Lock Rolling Suitcase, Silent Spinner Wheels, USB Ports & Ejectable Battery"
+  },
+  {
+    id: 9,
+    name: "Travelpro Platinum Elite Hardside Expandable Carry on Luggage",
+    category: "Luggage",
+    price: 273.53,
+    rating: 4.1,
+    reviewCount: 1170,
+    image: "https://m.media-amazon.com/images/I/712LWg++txS._AC_SL1500_.jpg",
+    asin: "B0937KCSZN",
+    description: "8 Wheel Spinner, TSA Lock, Hard Shell Polycarbonate Suitcase, Shadow Black, Carry on Laptop Pocket 21-Inch"
+  },
+  {
+    id: 10,
+    name: "NINETYGO Carry On Luggage 22x14x9 Airline Approved",
+    category: "Luggage",
+    price: 139.99,
+    rating: 4.4,
+    reviewCount: 272,
+    image: "https://m.media-amazon.com/images/I/612RvXO5mML._AC_SL1500_.jpg",
+    asin: "B0FrKNR6KF",
+    description: "20 Inch Suitcase with Front Compartment & Cup Holder, Coffee-Infused PC Hard Shell, Eco-Friendly, TSA Lock, 360° Spinner Wheels"
+  },
+  {
+    id: 11,
+    name: "Peak Design Travel Backpack 45L",
+    category: "Backpacks",
+    price: 299.95,
+    rating: 4.5,
+    reviewCount: 122,
+    image: "https://m.media-amazon.com/images/I/51tujQGaEVL._AC_SL1000_.jpg",
+    asin: "B0DDL4YW86",
+    description: "Black, Expandable 35-45L Design, Rear and Top Access, Weatherproof Shell, Laptop Sleeve, Ideal for Travel or Everyday Carry, Versatile Backpack"
+  },
+  {
+    id: 12,
+    name: "Peak Design Travel Backpack 30L",
+    category: "Backpacks",
+    price: 239.95,
+    rating: 4.3,
+    reviewCount: 225,
+    image: "https://m.media-amazon.com/images/I/718sLgvnN7L._AC_SL1500_.jpg",
+    asin: "B09RZN3MBC",
+    description: "Midnight, Expandable 27-33L Design, Rear and Top Access, Weatherproof Shell, Laptop Sleeve, Ideal for Travel or Everyday Carry, Versatile Backpack"
+  },
+  {
+    id: 13,
+    name: "Timbuk2 Authority Deluxe Laptop Backpack",
+    category: "Backpacks",
+    price: 185.0,
+    rating: 4.7,
+    reviewCount: 835,
+    image: "https://m.media-amazon.com/images/I/711G-5qbckL._AC_SL1500_.jpg",
+    asin: "B09DD7KYCW",
+    description: "Eco Static, 20L, Fits 15–17 Inch Laptops, Organized Design with Water Bottle Pocket, Compression Straps & Luggage Pass-Through"
+  },
+  {
+    id: 14,
+    name: "Nomatic Travel Bag 40L",
+    category: "Backpacks",
+    price: 329.99,
+    rating: 4.6,
+    reviewCount: 555,
+    image: "https://m.media-amazon.com/images/I/71ywdvI8M9L._AC_SL1500_.jpg",
+    asin: "B0721NW4Z2",
+    description: "Convertible Duffel/Backpack, Carry-on Size, Everyday Use Laptop Bag, TSA Compliant"
+  },
+  {
+    id: 15,
+    name: "Tortuga 40L Travel Backpack Pro",
+    category: "Backpacks",
+    price: 350.0,
+    rating: 4.2,
+    reviewCount: 49,
+    image: "https://m.media-amazon.com/images/I/718ZMSAHMdL._AC_SL1500_.jpg",
+    asin: "B0DZTGYB49",
+    description: "Large Carry-On Travel Backpack for Men and Women - Durable, Comfortable, Easy to Pack, Airline-Approved Bag with Laptop Compartment"
+  },
+  {
+    id: 16,
+    name: "Osprey Farpoint 40",
+    category: "Backpacks",
+    price: 111.0,
+    rating: 4.6,
+    reviewCount: 2277,
+    image: "https://m.media-amazon.com/images/I/81Egri2WivL._AC_SL1500_.jpg",
+    asin: "B09KQ2VJCW",
+    description: "Travel Backpack, Tunnel Vision"
+  },
+  {
+    id: 17,
+    name: "OGIO Renegade Backpack (Renegade, Black Pindot)",
+    category: "Backpacks",
+    price: 159.99,
+    rating: 4.6,
+    reviewCount: 5420,
+    image: "https://m.media-amazon.com/images/I/61v-8Rk+weL._AC_SL1000_.jpg",
+    asin: "B00AZU4G00",
+    description: "OGIO Renegade Backpack (Renegade, Black Pindot)"
+  },
+  {
+    id: 18,
+    name: "Samsonite Mother Lode Travel Backpack",
+    category: "Backpacks",
+    price: 154.29,
+    rating: 4.7,
+    reviewCount: 44,
+    image: "https://m.media-amazon.com/images/I/91KIXPD1CQL._AC_SL1500_.jpg",
+    asin: "B0DH99D741",
+    description: "Samsonite Mother Lode Travel Backpack - Heather Graphite"
+  },
+  {
+    id: 19,
+    name: "The North Face Recon Backpack",
+    category: "Backpacks",
+    price: 125.0,
+    rating: 4.7,
+    reviewCount: 6295,
+    image: "https://m.media-amazon.com/images/I/81It0IIEVLL._AC_SL1500_.jpg",
+    asin: "B0CNBCZGRZ",
+    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16\" Laptop Sleeve, 2 Water Bottle Pockets"
+  },
+  {
+    id: 20,
+    name: "Thule Crossover 32L Backpack",
+    category: "Backpacks",
+    price: 119.89,
+    rating: 4.6,
+    reviewCount: 1658,
+    image: "https://m.media-amazon.com/images/I/91ivq4AXW2L._AC_SL1500_.jpg",
+    asin: "B0FBMLQW7Z",
+    description: "Thule Crossover 32L Backpack New"
+  },
+  {
+    id: 21,
+    name: "BAGSMART Large Electronics Organizer",
+    category: "Tech Organizers",
+    price: 14.99,
+    rating: 4.6,
+    reviewCount: 9500,
+    image: "https://m.media-amazon.com/images/I/715h98AKwDL._AC_SX466_.jpg",
+    asin: "B017SKRWL4",
+    description: "BAGSMART Large Electronics Travel Organizer Case, Tech Accessories Cord Storage Bag for Phone, Power Bank, SD Card, Cables, Black"
+  },
+  {
+    id: 22,
+    name: "Peak Design Tech Pouch",
+    category: "Tech Organizers",
+    price: 49.95,
+    rating: 4.4,
+    reviewCount: 219,
+    image: "https://m.media-amazon.com/images/I/81SSsG9Gm6L._AC_SX466_.jpg",
+    asin: "B0DKV7QLXG",
+    description: "Peak Design Field Pouch V2, Charcoal, 2-in-1 Organizer and Sling Bag, Adjustable Shoulder Strap and Integrated Belt Loops"
+  },
+  {
+    id: 23,
+    name: "tomtoc Electronics Organizer",
+    category: "Tech Organizers",
+    price: 20.99,
+    rating: 4.8,
+    reviewCount: 3307,
+    image: "https://m.media-amazon.com/images/I/81OGglbW0DL._AC_SX466_.jpg",
+    asin: "B09781ZY7X",
+    description: "tomtoc Electronics Organizer Travel Case, Water Resistant Travel Bag Cable Organizer for Essentials, Tech Pouch Accessories Carry Storage for Cord, Phone"
+  },
+  {
+    id: 24,
+    name: "ProCase Hard Travel Organizer",
+    category: "Tech Organizers",
+    price: 12.99,
+    rating: 4.7,
+    reviewCount: 5403,
+    image: "https://m.media-amazon.com/images/I/71ZBU5Hb6pS._AC_SX679_.jpg",
+    asin: "B086M5CZJ6",
+    description: "ProCase Hard Drive Case 2.5 Inch for Elements WD My Passport Canvio Basics Seagate Backup Plus Slim Expansion 1TB 2TB 3TB 4TB"
+  },
+  {
+    id: 25,
+    name: "Bellroy Tech Kit Compact",
+    category: "Tech Organizers",
+    price: 69.0,
+    rating: 4.5,
+    reviewCount: 419,
+    image: "https://m.media-amazon.com/images/I/51o2TOI20XL._AC_SX679_.jpg",
+    asin: "B0B3HPRRQY",
+    description: "Bellroy Toiletry Kit Plus – (Toiletries pouch, bag)"
+  },
+  {
+    id: 26,
+    name: "TRIPPED Travel Gear Tech Organizer",
+    category: "Tech Organizers",
+    price: 22.0,
+    rating: 4.6,
+    reviewCount: 724,
+    image: "https://m.media-amazon.com/images/I/A1qD+b9mCAL._AC_SX466_.jpg",
+    asin: "B084GWHD21",
+    description: "Travelon World Travel Essentials Tech Organizer"
+  },
+  {
+    id: 27,
+    name: "Travelkin Cord Organizer",
+    category: "Tech Organizers",
+    price: 19.99,
+    rating: 4.5,
+    reviewCount: 937,
+    image: "https://m.media-amazon.com/images/I/81iT8xSCDYL._AC_SX466_.jpg",
+    asin: "B0CCL1T2SM",
+    description: "Travelkin Cord Organizer Travel, Electronic Organizer Travel Case, Cable Organizer Bag For Cords,Chargers Phone, Sd Card,Usbs (Black)"
+  },
+  {
+    id: 28,
+    name: "MATEIN Electronics Organizer",
+    category: "Tech Organizers",
+    price: 24.99,
+    rating: 4.6,
+    reviewCount: 1272,
+    image: "https://m.media-amazon.com/images/I/817AukCLnvL._AC_SX466_.jpg",
+    asin: "B08975LYWP",
+    description: "MATEIN Electronics Organizer, Waterproof Travel Electronic Case, Portable Double Layer Cable Storage Bag for Camera Accessories, Cord, Charger"
+  },
+  {
+    id: 29,
+    name: "Native Union Stow Organizer",
+    category: "Tech Organizers",
+    price: 49.99,
+    rating: 4.5,
+    reviewCount: 1206,
+    image: "https://m.media-amazon.com/images/I/813ZkN5qJxL._AC_SX679_.jpg",
+    asin: "B086SRMJJP",
+    description: "Native Union Stow Organizer"
+  },
+];
 
-);
-}
+// Amazon affiliate configuration
+const AFFILIATE_ID = "businesst02d1-20";
+
+export const getAmazonUrl = (asin) => {
+  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
+};
+
+// Categories
+export const categories = {
+  "luggage": {
+    name: "Luggage",
+    slug: "luggage",
+    icon: "https://api.iconify.design/mdi/bag-suitcase.svg?color=%232563eb&width=64",
+    description: "Premium carry-on and checked luggage"
+  },
+  "backpacks": {
+    name: "Backpacks",
+    slug: "backpacks",
+    icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%232563eb&width=64",
+    description: "Professional travel backpacks"
+  },
+  "tech-organizers": {
+    name: "Tech Organizers",
+    slug: "tech-organizers",
+    icon: "https://api.iconify.design/mdi/briefcase.svg?color=%232563eb&width=64",
+    description: "Cable bags and tech pouches"
+  },
+  "charging-cables": {
+    name: "Charging Cables",
+    slug: "charging-cables",
+    icon: "https://api.iconify.design/mdi/cable-data.svg?color=%232563eb&width=64",
+    description: "USB-C, Lightning, and more"
+  },
+  "power-adapters": {
+    name: "Power Adapters",
+    slug: "power-adapters",
+    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%232563eb&width=64",
+    description: "Wall chargers and USB hubs"
+  },
+  "portable-power": {
+    name: "Portable Power",
+    slug: "portable-power",
+    icon: "https://api.iconify.design/mdi/battery-charging-high.svg?color=%232563eb&width=64",
+    description: "Power banks and battery packs"
+  },
+  "neck-pillows": {
+    name: "Neck Pillows",
+    slug: "neck-pillows",
+    icon: "https://api.iconify.design/mdi/pillow.svg?color=%232563eb&width=64",
+    description: "Travel comfort and support"
+  },
+  "packing-cubes": {
+    name: "Packing Cubes",
+    slug: "packing-cubes",
+    icon: "https://api.iconify.design/mdi/package-variant.svg?color=%232563eb&width=64",
+    description: "Compression bags and organizers"
+  },
+  "laptop-sleeves": {
+    name: "Laptop Sleeves",
+    slug: "laptop-sleeves",
+    icon: "https://api.iconify.design/mdi/laptop.svg?color=%232563eb&width=64",
+    description: "Protective laptop cases"
+  },
+  "travel-adapters": {
+    name: "Travel Adapters",
+    slug: "travel-adapters",
+    icon: "https://api.iconify.design/mdi/earth.svg?color=%232563eb&width=64",
+    description: "International plug adapters"
+  },
+  "headphones": {
+    name: "Headphones",
+    slug: "headphones",
+    icon: "https://api.iconify.design/mdi/headphones.svg?color=%232563eb&width=64",
+    description: "Noise-canceling and wireless earbuds"
+  }
+};
+
+// Helper functions
+export const getProductsByCategory = (categorySlug) => {
+  return products.filter(p => p.category.toLowerCase().replace(/\s+/g, '-') === categorySlug);
+};
+
+export const getProduct = (id) => {
+  return products.find(p => p.id === parseInt(id));
+};
+
+export const getFeaturedProducts = (limit = 6) => {
+  return products.slice(0, limit);
+};
+
+export const getCategories = () => {
+  return Object.values(categories);
+};
