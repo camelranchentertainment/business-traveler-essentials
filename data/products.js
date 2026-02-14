@@ -1,5 +1,5 @@
 // Auto-generated from products-database.xlsx
-// 47 PRODUCTS ACROSS 5 COMPLETE CATEGORIES!
+// 56 PRODUCTS ACROSS 6 COMPLETE CATEGORIES!
 
 export const products = [
   {
@@ -504,7 +504,7 @@ export const products = [
     price: 19.99,
     rating: 4.6,
     reviewCount: 2705,
-    image: "https://m.media-amazon.com/images/I/71W8m5+rwXL._AC_SL1500_.jpg5",
+    image: "https://m.media-amazon.com/images/I/71W8m5+rwXL._AC_SL1500_.jpg",
     asin: "B07W4GJLGY",
     description: "LENCENT Universal Travel Adapter"
   },
@@ -517,7 +517,106 @@ export const products = [
     reviewCount: 622,
     image: "https://m.media-amazon.com/images/I/71gchm4SX2L._AC_SL1500_.jpg",
     asin: "B0D61QHHGQ",
-    description: "Syncwire International Adapter 65W"
+    description: "LENCENT 140W International Travel Adapter, GaN Universal Travel Adapter with 1 USB-A & 3 Type C Power Adapter"
+  },
+  {
+    id: 48,
+    name: "Anker 737 Power Bank 24,000mAh 140W",
+    category: "Portable Power",
+    price: 109.0,
+    rating: 4.4,
+    reviewCount: 16338,
+    image: "https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SL1500_.jpg",
+    asin: "B09VPHVT2Z",
+    description: "Anker 737 Power Bank 24,000mAh 140W"
+  },
+  {
+    id: 49,
+    name: "Anker Laptop Power Bank 25,000mAh 165W Built-In Cables",
+    category: "Portable Power",
+    price: 104.99,
+    rating: 4.6,
+    reviewCount: 7328,
+    image: "https://m.media-amazon.com/images/I/71jJ792398L._AC_SL1500_.jpg",
+    asin: "B0DMDJBCDP",
+    description: "Anker Laptop Power Bank 25,000mAh 165W Built-In Cables"
+  },
+  {
+    id: 50,
+    name: "Anker Prime Power Bank 20,000mAh 200W",
+    category: "Portable Power",
+    price: 134.99,
+    rating: 4.6,
+    reviewCount: 194,
+    image: "https://m.media-amazon.com/images/I/61B8Mnv4zHL._AC_SL1500_.jpg",
+    asin: "B0F66NH2ZX",
+    description: "Anker Prime Power Bank 20,000mAh 200W"
+  },
+  {
+    id: 51,
+    name: "Anker Nano Power Bank 10,000mAh Built-In Cable",
+    category: "Portable Power",
+    price: 35.99,
+    rating: 4.5,
+    reviewCount: 8827,
+    image: "https://m.media-amazon.com/images/I/614OfiBkyZL._AC_SL1500_.jpg",
+    asin: "B0C9CJKCH3",
+    description: "Anker Nano Power Bank 10,000mAh Built-In Cable"
+  },
+  {
+    id: 52,
+    name: "INIU Portable Charger 10,000mAh 65W",
+    category: "Portable Power",
+    price: 69.29,
+    rating: 4.5,
+    reviewCount: 2695,
+    image: "https://m.media-amazon.com/images/I/51TvmwF7ANL._AC_SL1150_.jpg",
+    asin: "B0CB1FWNMK",
+    description: "INIU Portable Charger 10,000mAh 65W"
+  },
+  {
+    id: 53,
+    name: "Baseus Blade 20,000mAh 100W Laptop Power Bank",
+    category: "Portable Power",
+    price: 59.99,
+    rating: 4.4,
+    reviewCount: 283,
+    image: "https://m.media-amazon.com/images/I/718WRpst61L._AC_SL1500_.jpg",
+    asin: "B0DK8V9LSV",
+    description: "Baseus Blade 20,000mAh 100W Laptop Power Bank"
+  },
+  {
+    id: 54,
+    name: "UGREEN 25,000mAh Portable Charger 145W",
+    category: "Portable Power",
+    price: 65.99,
+    rating: 4.4,
+    reviewCount: 5862,
+    image: "https://m.media-amazon.com/images/I/51yVTpKih8L._AC_SL1500_.jpg",
+    asin: "B0BJQ7F16T",
+    description: "UGREEN 25,000mAh Portable Charger 145W"
+  },
+  {
+    id: 55,
+    name: "Anker MagGo Power Bank 10,000mAh Qi2 Wireless",
+    category: "Portable Power",
+    price: 79.86,
+    rating: 4.5,
+    reviewCount: 6031,
+    image: "https://m.media-amazon.com/images/I/618crocn6IL._AC_SL1500_.jpg",
+    asin: "B0D7DKJ75M",
+    description: "Anker MagGo Power Bank 10,000mAh Qi2 Wireless"
+  },
+  {
+    id: 56,
+    name: "Mophie Powerstation XXL 20,000mAh USB-C PD",
+    category: "Portable Power",
+    price: 59.95,
+    rating: 4.3,
+    reviewCount: 579,
+    image: "https://m.media-amazon.com/images/I/71E5yD659wL._AC_SL1500_.jpg",
+    asin: "B0DY2JYCG1",
+    description: "Mophie Powerstation XXL 20,000mAh USB-C PD"
   },
 ];
 
