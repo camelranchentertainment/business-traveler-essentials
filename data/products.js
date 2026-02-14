@@ -584,12 +584,6 @@ export const categories = {
     icon: "https://api.iconify.design/mdi/laptop.svg?color=%232563eb&width=64",
     description: "Protective laptop cases"
   },
-  "travel-adapters": {
-    name: "Travel Adapters",
-    slug: "travel-adapters",
-    icon: "https://api.iconify.design/mdi/earth.svg?color=%232563eb&width=64",
-    description: "International plug adapters"
-  },
   "headphones": {
     name: "Headphones",
     slug: "headphones",
