@@ -144,9 +144,10 @@ export default function Home() {
                 <Link href="/category/charging-cables">
                   <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1591290619762-c588cf8729a5?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/61H3u4lvD0L._AC_SX466_.jpg"
                       alt="Charging Cables"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
