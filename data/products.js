@@ -71,7 +71,7 @@ export const products = [
   },
   {
     id: 7,
-    name: "Monos Carry-On Pro Plus Luggage 23"",
+    name: "Monos Carry-On Pro Plus Luggage 23\"",
     category: "Luggage",
     price: 315.0,
     rating: 0.0,
@@ -82,7 +82,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "July Carry On Pro - 20" Hardshell with Front Pocket",
+    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
     category: "Luggage",
     price: 325.0,
     rating: 4.5,
@@ -210,7 +210,7 @@ export const products = [
     reviewCount: 6295,
     image: "https://m.media-amazon.com/images/I/81It0IIEVLL._AC_SL1500_.jpg",
     asin: "B0CNBCZGRZ",
-    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16" Laptop Sleeve, 2 Water Bottle Pockets"
+    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16\" Laptop Sleeve, 2 Water Bottle Pockets"
   },
   {
     id: 20,
@@ -1016,13 +1016,6 @@ export const products = [
     description: "Anker Soundcore Liberty 4 NC Earbuds"
   }
 ];
-
-// Amazon affiliate configuration
-const AFFILIATE_ID = "businesst02d1-20";
-
-export const getAmazonUrl = (asin) => {
-  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
-};
 // Categories
 export const categories = {
   "luggage": {
