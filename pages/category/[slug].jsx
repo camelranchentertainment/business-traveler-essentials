@@ -78,7 +78,7 @@ export default function CategoryPage({ category, products }) {
               <div className="mt-6 flex items-center space-x-2 text-blue-100">
                 <span>{products.length} products</span>
                 <span>•</span>
-                <span>All 4.5+ star rated</span>
+                <span>All 4.0+ star rated</span>
               </div>
             </div>
           </section>
@@ -114,7 +114,7 @@ export default function CategoryPage({ category, products }) {
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">✓</span>
-                    <span>Rated 4.5 stars or higher with thousands of verified reviews</span>
+                    <span>Rated 4.0 stars or higher with thousands of verified reviews</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-400 mr-2">✓</span>
