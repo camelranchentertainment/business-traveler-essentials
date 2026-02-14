@@ -1,5 +1,5 @@
 // Auto-generated from products-database.xlsx
-// 38 PRODUCTS: Luggage, Backpacks, Tech Organizers, Charging Cables!
+// 47 PRODUCTS ACROSS 5 COMPLETE CATEGORIES!
 
 export const products = [
   {
@@ -419,6 +419,105 @@ export const products = [
     image: "https://m.media-amazon.com/images/I/61Yf3-RkvkL._AC_SL1500_.jpg",
     asin: "B0DT59DB6M",
     description: "USB C Splitter with 100W Fast Charging, Dual USB C Headphone and Charger Adapter Dongle for iPhone 16/15 Series, iPad, MacBook, Galaxy S24/S23 and More"
+  },
+  {
+    id: 39,
+    name: "Anker 735 GaNPrime 65W 3-Port Charger",
+    category: "Power Adapters",
+    price: 29.99,
+    rating: 4.7,
+    reviewCount: 19814,
+    image: "https://m.media-amazon.com/images/I/5164giE9fFL._AC_SX522_.jpg",
+    asin: "B09C5RG6KV",
+    description: "Anker 735 GaNPrime 65W 3-Port Charger"
+  },
+  {
+    id: 40,
+    name: "Anker Prime 100W GaN Wall Charger 3-Port",
+    category: "Power Adapters",
+    price: 49.99,
+    rating: 4.7,
+    reviewCount: 287,
+    image: "https://m.media-amazon.com/images/I/71vOwOXaTFL._AC_SX466_.jpg",
+    asin: "B0FB8QB54F",
+    description: "Anker Prime 100W GaN Wall Charger 3-Port"
+  },
+  {
+    id: 41,
+    name: "UGREEN Nexode 100W USB-C Charger 4-Port GaN",
+    category: "Power Adapters",
+    price: 42.99,
+    rating: 4.6,
+    reviewCount: 9835,
+    image: "https://m.media-amazon.com/images/I/516szWmX2ZL._AC_SX679_.jpg",
+    asin: "B091Z6JNX4",
+    description: "UGREEN Nexode 100W USB-C Charger 4-Port GaN"
+  },
+  {
+    id: 42,
+    name: "EPICKA Universal Travel Adapter TA-105",
+    category: "Power Adapters",
+    price: 16.99,
+    rating: 4.7,
+    reviewCount: 18200,
+    image: "https://m.media-amazon.com/images/I/719wxSGCE0L._AC_SX466_.jpg",
+    asin: "B0B8SLNBDP",
+    description: "EPICKA Universal Travel Adapter TA-105"
+  },
+  {
+    id: 43,
+    name: "TESSAN Universal Travel Adapter USB-C",
+    category: "Power Adapters",
+    price: 20.89,
+    rating: 4.7,
+    reviewCount: 343,
+    image: "https://m.media-amazon.com/images/I/71oOcgxnELL._AC_SX466_.jpg",
+    asin: "B0FSKNG3Q1",
+    description: "TESSAN Universal Travel Adapter USB-C"
+  },
+  {
+    id: 44,
+    name: "NEWVANGA International Travel Adapter",
+    category: "Power Adapters",
+    price: 16.99,
+    rating: 4.5,
+    reviewCount: 14084,
+    image: "https://m.media-amazon.com/images/I/71YnMcePa8L._AC_SX679_.jpg",
+    asin: "B01FO4W5W2",
+    description: "NEWVANGA International Travel Adapter"
+  },
+  {
+    id: 45,
+    name: "Anker 727 Charging Station 100W",
+    category: "Power Adapters",
+    price: 49.99,
+    rating: 4.6,
+    reviewCount: 1927,
+    image: "https://m.media-amazon.com/images/I/61m-MNbBWeL._AC_SL1500_.jpg",
+    asin: "B09SG31NPT",
+    description: "Anker 727 Charging Station 100W"
+  },
+  {
+    id: 46,
+    name: "LENCENT Universal Travel Adapter",
+    category: "Power Adapters",
+    price: 19.99,
+    rating: 4.6,
+    reviewCount: 2705,
+    image: "https://m.media-amazon.com/images/I/71W8m5+rwXL._AC_SL1500_.jpg5",
+    asin: "B07W4GJLGY",
+    description: "LENCENT Universal Travel Adapter"
+  },
+  {
+    id: 47,
+    name: "LENCENT 140W International Travel Adapter, GaN Universal Travel Adapter with 1 USB-A & 3 Type C Power Adapter",
+    category: "Power Adapters",
+    price: 75.04,
+    rating: 4.5,
+    reviewCount: 622,
+    image: "https://m.media-amazon.com/images/I/71gchm4SX2L._AC_SL1500_.jpg",
+    asin: "B0D61QHHGQ",
+    description: "Syncwire International Adapter 65W"
   },
 ];
 
