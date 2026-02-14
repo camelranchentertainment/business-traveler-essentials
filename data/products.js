@@ -830,61 +830,61 @@ export const categories = {
   "luggage": {
     name: "Luggage",
     slug: "luggage",
-    icon: "https://api.iconify.design/mdi/bag-suitcase.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🧳%3C/text%3E%3C/svg%3E",
     description: "Premium carry-on and checked luggage"
   },
   "backpacks": {
     name: "Backpacks",
     slug: "backpacks",
-    icon: "https://api.iconify.design/mdi/bag-personal.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎒%3C/text%3E%3C/svg%3E",
     description: "Professional travel backpacks"
   },
   "tech-organizers": {
     name: "Tech Organizers",
     slug: "tech-organizers",
-    icon: "https://api.iconify.design/mdi/briefcase.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💼%3C/text%3E%3C/svg%3E",
     description: "Cable bags and tech pouches"
   },
   "charging-cables": {
     name: "Charging Cables",
     slug: "charging-cables",
-    icon: "https://api.iconify.design/mdi/cable-data.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🔌%3C/text%3E%3C/svg%3E",
     description: "USB-C, Lightning, and more"
   },
   "power-adapters": {
     name: "Power Adapters",
     slug: "power-adapters",
-    icon: "https://api.iconify.design/mdi/power-plug.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E",
     description: "Wall chargers and USB hubs"
   },
   "portable-power": {
     name: "Portable Power",
     slug: "portable-power",
-    icon: "https://api.iconify.design/mdi/battery-charging-high.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🔋%3C/text%3E%3C/svg%3E",
     description: "Power banks and battery packs"
   },
   "neck-pillows": {
     name: "Neck Pillows",
     slug: "neck-pillows",
-    icon: "https://api.iconify.design/mdi/pillow.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💤%3C/text%3E%3C/svg%3E",
     description: "Travel comfort and support"
   },
   "packing-cubes": {
     name: "Packing Cubes",
     slug: "packing-cubes",
-    icon: "https://api.iconify.design/mdi/package-variant.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E📦%3C/text%3E%3C/svg%3E",
     description: "Compression bags and organizers"
   },
   "laptop-sleeves": {
     name: "Laptop Sleeves",
     slug: "laptop-sleeves",
-    icon: "https://api.iconify.design/mdi/laptop.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E",
     description: "Protective laptop cases"
   },
   "headphones": {
     name: "Headphones",
     slug: "headphones",
-    icon: "https://api.iconify.design/mdi/headphones.svg?color=%232563eb&width=64",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E",
     description: "Noise-canceling and wireless earbuds"
   }
 };
