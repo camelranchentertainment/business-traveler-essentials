@@ -257,9 +257,10 @@ export default function Home() {
                 <Link href="/category/laptop-sleeves">
                   <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SL1500_.jpg"
                       alt="Laptop Sleeves"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
@@ -282,16 +283,17 @@ export default function Home() {
                 <Link href="/category/headphones">
                   <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1545127398-14699f92334b?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg"
                       alt="Headphones"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
                     <div className="absolute inset-0 flex items-end p-8">
                       <div>
                         <h3 className="text-3xl font-bold text-white mb-2">Headphones</h3>
-                        <p className="text-gray-200 text-sm">Noise-canceling and wireless earbuds</p>
+                        <p className="text-gray-200 text-sm">Noise-canceling headphones and earbuds</p>
                       </div>
                     </div>
                     
