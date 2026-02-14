@@ -205,9 +205,10 @@ export default function Home() {
                 <Link href="/category/neck-pillows">
                   <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/51193RXQ1SL._AC_SL1080_.jpg"
                       alt="Neck Pillows"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
@@ -230,9 +231,10 @@ export default function Home() {
                 <Link href="/category/packing-cubes">
                   <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/91czenj1oWL._AC_SX679_.jpg"
                       alt="Packing Cubes"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
