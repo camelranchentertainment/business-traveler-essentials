@@ -1,5 +1,6 @@
-// Auto-generated from products-database.xlsx
-// 74 PRODUCTS ACROSS 8 COMPLETE CATEGORIES!
+// Product Database - Business Traveler Essentials
+// Generated from products-database.xlsx
+// Last updated: February 14, 2026
 
 export const products = [
   {
@@ -70,7 +71,7 @@ export const products = [
   },
   {
     id: 7,
-    name: "Monos Carry-On Pro Plus Luggage 23\"",
+    name: "Monos Carry-On Pro Plus Luggage 23"",
     category: "Luggage",
     price: 315.0,
     rating: 0.0,
@@ -81,7 +82,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
+    name: "July Carry On Pro - 20" Hardshell with Front Pocket",
     category: "Luggage",
     price: 325.0,
     rating: 4.5,
@@ -209,7 +210,7 @@ export const products = [
     reviewCount: 6295,
     image: "https://m.media-amazon.com/images/I/81It0IIEVLL._AC_SL1500_.jpg",
     asin: "B0CNBCZGRZ",
-    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16\" Laptop Sleeve, 2 Water Bottle Pockets"
+    description: "Everyday Laptop Backpack - Daypack, Water Repellent, 16" Laptop Sleeve, 2 Water Bottle Pockets"
   },
   {
     id: 20,
@@ -816,6 +817,204 @@ export const products = [
     asin: "B0BKQFQN16",
     description: "Osprey Ultralight Packing Cube Set"
   },
+  {
+    id: 75,
+    name: "MOSISO Laptop Sleeve 13-inch Polyester",
+    category: "Laptop Sleeves",
+    price: 15.99,
+    rating: 4.7,
+    reviewCount: 58263,
+    image: "https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SL1500_.jpg",
+    asin: "B01N6M1Y9N",
+    description: "MOSISO Laptop Sleeve 13-inch Polyester"
+  },
+  {
+    id: 76,
+    name: "MOSISO Laptop Sleeve 13-inch Neoprene",
+    category: "Laptop Sleeves",
+    price: 16.14,
+    rating: 4.6,
+    reviewCount: 42956,
+    image: "https://m.media-amazon.com/images/I/71XhnvavS5L._AC_SL1500_.jpg",
+    asin: "B07SLLLXZ3",
+    description: "MOSISO Laptop Sleeve 13-inch Neoprene"
+  },
+  {
+    id: 77,
+    name: "tomtoc 360 Protective Sleeve 14-inch",
+    category: "Laptop Sleeves",
+    price: 24.99,
+    rating: 4.7,
+    reviewCount: 25840,
+    image: "https://m.media-amazon.com/images/I/71qAy+OWIAL._AC_SL1500_.jpg",
+    asin: "B01HCF0XMU",
+    description: "tomtoc 360 Protective Sleeve 14-inch"
+  },
+  {
+    id: 78,
+    name: "tomtoc Slim Laptop Sleeve Case for 13-inch New MacBook Air M4/A3420 M3/A3113 M2/A2681, M1/A2337 2025-2018, MacBook Pro M2/M1, Water-Resistant Protective Carrying Case with Accessories Pocket",
+    category: "Laptop Sleeves",
+    price: 23.99,
+    rating: 4.8,
+    reviewCount: 607,
+    image: "https://m.media-amazon.com/images/I/819BxwyRnbL._AC_SL1500_.jpg",
+    asin: "B0C2YSKMXG",
+    description: "tomtoc Slim Laptop Sleeve Case for 13-inch New MacBook Air M4/A3420 M3/A3113 M2/A2681, M1/A2337 2025-2018, MacBook Pro M2/M1, Water-Resistant Protective Carrying Case with Accessories Pocket"
+  },
+  {
+    id: 79,
+    name: "MOSISO Laptop Sleeve 14-inch Polyester",
+    category: "Laptop Sleeves",
+    price: 16.99,
+    rating: 4.7,
+    reviewCount: 61333,
+    image: "https://m.media-amazon.com/images/I/71-1LJ816dL._AC_SL1500_.jpg",
+    asin: "B0DG8R4KMQ",
+    description: "MOSISO Laptop Sleeve 14-inch Polyester"
+  },
+  {
+    id: 80,
+    name: "tomtoc 360 Protective Sleeve 15-inch",
+    category: "Laptop Sleeves",
+    price: 24.99,
+    rating: 4.8,
+    reviewCount: 26233,
+    image: "https://m.media-amazon.com/images/I/81cy1WxSJaL._AC_SL1500_.jpg",
+    asin: "B01N0TOQEO",
+    description: "tomtoc 360 Protective Sleeve 15-inch"
+  },
+  {
+    id: 81,
+    name: "MOSISO Laptop Sleeve 15-16 inch",
+    category: "Laptop Sleeves",
+    price: 17.99,
+    rating: 4.6,
+    reviewCount: 48350,
+    image: "https://m.media-amazon.com/images/I/81QtssnUttL._AC_SL1500_.jpg",
+    asin: "B01AD15EXI",
+    description: "MOSISO Laptop Sleeve 15-16 inch"
+  },
+  {
+    id: 82,
+    name: "Amazon Basics 17.3-inch Laptop Sleeve, Protective Case with Zipper - Black",
+    category: "Laptop Sleeves",
+    price: 12.79,
+    rating: 4.6,
+    reviewCount: 113725,
+    image: "https://m.media-amazon.com/images/I/81QpTppvb0L._AC_SL1500_.jpg",
+    asin: "B00LU7BE20",
+    description: "Amazon Basics 17.3-inch Laptop Sleeve, Protective Case with Zipper - Black"
+  },
+  {
+    id: 83,
+    name: "JETech Laptop Sleeve 13-14 Inch",
+    category: "Laptop Sleeves",
+    price: 17.98,
+    rating: 4.7,
+    reviewCount: 42046,
+    image: "https://m.media-amazon.com/images/I/811T4koxurL._AC_SL1500_.jpg",
+    asin: "B076ZQQTYR",
+    description: "JETech Laptop Sleeve 13-14 Inch"
+  },
+  {
+    id: 84,
+    name: "Apple AirPods Pro 3 Wireless Earbuds",
+    category: "Headphones & Earbuds",
+    price: 249.0,
+    rating: 4.8,
+    reviewCount: 5240,
+    image: "",
+    asin: "",
+    description: "Apple AirPods Pro 3 Wireless Earbuds"
+  },
+  {
+    id: 85,
+    name: "Bose QuietComfort Ultra Earbuds 2nd Gen",
+    category: "Headphones & Earbuds",
+    price: 279.0,
+    rating: 4.6,
+    reviewCount: 8950,
+    image: "",
+    asin: "",
+    description: "Bose QuietComfort Ultra Earbuds 2nd Gen"
+  },
+  {
+    id: 86,
+    name: "Sony WF-1000XM5 Truly Wireless Earbuds",
+    category: "Headphones & Earbuds",
+    price: 279.95,
+    rating: 4.5,
+    reviewCount: 12380,
+    image: "",
+    asin: "",
+    description: "Sony WF-1000XM5 Truly Wireless Earbuds"
+  },
+  {
+    id: 87,
+    name: "Sony WH-1000XM6 Wireless Headphones",
+    category: "Headphones & Earbuds",
+    price: 398.0,
+    rating: 4.7,
+    reviewCount: 3250,
+    image: "",
+    asin: "",
+    description: "Sony WH-1000XM6 Wireless Headphones"
+  },
+  {
+    id: 88,
+    name: "Bose QuietComfort Ultra Headphones",
+    category: "Headphones & Earbuds",
+    price: 379.0,
+    rating: 4.6,
+    reviewCount: 11420,
+    image: "",
+    asin: "",
+    description: "Bose QuietComfort Ultra Headphones"
+  },
+  {
+    id: 89,
+    name: "Sennheiser MOMENTUM True Wireless 4",
+    category: "Headphones & Earbuds",
+    price: 299.95,
+    rating: 4.4,
+    reviewCount: 2680,
+    image: "",
+    asin: "",
+    description: "Sennheiser MOMENTUM True Wireless 4"
+  },
+  {
+    id: 90,
+    name: "Sony WF-C710N Noise Canceling Earbuds",
+    category: "Headphones & Earbuds",
+    price: 119.99,
+    rating: 4.5,
+    reviewCount: 8750,
+    image: "",
+    asin: "",
+    description: "Sony WF-C710N Noise Canceling Earbuds"
+  },
+  {
+    id: 91,
+    name: "Beats Studio Buds Plus Earbuds",
+    category: "Headphones & Earbuds",
+    price: 169.95,
+    rating: 4.6,
+    reviewCount: 28500,
+    image: "",
+    asin: "",
+    description: "Beats Studio Buds Plus Earbuds"
+  },
+  {
+    id: 92,
+    name: "Anker Soundcore Liberty 4 NC Earbuds",
+    category: "Headphones & Earbuds",
+    price: 99.99,
+    rating: 4.4,
+    reviewCount: 15680,
+    image: "",
+    asin: "",
+    description: "Anker Soundcore Liberty 4 NC Earbuds"
+  }
 ];
 
 // Amazon affiliate configuration
@@ -824,7 +1023,6 @@ const AFFILIATE_ID = "businesst02d1-20";
 export const getAmazonUrl = (asin) => {
   return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
 };
-
 // Categories
 export const categories = {
   "luggage": {
@@ -885,23 +1083,17 @@ export const categories = {
     name: "Headphones",
     slug: "headphones",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E",
-    description: "Noise-canceling and wireless earbuds"
+    description: "Noise-canceling headphones and earbuds"
   }
 };
 
 // Helper functions
 export const getProductsByCategory = (categorySlug) => {
-  return products.filter(p => p.category.toLowerCase().replace(/\s+/g, '-') === categorySlug);
+  const categoryName = categories[categorySlug]?.name;
+  if (!categoryName) return [];
+  return products.filter(product => product.category === categoryName || product.category === categoryName.replace(" ", " & "));
 };
 
-export const getProduct = (id) => {
-  return products.find(p => p.id === parseInt(id));
-};
-
-export const getFeaturedProducts = (limit = 6) => {
-  return products.slice(0, limit);
-};
-
-export const getCategories = () => {
-  return Object.values(categories);
+export const getProductById = (id) => {
+  return products.find(product => product.id === parseInt(id));
 };
