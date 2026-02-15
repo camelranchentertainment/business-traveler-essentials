@@ -304,7 +304,7 @@ export default function Home() {
                 <Link href="/category/computer-mouse">
                   <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://m.media-amazon.com/images/I/71VhYvKceUL._AC_SX679_.jpg"
+                      src="https://m.media-amazon.com/images/I/61+OT7FPABL._AC_SL1500_.jpg"
                       alt="Computer Mouse"
                       className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
@@ -330,7 +330,7 @@ export default function Home() {
                 <Link href="/category/portable-monitors">
                   <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://m.media-amazon.com/images/I/71WK5yp3IgL._AC_SX679_.jpg"
+                      src="https://m.media-amazon.com/images/I/61prlzCQqlL._AC_SL1400_.jpg"
                       alt="Portable Monitors"
                       className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
