@@ -11,7 +11,7 @@ export const products = [
     price: 139.99,
     rating: 4.8,
     reviewCount: 15200,
-    image: "https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/81UKNDaQDkL._AC_SL1500_.jpg",
     asin: "B01M0A3BKH",
     description: "Lightweight hardside spinner with 10-year warranty"
   },
@@ -33,7 +33,7 @@ export const products = [
     price: 895.0,
     rating: 4.9,
     reviewCount: 1200,
-    image: "https://m.media-amazon.com/images/I/81UKNDaQDkL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg",
     asin: "B07MQWFCHC",
     description: "Premium ballistic nylon with USB port"
   },
