@@ -1,101 +1,155 @@
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
-import { categories } from '../data/products';
+import { useRouter } from 'next/router';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const router = useRouter();
+
+  // Close mobile menu when route changes (auto-close on selection)
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setMobileMenuOpen(false);
+    };
+
+    router.events.on('routeChangeStart', handleRouteChange);
+    
+    return () => {
+      router.events.off('routeChangeStart', handleRouteChange);
+    };
+  }, [router]);
+
+  // Close menu when clicking a link
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm backdrop-blur-sm bg-white/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl">✈️</span>
-            <span className="font-bold text-xl text-gray-900">
-              Business Traveler Essentials
-            </span>
+          <Link href="/">
+            <div className="flex items-center cursor-pointer group">
+              <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-blue-700 group-hover:to-indigo-700 transition-all duration-300">
+                Business Traveler Essentials
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Home
+          <div className="hidden md:flex items-center space-x-8">
+            <Link href="/">
+              <span className={`text-sm font-medium transition-colors cursor-pointer ${
+                router.pathname === '/' 
+                  ? 'text-blue-600' 
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}>
+                Home
+              </span>
             </Link>
-            
-            {/* Categories Dropdown */}
-            <div className="relative group">
-              <button className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                Categories ▾
-              </button>
-              <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100">
-                {Object.values(categories).map((category) => (
-                  <Link
-                    key={category.slug}
-                    href={`/category/${category.slug}`}
-                    className="block px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100 last:border-b-0"
-                  >
-                    <div className="flex items-center space-x-3">
-                      <img src={category.icon} alt={category.name} className="w-8 h-8" />
-                      <div>
-                        <div className="font-medium text-gray-900">{category.name}</div>
-                        <div className="text-xs text-gray-600">{category.description.substring(0, 40)}...</div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              About
+            <Link href="/about">
+              <span className={`text-sm font-medium transition-colors cursor-pointer ${
+                router.pathname === '/about' 
+                  ? 'text-blue-600' 
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}>
+                About
+              </span>
             </Link>
-            
-            <Link href="/travel-tips" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Travel Tips
+            <Link href="/travel-tips">
+              <span className={`text-sm font-medium transition-colors cursor-pointer ${
+                router.pathname === '/travel-tips' 
+                  ? 'text-blue-600' 
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}>
+                Travel Tips
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span className={`text-sm font-medium transition-colors cursor-pointer ${
+                router.pathname === '/contact' 
+                  ? 'text-blue-600' 
+                  : 'text-gray-600 hover:text-blue-600'
+              }`}>
+                Contact
+              </span>
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <button
-            className="md:hidden text-gray-700"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <div className="md:hidden">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-lg text-gray-600 hover:text-blue-600 hover:bg-gray-50 transition-all"
+              aria-expanded={mobileMenuOpen}
+            >
+              <span className="sr-only">Open main menu</span>
+              {!mobileMenuOpen ? (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              ) : (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - auto-closes when you select an item */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
-          <div className="px-4 py-3 space-y-3">
-            <Link href="/" className="block py-2 text-gray-700 hover:text-blue-600 font-medium">
-              Home
+        <div className="md:hidden border-t border-gray-100 bg-white">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            <Link href="/">
+              <span 
+                onClick={handleLinkClick}
+                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                  router.pathname === '/' 
+                    ? 'text-blue-600 bg-blue-50' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                Home
+              </span>
             </Link>
-            
-            <div className="border-t border-gray-200 pt-3">
-              <div className="text-sm font-semibold text-gray-500 mb-2">Categories</div>
-              {Object.values(categories).map((category) => (
-                <Link
-                  key={category.slug}
-                  href={`/category/${category.slug}`}
-                  className="flex items-center space-x-2 py-2 pl-4 text-gray-700 hover:text-blue-600"
-                >
-                  <img src={category.icon} alt={category.name} className="w-6 h-6" />
-                  <span>{category.name}</span>
-                </Link>
-              ))}
-            </div>
-
-            <Link href="/about" className="block py-2 text-gray-700 hover:text-blue-600 font-medium border-t border-gray-200 pt-3">
-              About
+            <Link href="/about">
+              <span 
+                onClick={handleLinkClick}
+                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                  router.pathname === '/about' 
+                    ? 'text-blue-600 bg-blue-50' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                About
+              </span>
             </Link>
-            
-            <Link href="/travel-tips" className="block py-2 text-gray-700 hover:text-blue-600 font-medium">
-              Travel Tips
+            <Link href="/travel-tips">
+              <span 
+                onClick={handleLinkClick}
+                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                  router.pathname === '/travel-tips' 
+                    ? 'text-blue-600 bg-blue-50' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                Travel Tips
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span 
+                onClick={handleLinkClick}
+                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                  router.pathname === '/contact' 
+                    ? 'text-blue-600 bg-blue-50' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                }`}
+              >
+                Contact
+              </span>
             </Link>
           </div>
         </div>
