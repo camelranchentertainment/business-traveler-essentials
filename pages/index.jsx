@@ -299,6 +299,58 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
+
+                {/* Computer Mouse Category */}
+                <Link href="/category/computer-mouse">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71VhYvKceUL._AC_SX679_.jpg"
+                      alt="Computer Mouse"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
+                      <div>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Computer Mouse</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Wireless mice for productivity</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Portable Monitors Category */}
+                <Link href="/category/portable-monitors">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                    <img 
+                      src="https://m.media-amazon.com/images/I/71WK5yp3IgL._AC_SX679_.jpg"
+                      alt="Portable Monitors"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+                    
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
+                      <div>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Portable Monitors</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Portable displays for dual-screen productivity</p>
+                      </div>
+                    </div>
+                    
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </section>
