@@ -1,7 +1,5 @@
-// Product Database - Business Traveler Essentials
-// Generated from products-database.xlsx
-// Last updated: February 14, 2026
-// Total Products: 92 across 10 categories
+// Business Traveler Essentials - Product Database
+// Total Products: 112
 
 export const products = [
   {
@@ -11,7 +9,7 @@ export const products = [
     price: 139.99,
     rating: 4.8,
     reviewCount: 15200,
-    image: "https://m.media-amazon.com/images/I/81UKNDaQDkL._AC_SL1500_.jpg",
+    image: "https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg",
     asin: "B01M0A3BKH",
     description: "Lightweight hardside spinner with 10-year warranty"
   },
@@ -33,7 +31,7 @@ export const products = [
     price: 895.0,
     rating: 4.9,
     reviewCount: 1200,
-    image: "https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/81UKNDaQDkL._AC_SL1500_.jpg",
     asin: "B07MQWFCHC",
     description: "Premium ballistic nylon with USB port"
   },
@@ -72,7 +70,7 @@ export const products = [
   },
   {
     id: 7,
-    name: "Monos Carry-On Pro Plus Luggage 23\"",
+    name: "Monos Carry-On Pro Plus Luggage 23"",
     category: "Luggage",
     price: 315.0,
     rating: 0.0,
@@ -83,7 +81,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
+    name: "July Carry On Pro - 20" Hardshell with Front Pocket",
     category: "Luggage",
     price: 325.0,
     rating: 4.5,
@@ -1023,7 +1021,7 @@ export const products = [
     price: 99.99,
     rating: 4.7,
     reviewCount: 8500,
-    image: "https://m.media-amazon.com/images/I/71VhYvKceUL._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/61+OT7FPABL._AC_SL1500_.jpg",
     asin: "B09HM94VDS",
     description: "Ergonomic wireless mouse with quiet clicks and 8K DPI sensor"
   },
@@ -1031,11 +1029,11 @@ export const products = [
     id: 94,
     name: "Logitech MX Anywhere 3 Compact Mouse",
     category: "Computer Mouse",
-    price: 79.99,
+    price: 74.99,
     rating: 4.6,
     reviewCount: 12400,
-    image: "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SX679_.jpg",
-    asin: "B08FVTCVF8",
+    image: "https://m.media-amazon.com/images/I/61Hotz8r3bL._AC_SL1500_.jpg",
+    asin: "B0CVFJ1YSX",
     description: "Compact wireless mouse perfect for travel with USB-C charging"
   },
   {
@@ -1045,8 +1043,8 @@ export const products = [
     price: 79.99,
     rating: 4.4,
     reviewCount: 3200,
-    image: "https://m.media-amazon.com/images/I/41KdZbwCsQL._AC_SX679_.jpg",
-    asin: "B0CKLNZK2W",
+    image: "https://m.media-amazon.com/images/I/51wB+xEqJAL._AC_SL1500_.jpg",
+    asin: "B0DZ4YJS2F",
     description: "Ultra-slim foldable mouse that flattens for travel"
   },
   {
@@ -1056,7 +1054,7 @@ export const products = [
     price: 69.99,
     rating: 4.5,
     reviewCount: 4800,
-    image: "https://m.media-amazon.com/images/I/61dtb+gJ4WL._AC_SX679_.jpg",
+    image: "https://m.media-amazon.com/images/I/61OkuiCWbDL._AC_SL1500_.jpg",
     asin: "B09J1TB35S",
     description: "Vertical ergonomic design reduces wrist strain during long work sessions"
   },
@@ -1067,19 +1065,19 @@ export const products = [
     price: 79.99,
     rating: 4.3,
     reviewCount: 1800,
-    image: "https://m.media-amazon.com/images/I/61gC1j7OYCL._AC_SX679_.jpg",
-    asin: "B08PPHM82K",
+    image: "https://m.media-amazon.com/images/I/417ZShh5RCL._AC_SL1500_.jpg",
+    asin: "B09J6RF5TV",
     description: "Professional wireless mouse with 8 programmable buttons"
   },
   {
     id: 98,
     name: "Apple Magic Mouse",
     category: "Computer Mouse",
-    price: 79.00,
+    price: 79.0,
     rating: 4.5,
     reviewCount: 15600,
-    image: "https://m.media-amazon.com/images/I/51NOrd8wfBL._AC_SX679_.jpg",
-    asin: "B09BRHD3SG",
+    image: "https://m.media-amazon.com/images/I/31q4gGvBRiL._AC_SL1144_.jpg",
+    asin: "B0DL72PK1P",
     description: "Multi-touch surface mouse for Mac users"
   },
   {
@@ -1089,8 +1087,8 @@ export const products = [
     price: 24.99,
     rating: 4.5,
     reviewCount: 28000,
-    image: "https://m.media-amazon.com/images/I/61xJkJSRNNL._AC_SX679_.jpg",
-    asin: "B084SX7HPR",
+    image: "https://m.media-amazon.com/images/I/51FpHTYu+VL._AC_SL1500_.jpg",
+    asin: "B0BT4GFFGR",
     description: "Slim, quiet wireless mouse perfect for travel"
   },
   {
@@ -1100,8 +1098,8 @@ export const products = [
     price: 29.99,
     rating: 4.3,
     reviewCount: 2100,
-    image: "https://m.media-amazon.com/images/I/51rX0wn7nwL._AC_SX679_.jpg",
-    asin: "B08PBX7ZGF",
+    image: "https://m.media-amazon.com/images/I/61yhJuYUoEL._AC_SL1500_.jpg",
+    asin: "B083V5NZ4M",
     description: "Comfortable wireless mouse with long battery life"
   },
   {
@@ -1111,8 +1109,8 @@ export const products = [
     price: 99.99,
     rating: 4.2,
     reviewCount: 890,
-    image: "https://m.media-amazon.com/images/I/61b8fEtVmYL._AC_SX679_.jpg",
-    asin: "B09XGWB7G6",
+    image: "https://m.media-amazon.com/images/I/51cpV2vagkL._AC_SL1000_.jpg",
+    asin: "B08YNNLXRN",
     description: "Premium wireless mouse designed for creators and professionals"
   },
   {
@@ -1122,118 +1120,118 @@ export const products = [
     price: 39.99,
     rating: 4.5,
     reviewCount: 19200,
-    image: "https://m.media-amazon.com/images/I/61mp4GF923L._AC_SX679_.jpg",
-    asin: "B01LF37K80",
+    image: "https://m.media-amazon.com/images/I/51pMqozCpML._AC_SL1500_.jpg",
+    asin: "B087Z6LSHW",
     description: "Multi-device wireless mouse switches between 3 computers"
   },
   {
     id: 103,
-    name: "ASUS ZenScreen 15.6\" Portable Monitor",
+    name: "ASUS ZenScreen 15.6" Portable Monitor",
     category: "Portable Monitors",
-    price: 249.99,
+    price: 159.0,
     rating: 4.5,
     reviewCount: 5600,
-    image: "https://m.media-amazon.com/images/I/71WK5yp3IgL._AC_SX679_.jpg",
-    asin: "B0CRTBHJFQ",
+    image: "https://m.media-amazon.com/images/I/61prlzCQqlL._AC_SL1400_.jpg",
+    asin: "B0966YYP65",
     description: "Full HD IPS portable monitor with USB-C connectivity"
   },
   {
     id: 104,
-    name: "ARZOPA 15.6\" Portable Monitor",
+    name: "ARZOPA 15.6" Portable Monitor",
     category: "Portable Monitors",
     price: 99.99,
     rating: 4.4,
     reviewCount: 8200,
-    image: "https://m.media-amazon.com/images/I/71gEMhGB6LL._AC_SX679_.jpg",
-    asin: "B0CJQ6K3R3",
+    image: "https://m.media-amazon.com/images/I/71OPl1iOTBL._AC_SL1465_.jpg",
+    asin: "B0CH9XW8RK",
     description: "1080P FHD portable display with USB-C and HDMI"
   },
   {
     id: 105,
-    name: "ViewSonic VG1655 15.6\" Portable Monitor",
+    name: "ViewSonic VG1655 15.6" Portable Monitor",
     category: "Portable Monitors",
     price: 199.99,
     rating: 4.3,
     reviewCount: 1200,
-    image: "https://m.media-amazon.com/images/I/71O05G9tV-L._AC_SX679_.jpg",
-    asin: "B09FJXPG47",
+    image: "https://m.media-amazon.com/images/I/61S1112+XYL._AC_SL1500_.jpg",
+    asin: "B087792CQT",
     description: "Professional portable monitor with ergonomic stand"
   },
   {
     id: 106,
     name: "Lenovo ThinkVision M14 Portable Monitor",
     category: "Portable Monitors",
-    price: 199.00,
+    price: 199.0,
     rating: 4.4,
     reviewCount: 2800,
-    image: "https://m.media-amazon.com/images/I/71yYCyG1mKL._AC_SX679_.jpg",
-    asin: "B08KRDSM8Y",
+    image: "https://m.media-amazon.com/images/I/61cJ4UT2e0L._AC_SL1200_.jpg",
+    asin: "B07YX5NKK2",
     description: "14-inch FHD portable monitor with USB-C power delivery"
   },
   {
     id: 107,
-    name: "Dell C1422H 14\" Portable Monitor",
+    name: "Dell C1422H 14" Portable Monitor",
     category: "Portable Monitors",
-    price: 279.99,
+    price: 240.0,
     rating: 4.3,
     reviewCount: 890,
-    image: "https://m.media-amazon.com/images/I/71FMHB1JxwL._AC_SX679_.jpg",
-    asin: "B08KTXJW61",
+    image: "https://m.media-amazon.com/images/I/71LYUmeO7LL._AC_SL1500_.jpg",
+    asin: "B09H59H72W",
     description: "Ultra-slim portable monitor with built-in stand"
   },
   {
     id: 108,
-    name: "UPERFECT 15.6\" Portable Monitor",
+    name: "UPERFECT 15.6" Portable Monitor",
     category: "Portable Monitors",
-    price: 139.99,
+    price: 79.99,
     rating: 4.3,
     reviewCount: 4500,
-    image: "https://m.media-amazon.com/images/I/71k1CvhDHoL._AC_SX679_.jpg",
-    asin: "B0BVJT7SKF",
+    image: "https://m.media-amazon.com/images/I/71UePqgqiML._AC_SL1500_.jpg",
+    asin: "B07TWGBG3P",
     description: "1080P portable monitor with smart cover"
   },
   {
     id: 109,
     name: "Espresso 15 Touchscreen Portable Monitor",
     category: "Portable Monitors",
-    price: 449.00,
+    price: 449.0,
     rating: 4.2,
     reviewCount: 680,
-    image: "https://m.media-amazon.com/images/I/71cC3v0PRUL._AC_SX679_.jpg",
-    asin: "B08T1WQZQZ",
+    image: "https://m.media-amazon.com/images/I/61Jh0PJxgzL._AC_SL1200_.jpg",
+    asin: "B0G76H94SY",
     description: "Premium touchscreen portable display with magnetic stand"
   },
   {
     id: 110,
-    name: "JSAUX 14\" Portable Monitor",
+    name: "JSAUX 14" Portable Monitor",
     category: "Portable Monitors",
     price: 119.99,
     rating: 4.4,
     reviewCount: 1600,
-    image: "https://m.media-amazon.com/images/I/71YWw+U6GPL._AC_SX679_.jpg",
-    asin: "B0CS4KJWQW",
+    image: "https://m.media-amazon.com/images/I/71B9CddKNtL._AC_SL1500_.jpg",
+    asin: "B0D4TLGJD2",
     description: "Compact FHD portable monitor ideal for travel"
   },
   {
     id: 111,
-    name: "HP E14 G5 14\" Portable Monitor",
+    name: "HP E14 G4 14" Portable Monitor",
     category: "Portable Monitors",
-    price: 219.00,
+    price: 229.99,
     rating: 4.3,
     reviewCount: 450,
-    image: "https://m.media-amazon.com/images/I/71fK+6fqLqL._AC_SX679_.jpg",
-    asin: "B0BXXN6G2Y",
+    image: "https://m.media-amazon.com/images/I/81vBA2R9r5S._AC_SL1500_.jpg",
+    asin: "B08LBR1DL4",
     description: "Business-grade portable monitor with privacy screen option"
   },
   {
     id: 112,
-    name: "InnoView 15.8\" Portable Monitor",
+    name: "InnoView Portable Monitor, 15.6 Inch",
     category: "Portable Monitors",
-    price: 169.99,
+    price: 59.99,
     rating: 4.4,
     reviewCount: 2300,
-    image: "https://m.media-amazon.com/images/I/716v0g55KCL._AC_SX679_.jpg",
-    asin: "B0C1MQ3S7K",
+    image: "https://m.media-amazon.com/images/I/71k5N-RKVgL._AC_SL1500_.jpg",
+    asin: "B095GG31KX",
     description: "Large portable monitor with HDR support"
   }
 ];
@@ -1269,31 +1267,31 @@ export const categories = {
     name: "Charging Cables",
     slug: "charging-cables",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🔌%3C/text%3E%3C/svg%3E",
-    description: "USB-C, Lightning, and more"
+    description: "USB-C, Lightning, and multi-cables"
   },
   "power-adapters": {
     name: "Power Adapters",
     slug: "power-adapters",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E",
-    description: "Wall chargers and USB hubs"
+    description: "Universal travel power adapters"
   },
   "portable-power": {
     name: "Portable Power",
     slug: "portable-power",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🔋%3C/text%3E%3C/svg%3E",
-    description: "Power banks and battery packs"
+    description: "High-capacity power banks"
   },
   "neck-pillows": {
     name: "Neck Pillows",
     slug: "neck-pillows",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E💤%3C/text%3E%3C/svg%3E",
-    description: "Travel comfort and support"
+    description: "Comfortable travel neck pillows"
   },
   "packing-cubes": {
     name: "Packing Cubes",
     slug: "packing-cubes",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E📦%3C/text%3E%3C/svg%3E",
-    description: "Compression bags and organizers"
+    description: "Organized packing cube sets"
   },
   "laptop-sleeves": {
     name: "Laptop Sleeves",
