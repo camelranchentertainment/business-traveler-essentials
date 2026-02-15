@@ -1015,6 +1015,226 @@ export const products = [
     image: "https://m.media-amazon.com/images/I/5130BCxweAL._AC_SX679_.jpg",
     asin: "B0BZV4QFP8",
     description: "Anker Soundcore Liberty 4 NC Earbuds"
+  },
+  {
+    id: 93,
+    name: "Logitech MX Master 3S Wireless Mouse",
+    category: "Computer Mouse",
+    price: 99.99,
+    rating: 4.7,
+    reviewCount: 8500,
+    image: "https://m.media-amazon.com/images/I/71VhYvKceUL._AC_SX679_.jpg",
+    asin: "B09HM94VDS",
+    description: "Ergonomic wireless mouse with quiet clicks and 8K DPI sensor"
+  },
+  {
+    id: 94,
+    name: "Logitech MX Anywhere 3 Compact Mouse",
+    category: "Computer Mouse",
+    price: 79.99,
+    rating: 4.6,
+    reviewCount: 12400,
+    image: "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SX679_.jpg",
+    asin: "B08FVTCVF8",
+    description: "Compact wireless mouse perfect for travel with USB-C charging"
+  },
+  {
+    id: 95,
+    name: "Microsoft Surface Arc Mouse",
+    category: "Computer Mouse",
+    price: 79.99,
+    rating: 4.4,
+    reviewCount: 3200,
+    image: "https://m.media-amazon.com/images/I/41KdZbwCsQL._AC_SX679_.jpg",
+    asin: "B0CKLNZK2W",
+    description: "Ultra-slim foldable mouse that flattens for travel"
+  },
+  {
+    id: 96,
+    name: "Logitech Lift Vertical Ergonomic Mouse",
+    category: "Computer Mouse",
+    price: 69.99,
+    rating: 4.5,
+    reviewCount: 4800,
+    image: "https://m.media-amazon.com/images/I/61dtb+gJ4WL._AC_SX679_.jpg",
+    asin: "B09J1TB35S",
+    description: "Vertical ergonomic design reduces wrist strain during long work sessions"
+  },
+  {
+    id: 97,
+    name: "Razer Pro Click Mini Wireless Mouse",
+    category: "Computer Mouse",
+    price: 79.99,
+    rating: 4.3,
+    reviewCount: 1800,
+    image: "https://m.media-amazon.com/images/I/61gC1j7OYCL._AC_SX679_.jpg",
+    asin: "B08PPHM82K",
+    description: "Professional wireless mouse with 8 programmable buttons"
+  },
+  {
+    id: 98,
+    name: "Apple Magic Mouse",
+    category: "Computer Mouse",
+    price: 79.00,
+    rating: 4.5,
+    reviewCount: 15600,
+    image: "https://m.media-amazon.com/images/I/51NOrd8wfBL._AC_SX679_.jpg",
+    asin: "B09BRHD3SG",
+    description: "Multi-touch surface mouse for Mac users"
+  },
+  {
+    id: 99,
+    name: "Logitech Pebble Wireless Mouse",
+    category: "Computer Mouse",
+    price: 24.99,
+    rating: 4.5,
+    reviewCount: 28000,
+    image: "https://m.media-amazon.com/images/I/61xJkJSRNNL._AC_SX679_.jpg",
+    asin: "B084SX7HPR",
+    description: "Slim, quiet wireless mouse perfect for travel"
+  },
+  {
+    id: 100,
+    name: "Dell MS5120W Wireless Mouse",
+    category: "Computer Mouse",
+    price: 29.99,
+    rating: 4.3,
+    reviewCount: 2100,
+    image: "https://m.media-amazon.com/images/I/51rX0wn7nwL._AC_SX679_.jpg",
+    asin: "B08PBX7ZGF",
+    description: "Comfortable wireless mouse with long battery life"
+  },
+  {
+    id: 101,
+    name: "HP 930 Creator Wireless Mouse",
+    category: "Computer Mouse",
+    price: 99.99,
+    rating: 4.2,
+    reviewCount: 890,
+    image: "https://m.media-amazon.com/images/I/61b8fEtVmYL._AC_SX679_.jpg",
+    asin: "B09XGWB7G6",
+    description: "Premium wireless mouse designed for creators and professionals"
+  },
+  {
+    id: 102,
+    name: "Logitech M720 Triathlon Multi-Device Mouse",
+    category: "Computer Mouse",
+    price: 39.99,
+    rating: 4.5,
+    reviewCount: 19200,
+    image: "https://m.media-amazon.com/images/I/61mp4GF923L._AC_SX679_.jpg",
+    asin: "B01LF37K80",
+    description: "Multi-device wireless mouse switches between 3 computers"
+  },
+  {
+    id: 103,
+    name: "ASUS ZenScreen 15.6\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 249.99,
+    rating: 4.5,
+    reviewCount: 5600,
+    image: "https://m.media-amazon.com/images/I/71WK5yp3IgL._AC_SX679_.jpg",
+    asin: "B0CRTBHJFQ",
+    description: "Full HD IPS portable monitor with USB-C connectivity"
+  },
+  {
+    id: 104,
+    name: "ARZOPA 15.6\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 99.99,
+    rating: 4.4,
+    reviewCount: 8200,
+    image: "https://m.media-amazon.com/images/I/71gEMhGB6LL._AC_SX679_.jpg",
+    asin: "B0CJQ6K3R3",
+    description: "1080P FHD portable display with USB-C and HDMI"
+  },
+  {
+    id: 105,
+    name: "ViewSonic VG1655 15.6\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 199.99,
+    rating: 4.3,
+    reviewCount: 1200,
+    image: "https://m.media-amazon.com/images/I/71O05G9tV-L._AC_SX679_.jpg",
+    asin: "B09FJXPG47",
+    description: "Professional portable monitor with ergonomic stand"
+  },
+  {
+    id: 106,
+    name: "Lenovo ThinkVision M14 Portable Monitor",
+    category: "Portable Monitors",
+    price: 199.00,
+    rating: 4.4,
+    reviewCount: 2800,
+    image: "https://m.media-amazon.com/images/I/71yYCyG1mKL._AC_SX679_.jpg",
+    asin: "B08KRDSM8Y",
+    description: "14-inch FHD portable monitor with USB-C power delivery"
+  },
+  {
+    id: 107,
+    name: "Dell C1422H 14\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 279.99,
+    rating: 4.3,
+    reviewCount: 890,
+    image: "https://m.media-amazon.com/images/I/71FMHB1JxwL._AC_SX679_.jpg",
+    asin: "B08KTXJW61",
+    description: "Ultra-slim portable monitor with built-in stand"
+  },
+  {
+    id: 108,
+    name: "UPERFECT 15.6\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 139.99,
+    rating: 4.3,
+    reviewCount: 4500,
+    image: "https://m.media-amazon.com/images/I/71k1CvhDHoL._AC_SX679_.jpg",
+    asin: "B0BVJT7SKF",
+    description: "1080P portable monitor with smart cover"
+  },
+  {
+    id: 109,
+    name: "Espresso 15 Touchscreen Portable Monitor",
+    category: "Portable Monitors",
+    price: 449.00,
+    rating: 4.2,
+    reviewCount: 680,
+    image: "https://m.media-amazon.com/images/I/71cC3v0PRUL._AC_SX679_.jpg",
+    asin: "B08T1WQZQZ",
+    description: "Premium touchscreen portable display with magnetic stand"
+  },
+  {
+    id: 110,
+    name: "JSAUX 14\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 119.99,
+    rating: 4.4,
+    reviewCount: 1600,
+    image: "https://m.media-amazon.com/images/I/71YWw+U6GPL._AC_SX679_.jpg",
+    asin: "B0CS4KJWQW",
+    description: "Compact FHD portable monitor ideal for travel"
+  },
+  {
+    id: 111,
+    name: "HP E14 G5 14\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 219.00,
+    rating: 4.3,
+    reviewCount: 450,
+    image: "https://m.media-amazon.com/images/I/71fK+6fqLqL._AC_SX679_.jpg",
+    asin: "B0BXXN6G2Y",
+    description: "Business-grade portable monitor with privacy screen option"
+  },
+  {
+    id: 112,
+    name: "InnoView 15.8\" Portable Monitor",
+    category: "Portable Monitors",
+    price: 169.99,
+    rating: 4.4,
+    reviewCount: 2300,
+    image: "https://m.media-amazon.com/images/I/716v0g55KCL._AC_SX679_.jpg",
+    asin: "B0C1MQ3S7K",
+    description: "Large portable monitor with HDR support"
   }
 ];
 
@@ -1086,6 +1306,18 @@ export const categories = {
     slug: "headphones",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E",
     description: "Noise-canceling headphones and earbuds"
+  },
+  "computer-mouse": {
+    name: "Computer Mouse",
+    slug: "computer-mouse",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🖱️%3C/text%3E%3C/svg%3E",
+    description: "Wireless mice for productivity"
+  },
+  "portable-monitors": {
+    name: "Portable Monitors",
+    slug: "portable-monitors",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🖥️%3C/text%3E%3C/svg%3E",
+    description: "Portable displays for dual-screen productivity"
   }
 };
 
