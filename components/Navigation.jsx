@@ -48,6 +48,83 @@ export default function Navigation() {
                 Home
               </span>
             </Link>
+            
+            {/* Categories Dropdown */}
+            <div className="relative group">
+              <button className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors flex items-center space-x-1">
+                <span>Categories</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="py-2">
+                  <Link href="/category/luggage">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🧳</span>
+                      Luggage
+                    </span>
+                  </Link>
+                  <Link href="/category/backpacks">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🎒</span>
+                      Backpacks
+                    </span>
+                  </Link>
+                  <Link href="/category/tech-organizers">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">💼</span>
+                      Tech Organizers
+                    </span>
+                  </Link>
+                  <Link href="/category/charging-cables">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🔌</span>
+                      Charging Cables
+                    </span>
+                  </Link>
+                  <Link href="/category/power-adapters">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">⚡</span>
+                      Power Adapters
+                    </span>
+                  </Link>
+                  <Link href="/category/portable-power">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🔋</span>
+                      Portable Power
+                    </span>
+                  </Link>
+                  <Link href="/category/neck-pillows">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">💤</span>
+                      Neck Pillows
+                    </span>
+                  </Link>
+                  <Link href="/category/packing-cubes">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">📦</span>
+                      Packing Cubes
+                    </span>
+                  </Link>
+                  <Link href="/category/laptop-sleeves">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">💻</span>
+                      Laptop Sleeves
+                    </span>
+                  </Link>
+                  <Link href="/category/headphones">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🎧</span>
+                      Headphones
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
             <Link href="/about">
               <span className={`text-sm font-medium transition-colors cursor-pointer ${
                 router.pathname === '/about' 
@@ -115,42 +192,142 @@ export default function Navigation() {
                 Home
               </span>
             </Link>
-            <Link href="/about">
-              <span 
-                onClick={handleLinkClick}
-                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
-                  router.pathname === '/about' 
-                    ? 'text-blue-600 bg-blue-50' 
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-              >
-                About
-              </span>
-            </Link>
-            <Link href="/travel-tips">
-              <span 
-                onClick={handleLinkClick}
-                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
-                  router.pathname === '/travel-tips' 
-                    ? 'text-blue-600 bg-blue-50' 
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-              >
-                Travel Tips
-              </span>
-            </Link>
-            <Link href="/contact">
-              <span 
-                onClick={handleLinkClick}
-                className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
-                  router.pathname === '/contact' 
-                    ? 'text-blue-600 bg-blue-50' 
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                }`}
-              >
-                Contact
-              </span>
-            </Link>
+            
+            {/* Categories Section */}
+            <div className="border-t border-gray-100 pt-2 mt-2">
+              <div className="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                Categories
+              </div>
+              <Link href="/category/luggage">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🧳</span>
+                  Luggage
+                </span>
+              </Link>
+              <Link href="/category/backpacks">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🎒</span>
+                  Backpacks
+                </span>
+              </Link>
+              <Link href="/category/tech-organizers">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">💼</span>
+                  Tech Organizers
+                </span>
+              </Link>
+              <Link href="/category/charging-cables">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🔌</span>
+                  Charging Cables
+                </span>
+              </Link>
+              <Link href="/category/power-adapters">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">⚡</span>
+                  Power Adapters
+                </span>
+              </Link>
+              <Link href="/category/portable-power">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🔋</span>
+                  Portable Power
+                </span>
+              </Link>
+              <Link href="/category/neck-pillows">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">💤</span>
+                  Neck Pillows
+                </span>
+              </Link>
+              <Link href="/category/packing-cubes">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">📦</span>
+                  Packing Cubes
+                </span>
+              </Link>
+              <Link href="/category/laptop-sleeves">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">💻</span>
+                  Laptop Sleeves
+                </span>
+              </Link>
+              <Link href="/category/headphones">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🎧</span>
+                  Headphones
+                </span>
+              </Link>
+            </div>
+            
+            <div className="border-t border-gray-100 pt-2 mt-2">
+              <Link href="/about">
+                <span 
+                  onClick={handleLinkClick}
+                  className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                    router.pathname === '/about' 
+                      ? 'text-blue-600 bg-blue-50' 
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                >
+                  About
+                </span>
+              </Link>
+              <Link href="/travel-tips">
+                <span 
+                  onClick={handleLinkClick}
+                  className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                    router.pathname === '/travel-tips' 
+                      ? 'text-blue-600 bg-blue-50' 
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Travel Tips
+                </span>
+              </Link>
+              <Link href="/contact">
+                <span 
+                  onClick={handleLinkClick}
+                  className={`block px-4 py-2.5 rounded-lg text-base font-medium transition-colors cursor-pointer ${
+                    router.pathname === '/contact' 
+                      ? 'text-blue-600 bg-blue-50' 
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                  }`}
+                >
+                  Contact
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       )}
