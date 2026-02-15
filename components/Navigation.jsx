@@ -121,6 +121,18 @@ export default function Navigation() {
                       Headphones
                     </span>
                   </Link>
+                  <Link href="/category/computer-mouse">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🖱️</span>
+                      Computer Mouse
+                    </span>
+                  </Link>
+                  <Link href="/category/portable-monitors">
+                    <span className="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition-colors">
+                      <span className="mr-3 text-xl">🖥️</span>
+                      Portable Monitors
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -286,6 +298,24 @@ export default function Navigation() {
                 >
                   <span className="mr-3 text-xl">🎧</span>
                   Headphones
+                </span>
+              </Link>
+              <Link href="/category/computer-mouse">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🖱️</span>
+                  Computer Mouse
+                </span>
+              </Link>
+              <Link href="/category/portable-monitors">
+                <span 
+                  onClick={handleLinkClick}
+                  className="flex items-center px-4 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors cursor-pointer"
+                >
+                  <span className="mr-3 text-xl">🖥️</span>
+                  Portable Monitors
                 </span>
               </Link>
             </div>
