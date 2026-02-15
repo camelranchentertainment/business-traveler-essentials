@@ -16,104 +16,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen flex flex-col bg-black">
+      <div className="min-h-screen flex flex-col bg-white">
         <Navigation />
 
         <main className="flex-grow">
-          {/* Hero Section */}
-          <section className="relative bg-gray-900 text-white overflow-hidden">
-            {/* Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
-              <img 
-                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=80"
-                alt="Travel background"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-indigo-900/90"></div>
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  Curated Essentials For the Professional Business Traveler
+          {/* Minimal Hero Section */}
+          <section className="bg-gradient-to-br from-blue-50 to-indigo-50 border-b border-gray-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+              <div className="text-center">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                  Premium Travel Gear
                 </h1>
-              </div>
-            </div>
-          </section>
-
-          {/* Horizontal Category Navigation */}
-          <section className="bg-gray-900 border-t border-b border-gray-800">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 lg:gap-4">
-                <Link href="/category/luggage">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">🧳</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Luggage</span>
-                  </div>
-                </Link>
-                <Link href="/category/backpacks">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">🎒</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Backpacks</span>
-                  </div>
-                </Link>
-                <Link href="/category/tech-organizers">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">💼</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Tech Organizers</span>
-                  </div>
-                </Link>
-                <Link href="/category/charging-cables">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">🔌</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Charging Cables</span>
-                  </div>
-                </Link>
-                <Link href="/category/power-adapters">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">⚡</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Power Adapters</span>
-                  </div>
-                </Link>
-                <Link href="/category/portable-power">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">🔋</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Portable Power</span>
-                  </div>
-                </Link>
-                <Link href="/category/neck-pillows">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">💤</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Neck Pillows</span>
-                  </div>
-                </Link>
-                <Link href="/category/packing-cubes">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">📦</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Packing Cubes</span>
-                  </div>
-                </Link>
-                <Link href="/category/laptop-sleeves">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">💻</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Laptop Sleeves</span>
-                  </div>
-                </Link>
-                <Link href="/category/headphones">
-                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-xl sm:text-2xl">🎧</span>
-                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Headphones</span>
-                  </div>
-                </Link>
+                <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+                  Curated essentials for the professional business traveler
+                </p>
               </div>
             </div>
           </section>
 
           {/* Categories Grid */}
-          <section className="py-16 bg-black">
+          <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Shop by Category</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">Shop by Category</h2>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {/* Luggage Category */}
