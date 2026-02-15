@@ -70,7 +70,7 @@ export const products = [
   },
   {
     id: 7,
-    name: "Monos Carry-On Pro Plus Luggage 23"",
+    name: "Monos Carry-On Pro Plus Luggage 23\"",
     category: "Luggage",
     price: 315.0,
     rating: 0.0,
@@ -81,7 +81,7 @@ export const products = [
   },
   {
     id: 8,
-    name: "July Carry On Pro - 20" Hardshell with Front Pocket",
+    name: "July Carry On Pro - 20\" Hardshell with Front Pocket",
     category: "Luggage",
     price: 325.0,
     rating: 4.5,
@@ -1126,7 +1126,7 @@ export const products = [
   },
   {
     id: 103,
-    name: "ASUS ZenScreen 15.6" Portable Monitor",
+    name: "ASUS ZenScreen 15.6\" Portable Monitor",
     category: "Portable Monitors",
     price: 159.0,
     rating: 4.5,
@@ -1137,7 +1137,7 @@ export const products = [
   },
   {
     id: 104,
-    name: "ARZOPA 15.6" Portable Monitor",
+    name: "ARZOPA 15.6\" Portable Monitor",
     category: "Portable Monitors",
     price: 99.99,
     rating: 4.4,
@@ -1148,7 +1148,7 @@ export const products = [
   },
   {
     id: 105,
-    name: "ViewSonic VG1655 15.6" Portable Monitor",
+    name: "ViewSonic VG1655 15.6\" Portable Monitor",
     category: "Portable Monitors",
     price: 199.99,
     rating: 4.3,
@@ -1170,7 +1170,7 @@ export const products = [
   },
   {
     id: 107,
-    name: "Dell C1422H 14" Portable Monitor",
+    name: "Dell C1422H 14\" Portable Monitor",
     category: "Portable Monitors",
     price: 240.0,
     rating: 4.3,
@@ -1181,7 +1181,7 @@ export const products = [
   },
   {
     id: 108,
-    name: "UPERFECT 15.6" Portable Monitor",
+    name: "UPERFECT 15.6\" Portable Monitor",
     category: "Portable Monitors",
     price: 79.99,
     rating: 4.3,
@@ -1203,7 +1203,7 @@ export const products = [
   },
   {
     id: 110,
-    name: "JSAUX 14" Portable Monitor",
+    name: "JSAUX 14\" Portable Monitor",
     category: "Portable Monitors",
     price: 119.99,
     rating: 4.4,
@@ -1214,7 +1214,7 @@ export const products = [
   },
   {
     id: 111,
-    name: "HP E14 G4 14" Portable Monitor",
+    name: "HP E14 G4 14\" Portable Monitor",
     category: "Portable Monitors",
     price: 229.99,
     rating: 4.3,
