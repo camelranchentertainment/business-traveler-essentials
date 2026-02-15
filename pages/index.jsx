@@ -45,65 +45,65 @@ export default function Home() {
           {/* Horizontal Category Navigation */}
           <section className="bg-gray-900 border-t border-b border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-              <div className="flex flex-wrap justify-center items-center gap-4">
+              <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 lg:gap-4">
                 <Link href="/category/luggage">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">🧳</span>
-                    <span className="text-white font-medium group-hover:text-white">Luggage</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">🧳</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Luggage</span>
                   </div>
                 </Link>
                 <Link href="/category/backpacks">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">🎒</span>
-                    <span className="text-white font-medium group-hover:text-white">Backpacks</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">🎒</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Backpacks</span>
                   </div>
                 </Link>
                 <Link href="/category/tech-organizers">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">💼</span>
-                    <span className="text-white font-medium group-hover:text-white">Tech Organizers</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">💼</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Tech Organizers</span>
                   </div>
                 </Link>
                 <Link href="/category/charging-cables">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">🔌</span>
-                    <span className="text-white font-medium group-hover:text-white">Charging Cables</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">🔌</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Charging Cables</span>
                   </div>
                 </Link>
                 <Link href="/category/power-adapters">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">⚡</span>
-                    <span className="text-white font-medium group-hover:text-white">Power Adapters</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">⚡</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Power Adapters</span>
                   </div>
                 </Link>
                 <Link href="/category/portable-power">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">🔋</span>
-                    <span className="text-white font-medium group-hover:text-white">Portable Power</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">🔋</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Portable Power</span>
                   </div>
                 </Link>
                 <Link href="/category/neck-pillows">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">💤</span>
-                    <span className="text-white font-medium group-hover:text-white">Neck Pillows</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">💤</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Neck Pillows</span>
                   </div>
                 </Link>
                 <Link href="/category/packing-cubes">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">📦</span>
-                    <span className="text-white font-medium group-hover:text-white">Packing Cubes</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">📦</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Packing Cubes</span>
                   </div>
                 </Link>
                 <Link href="/category/laptop-sleeves">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">💻</span>
-                    <span className="text-white font-medium group-hover:text-white">Laptop Sleeves</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">💻</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Laptop Sleeves</span>
                   </div>
                 </Link>
                 <Link href="/category/headphones">
-                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
-                    <span className="text-2xl">🎧</span>
-                    <span className="text-white font-medium group-hover:text-white">Headphones</span>
+                  <div className="flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-xl sm:text-2xl">🎧</span>
+                    <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Headphones</span>
                   </div>
                 </Link>
               </div>
@@ -115,10 +115,10 @@ export default function Home() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Shop by Category</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {/* Luggage Category */}
                 <Link href="/category/luggage">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg"
                       alt="Luggage"
@@ -127,10 +127,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Luggage</h3>
-                        <p className="text-gray-200 text-sm">Premium carry-on and checked luggage</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Luggage</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Premium carry-on and checked luggage</p>
                       </div>
                     </div>
                     
@@ -144,7 +144,7 @@ export default function Home() {
 
                 {/* Backpacks Category */}
                 <Link href="/category/backpacks">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/51tujQGaEVL._AC_SL1000_.jpg"
                       alt="Backpacks"
@@ -153,10 +153,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Backpacks</h3>
-                        <p className="text-gray-200 text-sm">Professional travel backpacks</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Backpacks</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Professional travel backpacks</p>
                       </div>
                     </div>
                     
@@ -170,7 +170,7 @@ export default function Home() {
 
                 {/* Tech Organizers Category */}
                 <Link href="/category/tech-organizers">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/715h98AKwDL._AC_SX466_.jpg"
                       alt="Tech Organizers"
@@ -179,10 +179,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Tech Organizers</h3>
-                        <p className="text-gray-200 text-sm">Cable bags and tech pouches</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Tech Organizers</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Cable bags and tech pouches</p>
                       </div>
                     </div>
                     
@@ -196,7 +196,7 @@ export default function Home() {
 
                 {/* Charging Cables Category */}
                 <Link href="/category/charging-cables">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/61H3u4lvD0L._AC_SX466_.jpg"
                       alt="Charging Cables"
@@ -205,10 +205,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Charging Cables</h3>
-                        <p className="text-gray-200 text-sm">USB-C, Lightning, and more</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Charging Cables</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">USB-C, Lightning, and more</p>
                       </div>
                     </div>
                     
@@ -222,7 +222,7 @@ export default function Home() {
 
                 {/* Power Adapters Category */}
                 <Link href="/category/power-adapters">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/5164giE9fFL._AC_SX522_.jpg"
                       alt="Power Adapters"
@@ -231,10 +231,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Power Adapters</h3>
-                        <p className="text-gray-200 text-sm">Wall chargers and USB hubs</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Power Adapters</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Wall chargers and USB hubs</p>
                       </div>
                     </div>
                     
@@ -248,7 +248,7 @@ export default function Home() {
 
                 {/* Portable Power Category */}
                 <Link href="/category/portable-power">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SL1500_.jpg"
                       alt="Portable Power"
@@ -257,10 +257,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Portable Power</h3>
-                        <p className="text-gray-200 text-sm">Power banks and battery packs</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Portable Power</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Power banks and battery packs</p>
                       </div>
                     </div>
                     
@@ -274,7 +274,7 @@ export default function Home() {
 
                 {/* Neck Pillows Category */}
                 <Link href="/category/neck-pillows">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/51193RXQ1SL._AC_SL1080_.jpg"
                       alt="Neck Pillows"
@@ -283,10 +283,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Neck Pillows</h3>
-                        <p className="text-gray-200 text-sm">Travel comfort and support</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Neck Pillows</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Travel comfort and support</p>
                       </div>
                     </div>
                     
@@ -300,7 +300,7 @@ export default function Home() {
 
                 {/* Packing Cubes Category */}
                 <Link href="/category/packing-cubes">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/91czenj1oWL._AC_SX679_.jpg"
                       alt="Packing Cubes"
@@ -309,10 +309,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Packing Cubes</h3>
-                        <p className="text-gray-200 text-sm">Compression bags and organizers</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Packing Cubes</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Compression bags and organizers</p>
                       </div>
                     </div>
                     
@@ -326,7 +326,7 @@ export default function Home() {
 
                 {/* Laptop Sleeves Category */}
                 <Link href="/category/laptop-sleeves">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SL1500_.jpg"
                       alt="Laptop Sleeves"
@@ -335,10 +335,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Laptop Sleeves</h3>
-                        <p className="text-gray-200 text-sm">Protective laptop cases</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Laptop Sleeves</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Protective laptop cases</p>
                       </div>
                     </div>
                     
@@ -352,7 +352,7 @@ export default function Home() {
 
                 {/* Headphones Category */}
                 <Link href="/category/headphones">
-                  <div className="group relative h-96 w-full max-w-md rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg"
                       alt="Headphones"
@@ -361,10 +361,10 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                     
-                    <div className="absolute inset-0 flex items-end p-8">
+                    <div className="absolute inset-0 flex items-end p-4 sm:p-6 lg:p-8">
                       <div>
-                        <h3 className="text-3xl font-bold text-white mb-2">Headphones</h3>
-                        <p className="text-gray-200 text-sm">Noise-canceling headphones and earbuds</p>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Headphones</h3>
+                        <p className="text-gray-200 text-xs sm:text-sm">Noise-canceling headphones and earbuds</p>
                       </div>
                     </div>
                     
