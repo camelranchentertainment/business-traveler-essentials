@@ -63,65 +63,65 @@ export default function CategoryPage({ category, products }) {
         {/* Horizontal Category Navigation */}
         <section className="bg-gray-900 border-t border-b border-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <div className="flex flex-wrap justify-center items-center gap-4">
+            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 lg:gap-4">
               <Link href="/category/luggage">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'luggage' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">🧳</span>
-                  <span className="text-white font-medium group-hover:text-white">Luggage</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'luggage' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">🧳</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Luggage</span>
                 </div>
               </Link>
               <Link href="/category/backpacks">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'backpacks' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">🎒</span>
-                  <span className="text-white font-medium group-hover:text-white">Backpacks</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'backpacks' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">🎒</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Backpacks</span>
                 </div>
               </Link>
               <Link href="/category/tech-organizers">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'tech-organizers' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">💼</span>
-                  <span className="text-white font-medium group-hover:text-white">Tech Organizers</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'tech-organizers' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">💼</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Tech Organizers</span>
                 </div>
               </Link>
               <Link href="/category/charging-cables">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'charging-cables' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">🔌</span>
-                  <span className="text-white font-medium group-hover:text-white">Charging Cables</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'charging-cables' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">🔌</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Charging Cables</span>
                 </div>
               </Link>
               <Link href="/category/power-adapters">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'power-adapters' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">⚡</span>
-                  <span className="text-white font-medium group-hover:text-white">Power Adapters</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'power-adapters' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">⚡</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Power Adapters</span>
                 </div>
               </Link>
               <Link href="/category/portable-power">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'portable-power' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">🔋</span>
-                  <span className="text-white font-medium group-hover:text-white">Portable Power</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'portable-power' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">🔋</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Portable Power</span>
                 </div>
               </Link>
               <Link href="/category/neck-pillows">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'neck-pillows' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">💤</span>
-                  <span className="text-white font-medium group-hover:text-white">Neck Pillows</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'neck-pillows' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">💤</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Neck Pillows</span>
                 </div>
               </Link>
               <Link href="/category/packing-cubes">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'packing-cubes' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">📦</span>
-                  <span className="text-white font-medium group-hover:text-white">Packing Cubes</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'packing-cubes' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">📦</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Packing Cubes</span>
                 </div>
               </Link>
               <Link href="/category/laptop-sleeves">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'laptop-sleeves' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">💻</span>
-                  <span className="text-white font-medium group-hover:text-white">Laptop Sleeves</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'laptop-sleeves' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">💻</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Laptop Sleeves</span>
                 </div>
               </Link>
               <Link href="/category/headphones">
-                <div className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'headphones' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
-                  <span className="text-2xl">🎧</span>
-                  <span className="text-white font-medium group-hover:text-white">Headphones</span>
+                <div className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 cursor-pointer group ${slug === 'headphones' ? 'bg-blue-600' : 'bg-gray-800 hover:bg-blue-600'}`}>
+                  <span className="text-xl sm:text-2xl">🎧</span>
+                  <span className="text-sm sm:text-base text-white font-medium group-hover:text-white">Headphones</span>
                 </div>
               </Link>
             </div>
