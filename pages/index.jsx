@@ -122,7 +122,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg"
                       alt="Luggage"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -148,7 +148,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/51tujQGaEVL._AC_SL1000_.jpg"
                       alt="Backpacks"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -174,7 +174,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/715h98AKwDL._AC_SX466_.jpg"
                       alt="Tech Organizers"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -200,7 +200,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/61H3u4lvD0L._AC_SX466_.jpg"
                       alt="Charging Cables"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -226,7 +226,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/5164giE9fFL._AC_SX522_.jpg"
                       alt="Power Adapters"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -252,7 +252,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SL1500_.jpg"
                       alt="Portable Power"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -278,7 +278,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/51193RXQ1SL._AC_SL1080_.jpg"
                       alt="Neck Pillows"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -304,7 +304,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/91czenj1oWL._AC_SX679_.jpg"
                       alt="Packing Cubes"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -330,7 +330,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SL1500_.jpg"
                       alt="Laptop Sleeves"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -356,7 +356,7 @@ export default function Home() {
                     <img 
                       src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg"
                       alt="Headphones"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
