@@ -1082,7 +1082,7 @@ export const categories = {
     description: "Protective laptop cases"
   },
   "headphones": {
-    name: "Headphones",
+    name: "Headphones & Earbuds",
     slug: "headphones",
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎧%3C/text%3E%3C/svg%3E",
     description: "Noise-canceling headphones and earbuds"
@@ -1093,7 +1093,7 @@ export const categories = {
 export const getProductsByCategory = (categorySlug) => {
   const categoryName = categories[categorySlug]?.name;
   if (!categoryName) return [];
-  return products.filter(product => product.category === categoryName || product.category === categoryName.replace(" ", " & "));
+  return products.filter(product => product.category === categoryName);
 };
 
 export const getProductById = (id) => {
