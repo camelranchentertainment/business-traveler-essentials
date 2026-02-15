@@ -120,9 +120,10 @@ export default function Home() {
                 <Link href="/category/luggage">
                   <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/81jytwD8odL._AC_SX679_.jpg"
                       alt="Luggage"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
@@ -145,9 +146,10 @@ export default function Home() {
                 <Link href="/category/backpacks">
                   <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/51tujQGaEVL._AC_SL1000_.jpg"
                       alt="Backpacks"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
@@ -222,9 +224,10 @@ export default function Home() {
                 <Link href="/category/power-adapters">
                   <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
-                      src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80"
+                      src="https://m.media-amazon.com/images/I/5164giE9fFL._AC_SX522_.jpg"
                       alt="Power Adapters"
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                     
