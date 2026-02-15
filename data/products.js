@@ -1,6 +1,7 @@
 // Product Database - Business Traveler Essentials
 // Generated from products-database.xlsx
 // Last updated: February 14, 2026
+// Total Products: 92 across 10 categories
 
 export const products = [
   {
@@ -921,10 +922,10 @@ export const products = [
     name: "Apple AirPods Pro 3 Wireless Earbuds",
     category: "Headphones & Earbuds",
     price: 249.0,
-    rating: 4.8,
+    rating: 4.4,
     reviewCount: 5240,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/61solmQSSlL._AC_SL1500_.jpg",
+    asin: "B0FQFB8FMG",
     description: "Apple AirPods Pro 3 Wireless Earbuds"
   },
   {
@@ -934,8 +935,8 @@ export const products = [
     price: 279.0,
     rating: 4.6,
     reviewCount: 8950,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/513LCPDEWKL._AC_SL1500_.jpg",
+    asin: "B0F7M3HPBD",
     description: "Bose QuietComfort Ultra Earbuds 2nd Gen"
   },
   {
@@ -945,30 +946,30 @@ export const products = [
     price: 279.95,
     rating: 4.5,
     reviewCount: 12380,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SL1500_.jpg",
+    asin: "B0C33XXS56",
     description: "Sony WF-1000XM5 Truly Wireless Earbuds"
   },
   {
     id: 87,
     name: "Sony WH-1000XM6 Wireless Headphones",
     category: "Headphones & Earbuds",
-    price: 398.0,
+    price: 460.95,
     rating: 4.7,
     reviewCount: 3250,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/71vk17xkgtL._AC_SL1500_.jpg",
+    asin: "B0FL9J9LV4",
     description: "Sony WH-1000XM6 Wireless Headphones"
   },
   {
     id: 88,
     name: "Bose QuietComfort Ultra Headphones",
     category: "Headphones & Earbuds",
-    price: 379.0,
+    price: 399.0,
     rating: 4.6,
     reviewCount: 11420,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/51revx-zToL._AC_SL1500_.jpg",
+    asin: "B0FDKR293G",
     description: "Bose QuietComfort Ultra Headphones"
   },
   {
@@ -978,8 +979,8 @@ export const products = [
     price: 299.95,
     rating: 4.4,
     reviewCount: 2680,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/71dRuwGqffL._AC_SL1500_.jpg",
+    asin: "B0CTHVX6DK",
     description: "Sennheiser MOMENTUM True Wireless 4"
   },
   {
@@ -989,8 +990,8 @@ export const products = [
     price: 119.99,
     rating: 4.5,
     reviewCount: 8750,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/51Pz7QeTbqL._AC_SL1500_.jpg",
+    asin: "B0DWHPBK42",
     description: "Sony WF-C710N Noise Canceling Earbuds"
   },
   {
@@ -1000,8 +1001,8 @@ export const products = [
     price: 169.95,
     rating: 4.6,
     reviewCount: 28500,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/51aCbrU88ZL._AC_SL1500_.jpg",
+    asin: "B0C2W1KLSS",
     description: "Beats Studio Buds Plus Earbuds"
   },
   {
@@ -1011,11 +1012,19 @@ export const products = [
     price: 99.99,
     rating: 4.4,
     reviewCount: 15680,
-    image: "",
-    asin: "",
+    image: "https://m.media-amazon.com/images/I/5130BCxweAL._AC_SX679_.jpg",
+    asin: "B0BZV4QFP8",
     description: "Anker Soundcore Liberty 4 NC Earbuds"
   }
 ];
+
+// Amazon affiliate configuration
+const AFFILIATE_ID = "businesst02d1-20";
+
+export const getAmazonUrl = (asin) => {
+  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_ID}`;
+};
+
 // Categories
 export const categories = {
   "luggage": {
