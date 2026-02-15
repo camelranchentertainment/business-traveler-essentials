@@ -42,15 +42,83 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Horizontal Category Navigation */}
+          <section className="bg-gray-900 border-t border-b border-gray-800">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+              <div className="flex flex-wrap justify-center items-center gap-4">
+                <Link href="/category/luggage">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">🧳</span>
+                    <span className="text-white font-medium group-hover:text-white">Luggage</span>
+                  </div>
+                </Link>
+                <Link href="/category/backpacks">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">🎒</span>
+                    <span className="text-white font-medium group-hover:text-white">Backpacks</span>
+                  </div>
+                </Link>
+                <Link href="/category/tech-organizers">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">💼</span>
+                    <span className="text-white font-medium group-hover:text-white">Tech Organizers</span>
+                  </div>
+                </Link>
+                <Link href="/category/charging-cables">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">🔌</span>
+                    <span className="text-white font-medium group-hover:text-white">Charging Cables</span>
+                  </div>
+                </Link>
+                <Link href="/category/power-adapters">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">⚡</span>
+                    <span className="text-white font-medium group-hover:text-white">Power Adapters</span>
+                  </div>
+                </Link>
+                <Link href="/category/portable-power">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">🔋</span>
+                    <span className="text-white font-medium group-hover:text-white">Portable Power</span>
+                  </div>
+                </Link>
+                <Link href="/category/neck-pillows">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">💤</span>
+                    <span className="text-white font-medium group-hover:text-white">Neck Pillows</span>
+                  </div>
+                </Link>
+                <Link href="/category/packing-cubes">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">📦</span>
+                    <span className="text-white font-medium group-hover:text-white">Packing Cubes</span>
+                  </div>
+                </Link>
+                <Link href="/category/laptop-sleeves">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">💻</span>
+                    <span className="text-white font-medium group-hover:text-white">Laptop Sleeves</span>
+                  </div>
+                </Link>
+                <Link href="/category/headphones">
+                  <div className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-blue-600 rounded-lg transition-all duration-300 cursor-pointer group">
+                    <span className="text-2xl">🎧</span>
+                    <span className="text-white font-medium group-hover:text-white">Headphones</span>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </section>
+
           {/* Categories Grid */}
           <section className="py-16 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Shop by Category</h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {/* Luggage Category */}
                 <Link href="/category/luggage">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=800&q=80"
                       alt="Luggage"
@@ -75,7 +143,7 @@ export default function Home() {
 
                 {/* Backpacks Category */}
                 <Link href="/category/backpacks">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
                       alt="Backpacks"
@@ -100,7 +168,7 @@ export default function Home() {
 
                 {/* Tech Organizers Category */}
                 <Link href="/category/tech-organizers">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/715h98AKwDL._AC_SX466_.jpg"
                       alt="Tech Organizers"
@@ -126,7 +194,7 @@ export default function Home() {
 
                 {/* Charging Cables Category */}
                 <Link href="/category/charging-cables">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/61H3u4lvD0L._AC_SX466_.jpg"
                       alt="Charging Cables"
@@ -152,7 +220,7 @@ export default function Home() {
 
                 {/* Power Adapters Category */}
                 <Link href="/category/power-adapters">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=800&q=80"
                       alt="Power Adapters"
@@ -177,7 +245,7 @@ export default function Home() {
 
                 {/* Portable Power Category */}
                 <Link href="/category/portable-power">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/71QrhaW+kAL._AC_SL1500_.jpg"
                       alt="Portable Power"
@@ -203,7 +271,7 @@ export default function Home() {
 
                 {/* Neck Pillows Category */}
                 <Link href="/category/neck-pillows">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/51193RXQ1SL._AC_SL1080_.jpg"
                       alt="Neck Pillows"
@@ -229,7 +297,7 @@ export default function Home() {
 
                 {/* Packing Cubes Category */}
                 <Link href="/category/packing-cubes">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/91czenj1oWL._AC_SX679_.jpg"
                       alt="Packing Cubes"
@@ -255,7 +323,7 @@ export default function Home() {
 
                 {/* Laptop Sleeves Category */}
                 <Link href="/category/laptop-sleeves">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/71CRaMOcDvL._AC_SL1500_.jpg"
                       alt="Laptop Sleeves"
@@ -281,7 +349,7 @@ export default function Home() {
 
                 {/* Headphones Category */}
                 <Link href="/category/headphones">
-                  <div className="group relative h-80 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                  <div className="group relative h-80 w-full max-w-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer">
                     <img 
                       src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg"
                       alt="Headphones"
